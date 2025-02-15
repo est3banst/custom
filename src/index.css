@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock:wght@100..900&family=Montserrat:wght@100..900&family=Playwrite+AR:wght@100..400&display=swap');
+
 @import "tailwindcss";
+
 @font-face {
   font-family: myFont;
   src: url('/lt_internet/LTInternet-Regular.ttf') format('ttf');
+  font-family: Glock;
+  src: url('/Gloock-Regular.ttf') format('ttf');
 }
+
 
 :root {
   line-height: 1.5;
@@ -20,6 +26,39 @@ body {
   background-color: #171717;
   font-family: myFont, serif;
 }
+.cust-font {
+  font-family: 'Gloock', serif;
+  letter-spacing: 0.182rem;
+  font-weight: bold;
+}
+.about-font {
+  font-family: 'Gloock', serif;
+  font-weight: 300;
+}
+.hero-font {
+  font-family: 'Montserrat';
+  font-weight: 200;
+}
+.action {
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: rgba(167, 139, 250, 1);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(17, 24, 39, 1);
+}
+.action:hover {
+  background-color : rgba(167, 139, 250, .7);
+  cursor: pointer;
+  color: #cdcdcd;
+} 
 
 .folded-rectangle {
   --r: 80px; /* radius */

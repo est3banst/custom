@@ -7,7 +7,7 @@ const Nav = () => {
 
        <div className='flex justify-between w-full items-center'>
         <section className=''>
-       <h1 className='text-2xl'>Custom</h1>
+       <h1 className='text-2xl cust-font'>Custom</h1>
         <small>Soluciones web</small>       
            <Menu  />
 

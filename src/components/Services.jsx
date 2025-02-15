@@ -19,6 +19,14 @@ const services = [
     valuet: 'Tiendas personalizadas y escalables'
   },
   {
+    name: "Diseño e implementación de sistemas de administración",
+    attr: "Administra y gestiona todos los movimientos de tu negocio en un solo lugar",
+    price: 'Desde: $500',
+    value: 'Integración completa',
+    valuetwo: 'Funcionalidades personalizadas',
+    valuet: 'Diseños personalizados'
+  },
+  {
     name: "Soporte técnico especializado en la web",
     attr: "Tienes un sistema implementado y estás cansado de problemas sin resolver, nosotros nos encargamos",
     value: 'Respuesta inmediata',

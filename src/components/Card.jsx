@@ -97,27 +97,7 @@ const StyledWrapper = styled.div`
     margin-right: 0.5rem;
     color: rgba(167, 139, 250, 1);
   }
-
-  .action {
-    border: none;
-    outline: none;
-    display: inline-block;
-    border-radius: 0.25rem;
-    background-color: rgba(167, 139, 250, 1);
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    color: rgba(17, 24, 39, 1);
-  }
-  .action:hover {
-    background-color : rgba(167, 139, 250, .7);
-    cursor: pointer;
-    color: #cdcdcd;
-  }  
+ 
   `;
 
 export default Card;
