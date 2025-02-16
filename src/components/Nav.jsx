@@ -15,9 +15,17 @@ const Nav = () => {
         <div className='hidden md:block'>
         <nav className='hidden md:flex'>
                <ul className='flex gap-3 p-2'>
-                   <li className='border-nav'>Servicios</li>
+                  <a href="">
+                     <li className='border-nav'>Servicios</li>
+                    </a>
+                   <a href="">
                    <li className='border-nav'>Nosotros</li>
+
+                   </a>
+                   <a href="">
                    <li className='border-nav'>Contacto</li>
+
+                   </a>
                </ul>
            </nav>
         </div>

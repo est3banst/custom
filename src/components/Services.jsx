@@ -49,7 +49,7 @@ const services = [
   {
     name: "Diseño y alojamiento de tu sitio web",
     attr: "Expande tu marca hacia el mundo digital, maximiza el alcance de tu negocio",
-    price: "Desde: $99",
+    price: "Desde: USD 99",
     value: "Diseños atractivos y funcionales",
     valuetwo: "Enfoque en resultados",
     valuet: "Rápidos y adaptables",
@@ -57,7 +57,7 @@ const services = [
   {
     name: "Diseño e implementación de tienda virtual",
     attr: "Tus clientes podrán comprar en tu tienda a cualquier hora del día, cualquier día del año",
-    price: "Desde: $500",
+    price: "Desde: USD 500",
     value: "Integración completa",
     valuetwo: "Optimizadas para ventas",
     valuet: "Tiendas personalizadas y escalables",
@@ -65,7 +65,7 @@ const services = [
   {
     name: "Diseño e implementación de sistemas de administración",
     attr: "Administra y gestiona todos los movimientos de tu negocio en un solo lugar",
-    price: "Desde: $500",
+    price: "Desde: USD 500",
     value: "Integración completa",
     valuetwo: "Funcionalidades personalizadas",
     valuet: "Diseños personalizados",

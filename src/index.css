@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock:wght@100..900&family=Montserrat:wght@100..900&family=Playwrite+AR:wght@100..400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Italiana&family=Montserrat:wght@100..900&family=Orbitron:wght@400..900&display=swap');
 @import "tailwindcss";
 
 @font-face {
@@ -23,7 +22,14 @@
 body {
   overflow-x: hidden;
   background-color: #171717;
-  font-family: myFont, serif;
+  font-family: 'Montserrat', serif;
+}
+.brand {
+  font-family: 'Italiana', serif;
+}
+.font-st {
+  font-family: 'Orbitron', serif;
+  font-weight: 500;
 }
 .cust-font {
   font-family: 'Gloock', serif;
@@ -35,8 +41,8 @@ body {
   font-weight: 300;
 }
 .heading-about {
-  font-family: 'Gloock', serif;
-  font-weight: 200;
+  font-family: 'Orbitron', serif;
+  font-weight: 400;
   letter-spacing: 0.012rem;
   font-size: 1.21rem;
   text-align: center;
@@ -49,6 +55,7 @@ body {
   border: none;
   outline: none;
   display: inline-block;
+  font-family: 'Orbitron', serif;
   border-radius: 0.25rem;
   background-color: rgba(167, 139, 250, 1);
   padding-left: 1.25rem;
@@ -56,7 +63,7 @@ body {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.05em;
   color: rgba(17, 24, 39, 1);
 }
@@ -105,6 +112,19 @@ body {
 .startAnim {
   animation: animborder 800ms ease-in forwards;
 
+}
+
+.marquee {
+  display: flex;
+  gap: 6rem;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 6rem;
+  flex-shrink: 0;
+  min-width: 100%;
 }
 
 
