@@ -5,6 +5,7 @@ import App from './App';
 import './index.css'
 import Nosotros from './components/AboutPage'; 
 import Layout from './components/landing/Layout';
+import Faq from './components/Faq';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/nosotros" element={<Nosotros />} /> 
+        <Route path="/faq" element={<Faq />} />
         <Route path="/spa-service" element={<Layout />}/>
       </Routes>
     </BrowserRouter>

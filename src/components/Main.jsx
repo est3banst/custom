@@ -3,6 +3,7 @@ import Services from './Services'
 import Hero from './Hero'
 import About from './About'
 import { useInView } from "react-intersection-observer";
+import Footer from './Footer';
 
 const Main = () => {
 
@@ -24,7 +25,7 @@ const Main = () => {
     </div>
     <Services />
     <About />
-
+    <Footer />
     </div>
     </>
   )

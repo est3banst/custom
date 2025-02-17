@@ -26,19 +26,19 @@ const Landings = () => {
       ];
     return (
         <>
-    <div className="relative flex flex-col md:flex-row px-4 pt-20 pb-12 sm:px-6 lg:px-8" style={{ minHeight: '300vh' }}>
+    <div className="relative flex flex-col md:flex-row px-4 pb-12 sm:px-6 lg:px-8 min-h-[200vh] md:min-h-[250vh]">
       <div className="flex-1 text-center">
         {values.map((value, index) => (
           <div
             key={index}
-            className="sticky w-full max-w-xl px-8 py-12 mt-8 mx-auto space-y-4 border rounded-lg bg-[#171717]"
-            style={{ top: `calc(5.5rem * ${index + 1})`,
+            className="sticky w-full max-w-2xl px-6 py-8 mt-5 mx-auto space-y-4 border rounded-2xl bg-[#171717]"
+            style={{ top: `calc(5rem * ${index + 1})`,
                     zIndex: `calc(5 + ${index + 1})` }}
           >
-            <h2 className="space-y-1 text-2xl font-bold leading-none text-slate-50">
-              <span className="block text-sm">{value.title}</span>
+            <h2 className="space-y-1 text-base md:text-2xl lg:text-3xl font-bold leading-none text-slate-50">
+              <span className="block py-2">{value.title}</span>
             </h2>
-            <p>{value.text}</p>
+            <p className='text-left'>{value.text}</p>
           </div>
         ))}
       </div>
