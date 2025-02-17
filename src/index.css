@@ -12,7 +12,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: #242424;
+  --black-variant: #242424;
   color: #f2f2f2;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -84,12 +84,12 @@ body {
 } 
 
 .folded-rectangle {
-  --r: 80px; /* radius */
+  --r: 90px; /* radius */
 
   width: 100%;
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 0;
   height: 100vh;
   aspect-ratio: 1.5;
   background: rgba(167, 139, 250, .8);
@@ -203,13 +203,13 @@ body {
 }
 @media (width < 768px) {
   .folded-rectangle {
-    height: 190vh;
-    top: 18%;
+    height: 200vh;
+    top: 15%;
   }
 }
 @media (width < 420px) {
   .folded-rectangle {
-    top: 25%;
+    top: 17%;
   }
   .title {
     font-size: 1.2rem;
