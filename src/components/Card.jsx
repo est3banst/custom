@@ -65,13 +65,7 @@ const StyledWrapper = styled.div`
   background-color: #f2f2f2;
   margin : 4px 0;
   }
-  .title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    color: #fff
-  }
-
+  
   .price {
     font-size: 1.15rem;
     line-height: 1;

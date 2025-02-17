@@ -3,7 +3,7 @@ import Menu from './Menu'
 
 const Nav = () => {
     return (
-        <header className='bg-[#171717] z-[50] p-4 flex fixed top-0 left-0 justify-between w-full border-b-4 border-slate-200'>
+        <header className='bg-[#171717] custom-nav-bg z-[50] p-4 flex fixed top-0 left-0 justify-between w-full'>
 
        <div className='flex justify-between w-full items-center'>
         <section className=''>

@@ -23,12 +23,12 @@ const MarqueeComp = () => {
 
         <div className="marquee">
           <div className="marquee-second-content">
-            <p className="brand">ASESORÍA Y OPTIMIZACIÓN</p>
+            <p className="font-st">ASESORÍA Y OPTIMIZACIÓN</p>
             <p className="brand">INTEGRACIONES COMPLETAS</p>
             <p className="brand">DESARROLLO WEB</p>
             <p className="font-st">APLICACIONES ESCALABLES</p>
          
-            <p aria-hidden='true' className="brand">ASESORÍA Y OPTIMIZACIÓN</p>
+            <p aria-hidden='true' className="font-st">ASESORÍA Y OPTIMIZACIÓN</p>
             <p aria-hidden='true' className="brand">INTEGRACIONES COMPLETAS</p>
             <p aria-hidden='true' className="brand">DESARROLLO WEB</p>
             <p aria-hidden='true' className="font-st">APLICACIONES ESCALABLES</p>

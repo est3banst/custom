@@ -31,6 +31,15 @@ body {
   font-family: 'Orbitron', serif;
   font-weight: 500;
 }
+.custom-nav-bg {
+  background: #171717;
+  background: linear-gradient(180deg, rgba(23, 23, 23, .98) 90%);
+}
+.cust-background {
+  background: rgb(148,148,148);
+  background: linear-gradient(180deg, rgba(23, 23, 23, .99) 15%, rgba(73, 73, 73, 0.661) 22%, rgba(148,148,148,0.7660057773109244) 33%, rgba(29,29,29,.8) 74%, rgba(23,23,23,.99) 95%);
+
+}
 .cust-font {
   font-family: 'Gloock', serif;
   letter-spacing: 0.182rem;
@@ -54,13 +63,16 @@ body {
 .action {
   border: none;
   outline: none;
-  display: inline-block;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  gap: 14px;
+  margin: 0 auto;
   font-family: 'Orbitron', serif;
   border-radius: 0.25rem;
-  background-color: rgba(167, 139, 250, 1);
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  background-color: #a78bfa;
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   text-align: center;
@@ -80,7 +92,7 @@ body {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 10%;
   height: 100vh;
   aspect-ratio: 1.5;
   background: rgba(167, 139, 250, .8);
@@ -101,6 +113,14 @@ body {
 .border-nav:hover {
   background-color: #7271710a;
 }
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #fff
+}
+
 .load-bord {
   width: 0;
   height: 1.5px;
@@ -124,14 +144,14 @@ body {
   gap: 6rem;
   padding-left: 6rem;
   width: max-content;
-  animation: marquee-move-text var(--speed, 20s) linear infinite var(
+  animation: marquee-move-text var(--speed, 18s) linear infinite var(
       --direction,
       forwards
     );
 }
 .marquee-second-content {
  
-  animation: marquee-move-text var(--speed, 36s) linear infinite var(
+  animation: marquee-move-text var(--speed, 25s) linear infinite var(
       --direction,
       forwards
     );
@@ -167,18 +187,23 @@ body {
 
 @media (width < 1008px) {
   .folded-rectangle {
-    height: 150vh;
+    height: 140vh;
   }
 
 }
 @media (width < 768px) {
   .folded-rectangle {
-    height: 180vh;
-    top: 50%;
+    height: 190vh;
+    top: 18%;
   }
 }
-@media (width < 400px) {
+@media (width < 420px) {
   .folded-rectangle {
-    top: 65%;
+    top: 25%;
   }
+  .title {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
 }
