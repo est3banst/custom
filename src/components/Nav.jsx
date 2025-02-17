@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
-        <header className='bg-[#171717] custom-nav-bg z-[50] p-4 flex fixed top-0 left-0 justify-between w-full'>
+        <header className='z-[50] p-4 flex fixed top-0 left-0 justify-between w-full'>
 
        <div className='flex justify-between w-full items-center'>
-        <section className=''>
+        <section className='absolute top-0'>
        <Link to='/'>
-       <h1 className='text-2xl cust-font'>Custom</h1>
-       </Link>
-        <small>Soluciones web</small>       
+        <img src="clog.png"
+        className='relative h-[95px]' alt="Custom logo" />
+      
+       </Link> 
            <Menu  />
 
         </section>

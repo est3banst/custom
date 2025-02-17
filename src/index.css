@@ -31,10 +31,7 @@ body {
   font-family: 'Orbitron', serif;
   font-weight: 500;
 }
-.custom-nav-bg {
-  background: #171717;
-  background: linear-gradient(180deg, rgba(23, 23, 23, .98) 90%);
-}
+
 .cust-background {
   background: rgb(148,148,148);
   background: linear-gradient(180deg, rgba(23, 23, 23, .99) 15%, rgba(73, 73, 73, 0.661) 22%, rgba(148,148,148,0.7660057773109244) 33%, rgba(29,29,29,.8) 74%, rgba(23,23,23,.99) 95%);
