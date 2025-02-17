@@ -1,5 +1,6 @@
 import React from 'react'
 import Menu from './Menu'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
@@ -7,7 +8,9 @@ const Nav = () => {
 
        <div className='flex justify-between w-full items-center'>
         <section className=''>
+       <Link to='/'>
        <h1 className='text-2xl cust-font'>Custom</h1>
+       </Link>
         <small>Soluciones web</small>       
            <Menu  />
 

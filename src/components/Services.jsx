@@ -41,6 +41,7 @@ const ServiceCard = ({ service, index }) => {
         value={service.value}
         valuetwo={service.valuetwo}
         valuet={service.valuet}
+        link={service.link}
       />
     </div>
   );
@@ -56,6 +57,7 @@ const services = [
     value: "Diseños atractivos y funcionales",
     valuetwo: "Enfoque en resultados",
     valuet: "Rápidos y adaptables",
+    link: "/spa-service"
   },
   {
     name: "Diseño e implementación de tienda virtual",
@@ -64,6 +66,7 @@ const services = [
     value: "Integración completa",
     valuetwo: "Optimizadas para ventas",
     valuet: "Tiendas personalizadas y escalables",
+    link: "/ecommerce"
   },
   {
     name: "Diseño e implementación de sistemas de administración",
@@ -72,6 +75,7 @@ const services = [
     value: "Integración completa",
     valuetwo: "Funcionalidades personalizadas",
     valuet: "Diseños personalizados",
+    link: "/sistemas-admin"
   },
   {
     name: "Soporte técnico especializado en la web",
@@ -79,5 +83,6 @@ const services = [
     value: "Respuesta inmediata",
     valuetwo: "Asesoría y optimización",
     valuet: "Soporte técnico integral",
+    link: "/tech-support"
   },
 ];

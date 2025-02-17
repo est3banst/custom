@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Card = ({ name, attr, price, value, valuetwo, valuet}) => {
+const Card = ({ name, attr, price, value, valuetwo, valuet ,link}) => {
   return (
     <StyledWrapper>
       <div className="card">
@@ -31,7 +32,7 @@ const Card = ({ name, attr, price, value, valuetwo, valuet}) => {
             <span>{value}</span>
           </li>
         </ul>
-        <button type="button" className="action">Ver más</button>
+        <Link to={link} className="action">Ver más</Link>
       </div>
     </StyledWrapper>
   );
