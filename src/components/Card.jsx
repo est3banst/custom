@@ -7,6 +7,7 @@ const Card = ({ name, attr, price, value, valuetwo, valuet}) => {
       <div className="card">
         <div className="header">
           <span className="title">{name}</span>
+          <span className="line-sep"></span>
           <span className="price">{price }</span>
         </div>
         <p className="desc">{attr}</p>
@@ -44,7 +45,8 @@ const StyledWrapper = styled.div`
     flex-wrap: wrap;
     align-items: stretch;
     margin-bottom: 2rem;
-    max-width: 320px;
+    max-width: 350px;
+    min-width: auto;
     display: flex;
     flex-direction: column;
     border-radius: 0.25rem;
@@ -56,7 +58,13 @@ const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
-
+  .line-sep {
+  height: .5px;
+  width: 80%;
+  display: flex;
+  background-color: #f2f2f2;
+  margin : 4px 0;
+  }
   .title {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -65,7 +73,7 @@ const StyledWrapper = styled.div`
   }
 
   .price {
-    font-size: 1.75rem;
+    font-size: 1.15rem;
     line-height: 1;
     font-weight: 700;
     color: #fff

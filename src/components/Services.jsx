@@ -20,13 +20,13 @@ const Services = () => {
 const ServiceCard = ({ service, index }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1, 
+    threshold: 0.2, 
   });
 
   return (
     <div
       ref={ref}
-      className={`opacity-0 translate-y-10 transition-all duration-500 ease-in-out mb-4 ${
+      className={`opacity-0 -translate-y-15 transition-all duration-500 ease-in-out my-4 ${
         inView ? "opacity-100 translate-y-0" : ""
       }`}
       style={{ transitionDelay: `${index * 150}ms` }} 

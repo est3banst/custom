@@ -1,6 +1,7 @@
 import React from 'react'
 import { useInView } from "react-intersection-observer"
 import MarqueeComp from './MarqueeComp'
+import { Link } from 'react-router-dom'
 
 const About = () => {
 
@@ -23,7 +24,11 @@ const About = () => {
             <MarqueeComp />
                 
             </div>
+            <Link to='/nosotros'
+            className='w-max m-auto rounded-full underline hover:bg-[#f0f0f0] hover:opacity-75 flex justify-center bg-[#f5f5f5] text-slate-900 p-6'
+            >Nosotros
             
+            </Link>
         </>
 
     )

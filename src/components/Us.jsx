@@ -2,7 +2,7 @@ import React from 'react'
 
 const Us = () => {
     return (
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col relative h-auto gap-4'>
             <p>
                 Diseñamos y desarrollamos sitios web modernos, escalables y de alto rendimiento adaptados a tus necesidades.
             </p>
