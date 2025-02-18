@@ -31,6 +31,11 @@ body {
   font-family: 'Orbitron', serif;
   font-weight: 500;
 }
+.cust-shadow-box {
+  -webkit-box-shadow: 3px 5px 7px 4px rgba(167,139,250,1);
+  -moz-box-shadow: 3px 5px 7px 4px rgba(167,139,250,1);
+  box-shadow: 30px 5px 60px -7px rgba(167,139,250,1);
+}
 
 .cust-background {
   background: rgb(148,148,148);
@@ -121,7 +126,6 @@ body {
 .load-bord {
   width: 0;
   height: 1.5px;
-  margin-left: 10px;
   background-color: white;
   opacity: 0;
   transition: width 800ms ease-in, opacity 300ms ease-in;
@@ -141,6 +145,8 @@ body {
   gap: 6rem;
   padding-left: 6rem;
   width: max-content;
+}
+.marquee-content {
   animation: marquee-move-text var(--speed, 18s) linear infinite var(
       --direction,
       forwards
@@ -148,7 +154,7 @@ body {
 }
 .marquee-second-content {
  
-  animation: marquee-move-text var(--speed, 25s) linear infinite var(
+  animation: marquee-move-text var(--speed, 26s) linear infinite var(
       --direction,
       forwards
     );
@@ -190,7 +196,7 @@ body {
     opacity: .8;
   }
   100% {
-    width: 98%;
+    width: 100%;
     opacity: 1;
   }
 }

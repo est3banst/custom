@@ -9,7 +9,8 @@ const Nav = () => {
        <div className='flex justify-between w-full items-center'>
         <section className='absolute top-0'>
        <Link to='/'>
-        <img src="clog.png"
+        <img 
+        src="/clog.png"
         className='relative h-[95px]' alt="Custom logo" />
        </Link> 
            <Menu  />
@@ -18,17 +19,18 @@ const Nav = () => {
         <div className='hidden md:block w-full'>
         <nav className='hidden md:flex md:w-full'>
                <ul className='flex w-full justify-end gap-3 p-2'>
-                  <a href="">
+                  <Link to="/">
                      <li className='border-nav'>Servicios</li>
-                    </a>
-                   <a href="">
+                    </Link>
+                  <Link to="/services">
                    <li className='border-nav'>Nosotros</li>
 
-                   </a>
-                   <a href="">
-                   <li className='border-nav'>Contacto</li>
+                   </Link>
+                   <Link to="/contact">
+                       <li className='border-nav'>Contacto</li>
+                   </Link>
 
-                   </a>
+                
                </ul>
            </nav>
         </div>

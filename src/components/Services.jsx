@@ -57,7 +57,7 @@ const services = [
     value: "Diseños atractivos y funcionales",
     valuetwo: "Enfoque en resultados",
     valuet: "Rápidos y adaptables",
-    link: "/spa-service"
+    link: "/services/spa-service"
   },
   {
     name: "Diseño e implementación de tienda virtual",
@@ -66,7 +66,7 @@ const services = [
     value: "Integración completa",
     valuetwo: "Optimizadas para ventas",
     valuet: "Tiendas personalizadas y escalables",
-    link: "/ecommerce"
+    link: "/services/ecommerce"
   },
   {
     name: "Diseño e implementación de sistemas de administración",
@@ -75,7 +75,7 @@ const services = [
     value: "Integración completa",
     valuetwo: "Funcionalidades personalizadas",
     valuet: "Diseños personalizados",
-    link: "/sistemas-admin"
+    link: "/services/cms"
   },
   {
     name: "Soporte técnico especializado en la web",
@@ -83,6 +83,6 @@ const services = [
     value: "Respuesta inmediata",
     valuetwo: "Asesoría y optimización",
     valuet: "Soporte técnico integral",
-    link: "/tech-support"
+    link: "/services/support-service"
   },
 ];

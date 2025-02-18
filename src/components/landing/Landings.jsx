@@ -31,7 +31,7 @@ const Landings = () => {
         {values.map((value, index) => (
           <div
             key={index}
-            className="sticky w-full max-w-2xl px-6 py-8 mt-5 mx-auto space-y-4 border rounded-2xl bg-[#171717]"
+            className="sticky cust-shadow-box w-full max-w-2xl px-6 py-8 mt-5 mx-auto space-y-4 border rounded-2xl bg-[#171717]"
             style={{ top: `calc(5rem * ${index + 1})`,
                     zIndex: `calc(5 + ${index + 1})` }}
           >
