@@ -169,13 +169,13 @@ body {
   counter-reset: card;
   position: relative;
   display: block;
-  padding-bottom: 15vh;
+  padding-bottom: 35vh;
   margin-top: 12px;
   height: auto;
 }
 
 .scroll-cards > .scroll-cards__item + .scroll-cards__item {
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .scroll-cards__item {
@@ -243,13 +243,6 @@ body {
   .scroll-cards__item {
     --offset: 1.25em;
     max-width: 42em;
-  }
-}
-@media (width < 371px) {
-  .scroll-cards__item {
-    --offset: .85em;
-    max-width: 340px;
-    padding: 1rem;
   }
 }
 
