@@ -7,7 +7,7 @@ const GridHero = () => {
   const [key, setKey] = useState(0); 
 
   const squareSize = 1; 
-  const gapSize = 40;   
+  const gapSize = 35;   
   const animationDuration = 4 * 1000; 
 
   const calcGrid = () => {

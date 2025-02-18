@@ -33,8 +33,10 @@ const Faq = () => {
         <>
         <div className="flex flex-col justify-between h-screen">
             <Nav />
-            <div className="pt-20 rounded-2xl w-5/6 mx-auto px-4">
-                <h2 className="text-3xl font-bold p-4">Preguntas frecuentes</h2>
+            <div className="pt-20 rounded-2xl w-full mx-auto px-4">
+                <h2 className="text-3xl uppercase font-bold text-[#a78bfa] p-4">Preguntas
+                    </h2>
+                    <h2 className="text-3xl uppercase font-bold px-4">Frecuentes</h2>
                 <div className="mt-4">
                     {questions.map((question, index) => (
                         <AccordionComp

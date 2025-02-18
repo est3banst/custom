@@ -6,7 +6,7 @@ const Footer = () => {
  
   return (
     <>
-    <div className='h-auto my-4 p-4 flex w-full flex-col gap-4'>
+    <div className='h-auto my-8 p-4 flex w-full flex-col gap-4'>
       <h2 className='border-b-2 w-max' >Vínculos</h2>
       <div className='flex flex-col gap-5'>
       <Link to='/faq'>Preguntas Frecuentes </Link>

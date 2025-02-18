@@ -18,7 +18,7 @@ const About = () => {
             }`}></div>
           
 
-            <div className='text-xl p-4 flex flex-col gap-3'>
+            <div className='text-xl p-4 flex flex-col gap-3 mb-4'>
             <h2 className='heading-about uppercase'>Que hacemos</h2>
 
             <MarqueeComp />
