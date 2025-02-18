@@ -27,19 +27,16 @@ const Landings = () => {
     return (
         <>
     <div className="relative flex flex-col md:flex-row px-4 sm:px-6 lg:px-8">
-      <div className="flex-1 h-auto text-center">
+      <div className="scroll-cards">
         {values.map((value, index) => (
             
           <div
             key={index}
             className=
-            {`top-[7rem] sticky cust-shadow-box w-full custom-spacing max-w-2xl md:max-w-3xl px-6 mt-8 py-12 my-10 mx-auto border rounded-2xl bg-[#171717]`}
-            style={{
-                    zIndex: `calc(5 + ${index + 1})`,
-                    marginBlockEnd: `calc(9rem + ${index + 1.25}rem)`
-                    }}
+            {`scroll-cards__item bg-[#171717]`}
+         
           >
-            <h2 className="text-xl md:text-2xl lg:text-3xl pb-4 font-bold leading-none text-slate-50">
+            <h2 className="text-xl uppercase md:text-2xl lg:text-3xl pb-4 font-bold leading-none text-slate-50">
               <span className="block py-2">{value.title}</span>
             </h2>
             <p className='text-left md:text-xl'>{value.text}</p>
