@@ -26,19 +26,23 @@ const Landings = () => {
       ];
     return (
         <>
-    <div className="relative flex flex-col md:flex-row px-4 pb-12 sm:px-6 lg:px-8 min-h-[200vh] md:min-h-[250vh]">
-      <div className="flex-1 text-center">
+    <div className="relative flex flex-col md:flex-row px-4 sm:px-6 lg:px-8">
+      <div className="flex-1 h-auto text-center">
         {values.map((value, index) => (
+            
           <div
             key={index}
-            className="sticky cust-shadow-box w-full max-w-2xl px-6 py-8 mt-5 mx-auto space-y-4 border rounded-2xl bg-[#171717]"
-            style={{ top: `calc(5rem * ${index + 1})`,
-                    zIndex: `calc(5 + ${index + 1})` }}
+            className=
+            {`top-[7rem] sticky cust-shadow-box w-full custom-spacing max-w-2xl md:max-w-3xl px-6 mt-8 py-12 my-10 mx-auto border rounded-2xl bg-[#171717]`}
+            style={{
+                    zIndex: `calc(5 + ${index + 1})`,
+                    marginBlockEnd: `calc(9rem + ${index + 1.25}rem)`
+                    }}
           >
-            <h2 className="space-y-1 text-base md:text-2xl lg:text-3xl font-bold leading-none text-slate-50">
+            <h2 className="text-xl md:text-2xl lg:text-3xl pb-4 font-bold leading-none text-slate-50">
               <span className="block py-2">{value.title}</span>
             </h2>
-            <p className='text-left'>{value.text}</p>
+            <p className='text-left md:text-xl'>{value.text}</p>
           </div>
         ))}
       </div>

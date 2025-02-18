@@ -24,12 +24,12 @@ const Footer = () => {
       <h2 className='border-b-2 w-max'>Servicios</h2>
       <div className='flex flex-col gap-5'>
         <Link to="/services/spa-service">
-        Landing pages o aplicaciones de una página
+        Landing pages o SPA
         </Link>
-        <Link to="/services/ecommerce">Diseño e implementación de tienda virtual
+        <Link to="/services/ecommerce">E-commerce
         </Link>
         <Link to="/services/cms">
-        Diseño e implementación de sistema de administración para tu negocio
+        Sistemas de administración
         </Link>
       </div>
     </div>

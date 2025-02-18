@@ -11,10 +11,7 @@ const Section = () => {
             ?
             </h2>
         </section>
-        <p className='p-5'>
-        En la era digital, no tener un sitio web es como no existir para miles de clientes potenciales. 
-        ¿Realmente quieres perder oportunidades solo porque tu negocio no está en línea?
-        </p>
+        
     </div>
   )
 }
