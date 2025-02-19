@@ -15,7 +15,7 @@ const Main = () => {
 
   return (
     <>
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden grid grid-cols-1 gap-12 p-4'>
     <div
         ref={ref}
         className={`transform transition-all duration-600 ease-out 
@@ -23,8 +23,10 @@ const Main = () => {
       >
     <Hero />
     </div>
+    <div className='grid grid-cols-1 gap-15'>
     <Services />
     <About />
+    </div>
     <Footer />
     </div>
     </>

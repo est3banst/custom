@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 const Services = () => {
   return (
     <>
-    <div className="relative mt-12 mb-12 md:mt-8">
+    <div className="relative my-12 lg:my-14">
     <div className="folded-rectangle"></div>
       <div className="flex justify-center gap-3">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">

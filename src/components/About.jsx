@@ -11,14 +11,14 @@ const About = () => {
     return (
 
         <>
-        <div ref={ref} className={`load-bord transition-all duration-[320ms]
+        <div ref={ref} className={`load-bord custom-space lg:mt-30 transition-all duration-[320ms]
             ${
                 inView ? 'startAnim' : 
                 ''
             }`}></div>
           
 
-            <div className='text-xl py-4 flex flex-col gap-3 mb-4'>
+            <div className='relative h-auto text-xl py-4 flex flex-col gap-3 mb-4'>
             <h2 className='heading-about uppercase'>Que hacemos</h2>
 
             <MarqueeComp />

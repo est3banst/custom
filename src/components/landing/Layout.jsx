@@ -3,8 +3,13 @@ import Landings from './Landings'
 import Nav from '../Nav'
 import { Link } from 'react-router-dom'
 import Section from './Section'
+import { useEffect } from 'react'
 
 const Layout = () => {
+
+    useEffect(() => {
+        scrollTo(0, 0)
+    }, [])
   return (
     <div className='h-screen bg-[#171717]'>
         <Nav/>

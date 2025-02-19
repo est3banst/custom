@@ -288,22 +288,15 @@ body {
     opacity: 1;
   }
 }
-
-@media (width < 1008px) {
-  .folded-rectangle {
-    height: 140vh;
+@media (width < 1025px) {
+  .custom-space {
+    margin-top: 4rem;
   }
-
 }
+
 @media (width < 768px) {
   .folded-rectangle {
-    height: 200vh;
-    top: 15%;
-  }
-}
-@media (width < 420px) {
-  .folded-rectangle {
-    top: 17%;
+    height: 140vh;
   }
   .title {
     font-size: 1.2rem;
