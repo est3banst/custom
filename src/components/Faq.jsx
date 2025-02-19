@@ -2,6 +2,7 @@ import { useState } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import AccordionComp from "./AccordionComp";
+import { useEffect } from "react";
 
 const questions = [
     {
@@ -23,6 +24,11 @@ const questions = [
 ];
 
 const Faq = () => {
+
+    useEffect(() => {
+        scrollTo(0, 0)
+    }, []);
+    
     const [active, setActive] = useState(null);
 
     const handleToggle = (id) => {

@@ -19,10 +19,10 @@ const Nav = () => {
         <div className='hidden md:block w-full'>
         <nav className='hidden md:flex md:w-full'>
                <ul className='flex w-full justify-end gap-3 p-2'>
-                  <Link to="/">
+                  <Link to="/services">
                      <li className='border-nav'>Servicios</li>
                     </Link>
-                  <Link to="/services">
+                  <Link to="/about">
                    <li className='border-nav'>Nosotros</li>
 
                    </Link>

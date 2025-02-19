@@ -1,7 +1,7 @@
 import React from 'react'
-import Nav from './Nav'
-import Plans from './Plans'
-import Footer from './Footer'
+import Nav from '../Nav'
+import Plans from '../Plans'
+import Footer from '../Footer'
 
 const PlansLayout = () => {
   return (

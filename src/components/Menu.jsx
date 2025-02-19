@@ -24,13 +24,13 @@ const Menu = () => {
         </Link>
       </li>
       <li>
-        <Link to="/nosotros">
+        <Link to="/about">
           <label htmlFor="menuCheckbox">Nosotros</label>
         </Link>
       </li>
       
       <li>
-      <Link to="/">
+      <Link to="/services">
       <label htmlFor="menuCheckbox">Servicios</label>
       </Link>
         </li>

@@ -18,8 +18,8 @@ const Footer = () => {
       <div className='flex flex-col gap-5'>
       <Link to='/faq'>Preguntas Frecuentes </Link>
       <Link to="/plans">Planes</Link>
-      <Link to="/nosotros">Nosotros</Link>
-      <Link>Contacto</Link>
+      <Link to="/about">Nosotros</Link>
+      <Link to="/contact">Contacto</Link>
       </div>
       <h2 className='border-b-2 w-max'>Servicios</h2>
       <div className='flex flex-col gap-5'>

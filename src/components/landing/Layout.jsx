@@ -14,10 +14,10 @@ const Layout = () => {
     <div className='h-screen bg-[#171717]'>
         <Nav/>
         <Section />
-       <div>
+       <div className='md:flex md:gap-12 md:relative'>
        <Landings />
-        <div className='mb-6 flex flex-col gap-4 translate-y-[-120px] px-4 pb-4'>
-        <p className='p-5 text-xl md:text-2xl'>
+        <div className='mb-6 md:fixed md:top-[65%] lg:w-3/6 md:w-4/6 md:right-0 flex flex-col gap-4 translate-y-[-120px] px-4 pb-4'>
+        <p className='p-5 text-xl md:text-3xl'>
         En la era digital, no tener un sitio web es como no existir para miles de clientes potenciales. 
         ¿Realmente quieres perder oportunidades solo porque tu negocio no está en línea?
         </p>

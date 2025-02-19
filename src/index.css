@@ -94,7 +94,7 @@ body {
 } 
 
 .folded-rectangle {
-  --r: 90px; /* radius */
+  --r: 140px; /* radius */
 
   width: 100%;
   position: absolute;
@@ -169,8 +169,8 @@ body {
   counter-reset: card;
   position: relative;
   display: block;
-  padding-bottom: 35vh;
-  margin-top: 12px;
+  padding-bottom: 25vh;
+  margin-top: 32px;
   height: auto;
 }
 
@@ -179,12 +179,13 @@ body {
 }
 
 .scroll-cards__item {
-  --offset: 0.5em;
+  --offset: 1em;
   color: #fff;
   position: sticky;
   top: max(12vh, 10em);
-  padding: 2em .5em;
-  min-height: 20em;
+  padding: 3em 2rem;
+  
+  min-height: 30em;
   background: #242424;
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
   width: calc(100% - 5 * var(--offset));
@@ -210,9 +211,7 @@ body {
 }
 
 @media screen and (min-width: 37em) {
-  h1 {
-    font-size: 3em;
-  }
+
   .scroll-cards__item {
     --offset: 1em;
     padding-left: 5em;
@@ -237,9 +236,7 @@ body {
 }
 
 @media screen and (min-width: 62em) {
-  .scroll-cards h1 {
-    font-size: 3em;
-  }
+
   .scroll-cards__item {
     --offset: 1.25em;
     max-width: 42em;
@@ -288,35 +285,59 @@ body {
     opacity: 1;
   }
 }
-@media (width < 1025px) {
-  .custom-space {
-    margin-top: 4rem;
-  }
-}
 
 @media (width < 768px) {
-  
+  .folded-rectangle {
+    height: 150vh;
+  }
+
   .title {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
-
-}
-@media (width > 768px) {
-  .folded-rectangle {
-    height: auto;
+  .scroll-cards {
+    padding-bottom: 30vh;
+  }
+@media (width < 460px) {
+  .scroll-cards {
+    padding-bottom: 24vh;
+  }
+  .scroll-cards__item {
+    min-height: auto;
   }
 }
+@media (width < 400px) {
+  .scroll-cards {
+    padding-bottom: 20vh;
+  }
+  .scroll-cards__item {
+    --offset: .92em;
+  }
+}
+}
+@media (width > 532px) {
+  .scroll-cards__item {
+    min-height: 28em;
+  }
+}
+
+@media (width > 768px) {
+  .folded-rectangle {
+    height: 100%;
+  }
+}
+
 @media (width > 1654px) {
   .custom-spacing-pc {
     gap: 10rem;
   }
 }
 @media (width > 2000px) {
-  .custom-spacing-pc {
-    gap: 20rem;
-  }
+  
   .custom-width-pc {
     width: 100dvw;
+  }
+  .custom-space {
+    margin-top: 10rem;
   }
 }
