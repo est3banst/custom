@@ -295,12 +295,28 @@ body {
 }
 
 @media (width < 768px) {
-  .folded-rectangle {
-    height: 140vh;
-  }
+  
   .title {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
 
+}
+@media (width > 768px) {
+  .folded-rectangle {
+    height: auto;
+  }
+}
+@media (width > 1654px) {
+  .custom-spacing-pc {
+    gap: 10rem;
+  }
+}
+@media (width > 2000px) {
+  .custom-spacing-pc {
+    gap: 20rem;
+  }
+  .custom-width-pc {
+    width: 100dvw;
+  }
 }

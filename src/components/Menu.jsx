@@ -35,7 +35,7 @@ const Menu = () => {
       </Link>
         </li>
         <li>
-      <Link to="/">
+      <Link to="/plans">
       <label htmlFor="menuCheckbox">Planes</label>
       </Link>
         </li>

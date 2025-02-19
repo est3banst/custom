@@ -17,7 +17,7 @@ const Footer = () => {
       <h2 className='border-b-2 w-max' >Vínculos</h2>
       <div className='flex flex-col gap-5'>
       <Link to='/faq'>Preguntas Frecuentes </Link>
-      <Link to="/">Planes</Link>
+      <Link to="/plans">Planes</Link>
       <Link to="/nosotros">Nosotros</Link>
       <Link>Contacto</Link>
       </div>

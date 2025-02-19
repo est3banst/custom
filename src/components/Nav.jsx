@@ -26,6 +26,9 @@ const Nav = () => {
                    <li className='border-nav'>Nosotros</li>
 
                    </Link>
+                   <Link to="/plans">
+                   <li className='border-nav'>Planes</li>
+                   </Link>
                    <Link to="/contact">
                        <li className='border-nav'>Contacto</li>
                    </Link>

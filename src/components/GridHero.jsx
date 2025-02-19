@@ -43,7 +43,7 @@ const GridHero = () => {
   }, [numColumns]);
 
   return (
-    <div className="absolute z-20 top-0 left-0 w-full h-full grid"
+    <div className="absolute z-20 top-0 left-0 w-full custom-width-pc h-full grid"
       style={{
         gridTemplateColumns: `repeat(${numColumns}, ${squareSize + gapSize}px)`,
         gridTemplateRows: `repeat(${numRows}, ${squareSize + gapSize}px)`,

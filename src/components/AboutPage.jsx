@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Us from './Us'
+import Footer from './Footer'
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
 
         <Us />
         </div>
+        <Footer/>
     </div>
     </>
   )
