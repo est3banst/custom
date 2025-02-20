@@ -8,6 +8,7 @@ import Layout from './components/landing/Layout';
 import Faq from './components/Faq';
 import PlansLayout from './components/pages/PlansLayout';
 import ServicesPage from './components/pages/ServicesPage';
+import LayoutStores from './components/ecomm/LayoutStores';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,7 +21,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/services" element={<ServicesPage/>} />
         <Route path='/plans' element={<PlansLayout/>} />
         <Route path="/services/spa-service" element={<Layout />}/>
-        <Route path="/services/ecommerce" element={<App />} />
+        <Route path="/services/ecommerce" element={<LayoutStores />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

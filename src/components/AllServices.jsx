@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AllServices = () => {
     return (
@@ -33,6 +34,11 @@ const AllServices = () => {
 </p>
                     </section>
                    </div>
+                   <Link to="/services/spa-service" >
+                   <button className='action'>
+                    Landing Pages
+                    </button>
+                   </Link>
                 </section>
                 <section>
                     Desarrollo e Implementación de E-commerce
@@ -67,6 +73,9 @@ const AllServices = () => {
                         </p>
                     </section>
                    </div>
+                   <Link to="/services/ecommerce">
+                   <button className='action'>
+                    E-commerce</button></Link>
                 </section>
                 <section>
                     Sistemas de Gestión Empresarial
