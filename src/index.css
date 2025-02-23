@@ -19,7 +19,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  scrollbar-width: 9px;
+  scrollbar-color: #a78bfa var(--black-variant);
 
+}
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -198,7 +202,7 @@ body {
   color: #fff;
   position: sticky;
   top: max(12vh, 10em);
-  padding: 3em 2rem;
+  padding: 3em 6px;
   
   min-height: 30em;
   background: #242424;
@@ -253,8 +257,8 @@ body {
 @media screen and (min-width: 62em) {
 
   .scroll-cards__item {
-    --offset: 1.25em;
-    max-width: 42em;
+   
+    max-width: 60em;
   }
 }
 
@@ -313,12 +317,19 @@ body {
   .scroll-cards {
     padding-bottom: 30vh;
   }
+}
+@media (width < 600px) {
+  .scroll-cards__item {
+    padding: 2rem 1.5rem;
+
+  }
+}
 @media (width < 460px) {
   .scroll-cards {
     padding-bottom: 24vh;
   }
   .scroll-cards__item {
-    min-height: auto;
+    min-height: 28em;
   }
 }
 @media (width < 400px) {
@@ -329,7 +340,7 @@ body {
     --offset: .92em;
   }
 }
-}
+
 @media (width > 532px) {
   .scroll-cards__item {
     min-height: 28em;

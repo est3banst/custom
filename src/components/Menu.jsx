@@ -1,9 +1,10 @@
 import React from 'react'
 import '../assets/Menu.css'
-import { Link } from 'react-router-dom'
+import { Link ,useLocation} from 'react-router-dom'
 
 const Menu = () => {
     const year = new Date();
+    const location = useLocation();
   return (
     <div className='flex md:hidden'>
         <nav role="navigation">
@@ -20,27 +21,27 @@ const Menu = () => {
    
       <li>
         <Link to="/">
-          <label htmlFor="menuCheckbox">Inicio</label>
+          <label className={location.pathname === '/' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Inicio</label>
         </Link>
       </li>
       <li>
         <Link to="/about">
-          <label htmlFor="menuCheckbox">Nosotros</label>
+          <label className={location.pathname === '/about' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Nosotros</label>
         </Link>
       </li>
       
       <li>
       <Link to="/services">
-      <label htmlFor="menuCheckbox">Servicios</label>
+      <label className={location.pathname === '/services' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Servicios</label>
       </Link>
         </li>
         <li>
       <Link to="/plans">
-      <label htmlFor="menuCheckbox">Planes</label>
+      <label className={location.pathname === '/plans' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Planes</label>
       </Link>
         </li>
         <li>
-      <Link to="/">
+      <Link className={location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''} to="/">
       <label htmlFor="menuCheckbox">Contacto</label>
         </Link>
         
