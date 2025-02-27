@@ -3,7 +3,7 @@ import React from "react";
 const MarqueeComp = () => {
 
   return (
-    <div className="overflow-hidden my-3 whitespace-nowrap p-4 text-3xl md:text-4xl">
+    <div className="overflow-hidden bg-white/5 shadow-lg text-slate-200 rotate-[3deg] my-3 whitespace-nowrap py-4 text-3xl md:text-4xl">
       <div className="relative flex flex-col gap-3">
       
         <div className="marquee">

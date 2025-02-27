@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 const GridHero = () => {
   const [numColumns, setNumColumns] = useState(0);
   const [numRows, setNumRows] = useState(0);
-  const [activeColumn, setActiveColumn] = useState(null);
+  const [activeColumns, setActiveColumns] = useState([]);
   const [key, setKey] = useState(0); 
 
   const squareSize = 1; 
   const gapSize = 35;   
-  const animationDuration = 4 * 1000; 
+  const animationDuration = 4000; 
 
   const calcGrid = () => {
     const container = document.getElementById("hero-container");
@@ -34,12 +34,28 @@ const GridHero = () => {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveColumn(Math.floor(Math.random() * numColumns));
-      setKey(prevKey => prevKey + 1);
-    }, animationDuration);
+    const addColumnEffect = () => {
+      setActiveColumns((prevColumns) => {
+        let newColumn;
+        do {
+          newColumn = Math.floor(Math.random() * numColumns);
+        } while (prevColumns.includes(newColumn)); 
 
-    return () => clearInterval(interval);
+        return [...prevColumns.slice(-1), newColumn]; 
+      });
+
+      setKey(prevKey => prevKey + 1);
+    };
+
+    const interval1 = setInterval(addColumnEffect, animationDuration); 
+    const interval2 = setTimeout(() => { 
+      setInterval(addColumnEffect, animationDuration); 
+    }, animationDuration / 2);
+
+    return () => {
+      clearInterval(interval1);
+      clearTimeout(interval2);
+    };
   }, [numColumns]);
 
   return (
@@ -57,16 +73,16 @@ const GridHero = () => {
         />
       ))}
 
-      {activeColumn !== null && (
+      {activeColumns.map((column, i) => (
         <div 
-          key={key}
-          className="absolute top-0 left-0 w-[2.5px] h-full bg-[#a78bfa] opacity-50 animate-raydrop" 
+          key={key + i}
+          className="absolute top-0 left-0 w-[4px] -translate-x-[2px] h-1/4 rounded-full bg-[#5f2bfb] animate-flashing-star animate-falling shadow-purple-900" 
           style={{ 
-            left: `${activeColumn * (squareSize + gapSize)}px`,
+            left: `${column * (squareSize + gapSize)}px`,
             animationDuration: "4s",
           }}
         />
-      )}
+      ))}
     </div>
   );
 };

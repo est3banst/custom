@@ -29,10 +29,10 @@ const ServiceCard = ({ service, index }) => {
   return (
     <div
       ref={ref}
-      className={`opacity-0 -translate-y-15 transition-all duration-500 ease-in-out my-4 ${
-        inView ? "opacity-100 translate-y-0" : ""
+      className={`opacity-0 -translate-y-15 -rotate-3 transition-all duration-500 ease-in-out my-4 ${
+        inView ? "opacity-100 translate-y-0 rotate-0" : ""
       }`}
-      style={{ transitionDelay: `${index * 150}ms` }} 
+      style={{ transitionDelay: `${index * 190}ms` }} 
     >
       <Card
         name={service.name}
@@ -75,7 +75,7 @@ const services = [
     value: "Integración completa",
     valuetwo: "Funcionalidades personalizadas",
     valuet: "Diseños personalizados",
-    link: "/services/cms"
+    link: "/services/crm"
   },
   {
     name: "Soporte técnico especializado en la web",

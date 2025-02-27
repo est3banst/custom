@@ -5,9 +5,7 @@ const Plans = () => {
     <>
     <div className='p-4'>
         <h2 className='border-b border-slate-50 w-max'>Planes</h2>
-        <section>
-    Basico
-        </section>
+   
         <section>
 Standard
         </section>

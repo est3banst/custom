@@ -17,7 +17,7 @@ const Menu = () => {
     <span></span>
     <span></span>
 
-    <ul id="menu">
+    <ul id="menu" className='orbitron'>
    
       <li>
         <Link to="/">
@@ -32,7 +32,7 @@ const Menu = () => {
       
       <li>
       <Link to="/services">
-      <label className={location.pathname === '/services' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Servicios</label>
+      <label className={location.pathname.includes('/services') ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Servicios</label>
       </Link>
         </li>
         <li>
@@ -41,14 +41,14 @@ const Menu = () => {
       </Link>
         </li>
         <li>
-      <Link className={location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''} to="/">
-      <label htmlFor="menuCheckbox">Contacto</label>
+      <Link to="/contact">
+      <label className={location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Contacto</label>
         </Link>
         
         </li>
       
         <section className='my-12 relative flex gap-1 flex-col w-full'>
-    <p className='border-b border-slate-50 w-max'>Custom &copy; {year.getFullYear()}</p>
+    <p className='border-b border-slate-50 w-max'>Kustom &copy; {year.getFullYear()}</p>
     <small>Soluciones web </small>
 </section>
     </ul>

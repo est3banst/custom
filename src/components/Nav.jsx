@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
-        <header className='z-[50] pt-4 px-4 flex fixed top-0 left-0 justify-between w-full'>
+        <header className='z-[90] pt-4 px-4 flex fixed top-0 left-0 justify-between w-full'>
 
        <div className='flex justify-between w-full items-center'>
         <section className='absolute top-0'>
        <Link to='/'>
         <img 
-        src="/clog.png"
-        className='relative h-[95px]' alt="Custom logo" />
+        src="/klog.png"
+        className='relative h-[95px]' alt="Kustom logo" />
        </Link> 
            <Menu  />
 
@@ -20,17 +20,17 @@ const Nav = () => {
         <nav className='hidden md:flex md:w-full'>
                <ul className='flex w-full justify-end gap-3 p-2'>
                   <Link to="/services">
-                     <li className='border-nav'>Servicios</li>
+                     <li className='orbitron border-nav'>Servicios</li>
                     </Link>
                   <Link to="/about">
-                   <li className='border-nav'>Nosotros</li>
+                   <li className='orbitron border-nav'>Nosotros</li>
 
                    </Link>
                    <Link to="/plans">
-                   <li className='border-nav'>Planes</li>
+                   <li className='orbitron border-nav'>Planes</li>
                    </Link>
                    <Link to="/contact">
-                       <li className='border-nav'>Contacto</li>
+                       <li className='orbitron border-nav'>Contacto</li>
                    </Link>
 
                 

@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const questions = [
     {
         question: "Qué hace que este servicio de desarrollo web sea diferente?",
-        answ: "Especializados en el desarrollo de sitios web personalizados que combinan tecnología de vanguardia con estrategias basadas en datos. Nuestro enfoque está en crear diseños web de alto rendimiento y responsivos que impulsen un crecimiento empresarial real. Ya sea diseño de sitios web para el sector de la salud o diseño de sitios web para bufetes de abogados, cada solución se construye con código limpio, tiempos de carga rápidos y patrones estratégicos que maximizan las conversiones."
+        answ: "Especializados en el desarrollo de sitios web personalizados que combinan tecnología de vanguardia con estrategias basadas en datos. Nuestro enfoque está en crear diseños web de alto rendimiento y responsivos que impulsen un crecimiento empresarial real. Ya sea diseño de sitios web para el sector de la salud o diseño de sitios web para firmas de abogados o grupos de consultoría, cada solución se construye con código limpio, tiempos de carga rápidos y patrones estratégicos que maximizan las conversiones."
     },
     {
         question: "Cuánto tiempo lleva la creación de la aplicación web o página?",
@@ -15,12 +15,16 @@ const questions = [
     },
     {
         question: "Con qué tipos de negocios trabajamos ?",
-        answ: "Como empresa de desarrollo web, trabajamos con diversas industrias, incluyendo firmas de abogados, proveedores de servicios de salud y negocios de comercio electrónico. Expertos en el diseño de sitios web para consultorios médicos, desarrollo de sitios web personalizados y creación de diseños de páginas de alta conversión que generan resultados."
+        answ: "Como empresa de desarrollo web, trabajamos con diversas industrias, incluyendo firmas de abogados, gimnasios, grupos de consultoría ,proveedores de servicios de salud y negocios de comercio electrónico. Expertos en el diseño de sitios web para consultorios médicos, desarrollo de sitios web personalizados y creación de diseños de páginas de alta conversión que generan resultados."
     },
     {
         question: "Proveemos soporte/atención sobre la marcha?",
         answ: "Si, todos los servicios incluyen soporte y atención continua que se adaptan a tus presupuestos, un plan de soporte básico consiste en monitoreo y actualizaciones de seguridad mientras que un plan de soporte premium incluye un seguimiento periódico, horas semanales dedicadas de desarrollo, optimizaciones y tiempos de respuesta en el día."
-    }
+    },
+    {
+        question: "Pueden trabajar con mi sitio web actual ?",
+        answ: "Si, nuestro servicio de Soporte y Optimización Web incluye el rediseñado, mejora de rendimiento, agregar o modificar funcionalidades o una transformación completa de el diseño del sitio manteniendo el mismo contenido y valor de SEO. Auditaremos tu sitio actual y te recomendamos el enfoque más responsivo de diseño para que logres tus objetivos."
+    },
 ];
 
 const Faq = () => {

@@ -11,7 +11,7 @@ const AccordionComp = ({ que, answ, idn, active, handleToggle }) => {
                 }`}
                 onClick={() => handleToggle(idn)}
             >
-                <h5 className="text-base font-semibold">{que}</h5>
+                <h5 className="text-sm font-semibold">{que}</h5>
                 <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -19,7 +19,7 @@ const AccordionComp = ({ que, answ, idn, active, handleToggle }) => {
       strokeWidth={2}
      
       stroke="currentColor"
-      className={`${active === idn ? "rotate-180" : ""} h-8 w-8 transition-transform`}
+      className={`${active === idn ? "rotate-180" : ""} w-[30px] md:w-[40px] transition-transform`}
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
     </svg>
