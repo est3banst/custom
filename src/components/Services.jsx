@@ -62,7 +62,7 @@ const services = [
   {
     name: "Diseño e implementación de tienda virtual",
     attr: "Tus clientes podrán comprar en tu tienda a cualquier hora del día, cualquier día del año",
-    price: "Desde: USD 800/Anual",
+    price: "Desde: USD 99/Mes",
     value: "Integración completa",
     valuetwo: "Optimizadas para ventas",
     valuet: "Tiendas personalizadas y escalables",
@@ -71,7 +71,7 @@ const services = [
   {
     name: "Diseño e implementación de sistemas de administración",
     attr: "Administra y gestiona todos los movimientos de tu negocio en un solo lugar",
-    price: "Desde: USD 500/Anual",
+    price: "Desde: USD 89/Mes",
     value: "Integración completa",
     valuetwo: "Funcionalidades personalizadas",
     valuet: "Diseños personalizados",

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Italiana&family=Montserrat:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Italiana:wght@100..900&family=Montserrat:wght@100..900&family=Orbitron:wght@400..900&display=swap');
 @import "tailwindcss";
 
 @font-face {
@@ -65,6 +65,18 @@ body {
   box-shadow: 30px 15px 60px -7px rgba(167,139,250,1);
 }
 
+.little-jump
+ {
+  animation: jumpee 4s linear infinite;
+ }
+ @keyframes jumpee {
+    from {
+      transform: scale(1.0);
+    }
+    to {
+      transform: scale(1.09);
+    }
+ }
 .outbutton {
   max-width: 100%;
   text-align: center;
@@ -209,31 +221,51 @@ button:hover span::after {
   background: #f2f2f2;
   color: #090909;
 }
+
 .action {
-  border: none;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  width: max-content;
-  gap: 14px;
-  margin: 0 auto;
+  --color: #a78bfa;
+
   font-family: 'Orbitron', serif;
-  border-radius: 0.25rem;
-  background-color: #a78bfa;
-  padding-left: 3.25rem;
-  padding-right: 3.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: rgba(17, 24, 39, 1);
-}
-.action:hover {
-  background-color : rgba(167, 139, 250, .7);
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 8px 12px;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
   cursor: pointer;
-  color: #cdcdcd;
-} 
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.action::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+}
+
+.action:hover {
+  color: white;
+}
+
+.action:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.action:hover::before {
+  top: -30px;
+  left: 0px;
+}
 
 .folded-rectangle {
   --r: 140px; /* radius */

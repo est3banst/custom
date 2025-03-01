@@ -12,7 +12,7 @@ const AboutPage = () => {
     <>
     <div className='flex flex-col relative h-screen bg-[#171717]'>
         <Nav />
-        <div className='pt-[120px] px-4'>
+        <div className='pt-[100px] px-4'>
 
         <Us />
         </div>

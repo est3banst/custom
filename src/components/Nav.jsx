@@ -22,10 +22,11 @@ const Nav = () => {
                   <Link to="/services">
                      <li className='orbitron border-nav'>Servicios</li>
                     </Link>
-                  <Link to="/about">
-                   <li className='orbitron border-nav'>Nosotros</li>
-
+                
+                   <Link to="/portfolio">
+                   <li className='orbitron border-nav'>Portfolio</li>
                    </Link>
+
                    <Link to="/plans">
                    <li className='orbitron border-nav'>Planes</li>
                    </Link>

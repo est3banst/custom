@@ -33,7 +33,7 @@ const Card = ({ name, attr, price, value, valuetwo, valuet ,link}) => {
             <span>{value}</span>
           </li>
         </ul>
-        <Link to={link}> <a className="action">Ver más
+        <Link to={link}> <button className="action">Ver más
         <svg xmlns="http://www.w3.org/2000/svg" className='animate-icons' width={20} height={20} viewBox="0 0 20 20">
 	<g fill="currentColor" fillRule="evenodd" clipRule="evenodd">
 		<g opacity={0.2}>
@@ -46,7 +46,7 @@ const Card = ({ name, attr, price, value, valuetwo, valuet ,link}) => {
 		<path d="M10 5a.5.5 0 0 1 .5.5V15a.5.5 0 0 1-1 0V5.5A.5.5 0 0 1 10 5"></path>
 	</g>
 </svg>
-</a>
+</button>
         </Link>
       </div>
       </div>
@@ -72,10 +72,10 @@ const StyledWrapper = styled.div`
     inset: 0; 
     background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    #8e1cff 50%,
-    #c340ff 65%, 
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0.2) 0%,
+    #a78bfa 50%,
+    #8670c8 65%, 
+    rgba(255, 255, 255, 0.2) 100%
   );
     /* background: conic-gradient(from 0deg, #8e1cff, #c340ff, #8e1cff); */
     border-radius: 0.25rem;

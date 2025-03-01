@@ -24,15 +24,15 @@ const Menu = () => {
           <label className={location.pathname === '/' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Inicio</label>
         </Link>
       </li>
-      <li>
-        <Link to="/about">
-          <label className={location.pathname === '/about' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Nosotros</label>
-        </Link>
-      </li>
       
       <li>
       <Link to="/services">
       <label className={location.pathname.includes('/services') ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Servicios</label>
+      </Link>
+        </li>
+        <li>
+      <Link to="/portfolio">
+      <label className={location.pathname.includes('/portfolio') ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Portfolio</label>
       </Link>
         </li>
         <li>
