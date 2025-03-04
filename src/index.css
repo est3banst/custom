@@ -225,7 +225,7 @@ button:hover span::after {
 .action {
   --color: #a78bfa;
 
-  font-family: 'Orbitron', serif;
+  font-family: 'Montserrat', serif;
   display: flex;
   align-items: center;
   width: max-content;
@@ -233,6 +233,7 @@ button:hover span::after {
   height: auto;
   line-height: 2em;
   overflow: hidden;
+  font-weight: 600;
   cursor: pointer;
   margin: 20px;
   font-size: 17px;
@@ -477,78 +478,6 @@ button:hover span::after {
 
 .animate-falling {
   animation: fallingEffect 4s linear forwards;
-}
-
- .container::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-image: radial-gradient(
-    circle at 50% 50%,
-    #0000 0,
-    #0000 2px,
-    hsl(0 0 4%) 2px
-
-  );
-  background-size: 8px 8px;
-  --f: blur(1em) brightness(6);
-  animation: hii 10s linear infinite;
-}
-
-@keyframes hii {
-  0% {
-    backdrop-filter: var(--f) hue-rotate(0);
-  }
-  to {
-    backdrop-filter: var(--f) hue-rotate(30deg);
-  }
-  
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  --c: #a78bfa;
-  background-color: #000;
-  background-image: 
-    radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 253px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 126.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 300px 179px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 105px, var(--c) 100%, #0000 150%);
-  background-size:
-    300px 235px,
-    300px 235px,
-    300px 253px,
-    300px 253px,
-    300px 179px,
-    300px 210px;
-  animation: hi 150s linear infinite;
-}
-
-@keyframes hi {
-  0% {
-    background-position:
-      0px 220px,
-      151.5px 337.5px,
-      75px 224px,
-      226.5px 350.5px,
-      153px 31px,
-      426.5px 180px;
-  }
-
-  to {
-    background-position:
-      0px 6800px,
-      151.5px 6917.5px,
-      75px 17175px,
-      226.5px 17301.5px,
-      153px 9876px,
-      426.5px 6480px;
-  }
 }
 
 

@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useForm, ValidationError } from '@formspree/react';
 import '../assets/Contact.css';
+import { useEffect } from 'react';
 
 const Contact = () => {
   const [recaptchaToken, setRecaptchaToken] = useState('');
   const [captchaValidated, setCaptchaValidated] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  useEffect(() => {
+    scrollTo(0, 0)
+  }, [])
   const [state, handleSubmit] = useForm("xldgqzel");
 
   const closeModal = () => {

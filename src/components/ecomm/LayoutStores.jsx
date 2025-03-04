@@ -3,6 +3,7 @@ import Nav from '../Nav';
 import FormModal from '../FormModal';
 import SectionEcommerce from './SectionEcommerce';
 import Footer from '../Footer';
+import Lighting from '../Lighting';
 
 const LayoutStores = () => {
 
@@ -27,7 +28,9 @@ const LayoutStores = () => {
 
     return (
         <>
-        <div className='container max-w-full'>
+        <Lighting>
+
+        
             <Nav />
             <div className='p-4 flex relative items-center z-20 flex-col gap-3'>
             <div className='relative px-4 items-center grid grid-cols-1 gap-4 w-full pt-24'>
@@ -76,7 +79,7 @@ const LayoutStores = () => {
             <div className='bg-[#00000020] relative z-20 backdrop-blur-xs'>
             <Footer />
             </div>
-            </div>
+            </Lighting>
         </>
     );
 };
