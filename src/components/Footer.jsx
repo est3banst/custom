@@ -9,7 +9,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className='h-auto my-8 py-4 px-3 flex w-full flex-col gap-4'>
+      <div className='h-auto grid grid-cols-1 p-4 md:grid-cols-2 w-full gap-4'>
+        <div className='flex flex-col gap-4'>
         <h2 className='border-b-2 border-slate-50 w-max'>Vínculos</h2>
         <div className='flex flex-col gap-5'>
           <Link to='/faq' className={`hover-footer ${location.pathname === '/faq' ? 'text-[#a78bfa] font-bold' : ''}`}>
@@ -25,7 +26,9 @@ const Footer = () => {
             Contacto
           </Link>
         </div>
+        </div>
 
+        <div className='flex flex-col gap-4'>
         <h2 className='border-b-2 border-slate-50 w-max'>Servicios</h2>
         <div className='flex flex-col gap-5'>
           <Link to='/services/spa-service' className={`hover-footer ${location.pathname === '/services/spa-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
@@ -38,14 +41,30 @@ const Footer = () => {
             Sistemas de administración
           </Link>
         </div>
+        </div>
+        <div className='flex flex-col gap-4'>
+          <h2 className='border-b-2 border-slate-50 w-max'>
+          Contacto
+          </h2>
+          <div className='flex flex-col gap-5'>
+            <a 
+            className='underline hover-footer font-medium'
+            href="mailto:info@kustomdev.com">Envíanos un mail &rarr;</a>
+            <small className='font-bold hover-footer text-base'>info@kustomdev.com</small>
+          </div>
+        </div>
       </div>
 
       <div ref={ref} className={`load-bord transition-all duration-[320ms] ${inView ? 'startAnim' : ''}`}></div>
 
-      <section className='flex orbitron gap-4 items-center justify-center py-2'>
+      <section className='flex orbitron gap-5 items-center justify-center py-2'>
         <span>Kustom</span>
         <small>Soluciones Web &copy; {yearToday}</small>
       </section>
+      <div className='flex gap-4 justify-center w-full'>
+        <a href="">Política de privacidad</a>
+        <a href="">Términos del servicio</a>
+      </div>
     </>
   );
 };

@@ -4,7 +4,7 @@ const Plans = () => {
   return (
     <>
     <div className='p-4'>
-        <h2 className='border-b text-xl md:text-2xl border-slate-50 w-max my-4'>Planes</h2>
+        <h2 className='border-b text-xl md:text-2xl font-black border-slate-50 w-max my-4'>Planes</h2>
         <h2>Todos nuestros servicios tienen las mismas dos modalidades, <b className='text-[#a78bfa]'>Standard</b> o <b className='text-[#a78bfa]'>Premium</b></h2>
    
         <section className='border-t-2 border-amber-50 my-4'>

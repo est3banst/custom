@@ -29,10 +29,10 @@ const LayoutStores = () => {
         <>
         <div className='container max-w-full'>
             <Nav />
-            <div className='p-4 flex relative z-20 flex-col gap-3'>
+            <div className='p-4 flex relative items-center z-20 flex-col gap-3'>
             <div className='relative px-4 items-center grid grid-cols-1 gap-4 w-full pt-24'>
             <section className='flex gap-2 uppercase'>
-                <h2 className='text-xl md:text-2xl'>
+                <h2 className='text-xl'>
 
                     ¿Cómo se puede beneficiar tu negocio de tener una <b className='text-xl md:text-2xl px-1 text-[#a78bfa]'>tienda virtual</b>?
                 </h2>
@@ -48,7 +48,7 @@ const LayoutStores = () => {
                 </section>
                 </div>
                 
-                <h2 className='text-2xl md:text-3xl lg:text-4xl py-4'>Estás a un paso de 
+                <h2 className='text-2xl py-4'>Estás a un paso de 
                     <b className='text-[#a78bfa] px-2'>
                     transformar
                     </b>
@@ -59,7 +59,7 @@ const LayoutStores = () => {
             {showEcommModal && (
                 <div 
                     id="modalEcommOverlay" 
-                    className="fixed inset-0 bg-black bg-opacity-50 p-4 flex justify-center items-center z-50"
+                    className="fixed inset-0 bg-black bg-opacity-50 p-4 flex justify-center items-center z-[555]"
                     onClick={closeModal}
                 >
                     <div className="bg-[#242424] p-6 rounded-lg shadow-lg relative w-[80%] max-w-lg" onClick={(e) => e.stopPropagation()}>

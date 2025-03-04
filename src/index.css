@@ -229,9 +229,9 @@ button:hover span::after {
   display: flex;
   align-items: center;
   width: max-content;
-  padding: 8px 12px;
-  height: 2.6em;
-  line-height: 2.5em;
+  padding: 8px 20px;
+  height: auto;
+  line-height: 2em;
   overflow: hidden;
   cursor: pointer;
   margin: 20px;
@@ -296,7 +296,7 @@ button:hover span::after {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 700;
   color: #fff
