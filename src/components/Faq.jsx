@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import AccordionComp from "./AccordionComp";
 import { useEffect } from "react";
+import useScrollTop from './hooks/useScrollTop'
 
 const questions = [
     {
@@ -29,9 +30,7 @@ const questions = [
 
 const Faq = () => {
 
-    useEffect(() => {
-        scrollTo(0, 0)
-    }, []);
+    useScrollTop();
     
     const [active, setActive] = useState(null);
 

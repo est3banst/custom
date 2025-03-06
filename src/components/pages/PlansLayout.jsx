@@ -11,7 +11,7 @@ const PlansLayout = () => {
     <>
     <div className='grid grid-cols-1 justify-evenly'>
         <Nav/>
-       <div className='pt-[100px]'>
+       <div className='pt-[96px]'>
        <Plans/>
        </div>
         <Footer/>

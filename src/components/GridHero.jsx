@@ -30,17 +30,15 @@ const GridHero = () => {
     return () => window.removeEventListener("resize", calcGrid);
   }, []);
 
-  // Create an array of grid items
   const gridItems = useMemo(() => {
     return Array.from({ length: numColumns * numRows }).map((_, index) => ({
       key: index,
       delay:
         Math.floor(index / numColumns) * animationDuration +
-        (index % numColumns) * 0.01, // Staggered effect
+        (index % numColumns) * 0.01, 
     }));
   }, [numColumns, numRows]);
 
-  // Detect when the grid is fully loaded
   useEffect(() => {
     if (gridItems.length > 0) {
       const lastItemDelay = gridItems[gridItems.length - 1].delay;
@@ -48,7 +46,6 @@ const GridHero = () => {
     }
   }, [gridItems]);
 
-  // Start active column animation when the grid is fully loaded
   useEffect(() => {
     if (!gridLoaded) return;
 
@@ -59,7 +56,7 @@ const GridHero = () => {
           newColumn = Math.floor(Math.random() * numColumns);
         } while (prevColumns.includes(newColumn));
 
-        return [...prevColumns.slice(-1), newColumn]; // Keep only the latest column
+        return [...prevColumns.slice(-1), newColumn]; 
       });
     };
 
@@ -76,7 +73,6 @@ const GridHero = () => {
         gridTemplateRows: `repeat(${numRows}, ${squareSize + gapSize}px)`,
       }}
     >
-      {/* Grid cells */}
       {gridItems.map(({ key, delay }) => (
         <motion.div
           key={key}
@@ -86,8 +82,6 @@ const GridHero = () => {
           transition={{ duration: 0.3, delay }}
         />
       ))}
-
-      {/* Active columns animation (only starts after grid is fully loaded) */}
       {gridLoaded &&
         activeColumns.map((column, i) => (
           <motion.div

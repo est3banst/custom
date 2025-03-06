@@ -2,12 +2,11 @@ import React from 'react'
 import Nav from '../Nav'
 import Us from '../Us'
 import Footer from '../Footer'
-import { useEffect } from 'react'
+
+import useScrollTop from '../hooks/useScrollTop'
 
 const AboutPage = () => {
-    useEffect(() => {
-        scrollTo(0, 0)
-    }, []);
+    useScrollTop()
   return (
     <>
     <div className='flex flex-col relative h-screen bg-[#171717]'>

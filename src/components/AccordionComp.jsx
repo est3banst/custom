@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-const AccordionComp = ({ que, answ, idn, active, handleToggle }) => {
+const AccordionComp = ({ que, answ, idn, num, active, secclass, clasname, handleToggle }) => {
     const contentEl = useRef();
 
     return (
@@ -11,7 +11,8 @@ const AccordionComp = ({ que, answ, idn, active, handleToggle }) => {
                 }`}
                 onClick={() => handleToggle(idn)}
             >
-                <h5 className="text-sm font-semibold leading-relaxed">{que}</h5>
+               <section className="flex gap-4"><b className="font-black">{num}</b>
+                <h5 className={`font-bold ${clasname} leading-relaxed`}>{que}</h5></section>
                 <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -31,7 +32,7 @@ const AccordionComp = ({ que, answ, idn, active, handleToggle }) => {
                     height: active === idn ? `${contentEl.current.scrollHeight}px` : "0px",
                 }}
             >
-                <div className="p-4 leading-relaxed text-slate-100">{answ}</div>
+                <div className={`p-4 leading-relaxed text-slate-100 ${secclass}`}>{answ}</div>
             </div>
         </div>
     );
