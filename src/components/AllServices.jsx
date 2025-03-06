@@ -1,28 +1,8 @@
-
 import React from 'react'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer';
-import { Link } from 'react-router-dom'
 import ServiceCard from './ServicesCard';
 
 const AllServices = () => {
 
-  const { ref: ref, inView: inView } = useInView({ threshold: 0.1 });
-
-  const { ref: ref2, inView :inView2 } = useInView({ threshold: 0.1 });
-
-  const { ref:ref3, inView: inView3 } = useInView({ threshold: 0.1 });
-
-  const { ref:ref4, inView: inView4 } = useInView({ threshold: 0.1 });
-
-  const { ref: refCard, inView: inViewCard } = useInView({
-    threshold: 0.1,
-    triggerOnce: true
-  })
-
-    useEffect(() => {
-        scrollTo(0, 0)
-    }, [])
     const servicesAll = [
         { title : "Desarrollo de Landing Pages o Aplicaciones de una Sola Página" ,
             benefits :[
@@ -256,7 +236,7 @@ const AllServices = () => {
                     index={service.index}
                     key={index}/>
                 ))}
-                
+              
             </div>
         </>
     )

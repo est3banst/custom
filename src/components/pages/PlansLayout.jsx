@@ -3,7 +3,10 @@ import Nav from '../Nav'
 import Plans from '../Plans'
 import Footer from '../Footer'
 
+import useScrollTop from '../hooks/useScrollTop'
+
 const PlansLayout = () => {
+  useScrollTop()
   return (
     <>
     <div className='grid grid-cols-1 justify-evenly'>

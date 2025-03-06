@@ -1,24 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Nav from '../Nav';
 import FormModal from '../FormModal';
 import SectionEcommerce from './SectionEcommerce';
 import Footer from '../Footer';
 import Lighting from '../Lighting';
+import useScrollTop from '../hooks/useScrollTop'
 
 const LayoutStores = () => {
 
-    useEffect(() => {
-        scrollTo(0, 0)
-    }, [])
+    useScrollTop()
     
- 
     const [showEcommModal, setShowEcommModal] = useState(false);
-   useEffect(() => {
-          const isBodyHiddenHere = () => {
-              showEcommModal ? document.body.classList.add('body-hidden') : document.body.classList.remove('body-hidden');
-          }
-          isBodyHiddenHere();
-      }, [showEcommModal])
+   
     const closeModal = (e) => {
       
         if (e.target.id === 'modalEcommOverlay') {

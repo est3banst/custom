@@ -3,8 +3,10 @@ import Lighting from './Lighting'
 import AllServices from './AllServices'
 import Nav from './Nav'
 import Footer from './Footer'
+import useScrollTop from './hooks/useScrollTop'
 
 const ServicesLayout = () => {
+  useScrollTop();
   return (
     <>
     <div className='h-auto'>

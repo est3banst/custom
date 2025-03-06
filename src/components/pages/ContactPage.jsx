@@ -3,12 +3,10 @@ import Nav from '../Nav'
 import Contact from '../Contact'
 import Footer from '../Footer'
 import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
+import useScrollTop from '../hooks/useScrollTop'
 
 const ContactPage = () => {
-    useEffect(() => {
-        scrollTo(0, 0)
-    },[])
+   useScrollTop()
 
   const { ref: contactRef, inView: inViewContact } = useInView({ threshold: 0.1 });
   return (

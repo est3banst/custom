@@ -19,7 +19,7 @@ const AccordionComp = ({ que, answ, idn, active, handleToggle }) => {
       strokeWidth={2}
      
       stroke="currentColor"
-      className={`${active === idn ? "rotate-180" : ""} w-[30px] shrink-0 md:w-[40px] transition-transform`}
+      className={`${active === idn ? "rotate-180" : ""} w-[20px] shrink-0 md:w-[30px] transition-transform`}
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
     </svg>
@@ -31,7 +31,7 @@ const AccordionComp = ({ que, answ, idn, active, handleToggle }) => {
                     height: active === idn ? `${contentEl.current.scrollHeight}px` : "0px",
                 }}
             >
-                <div className="p-4 text-slate-100">{answ}</div>
+                <div className="p-4 leading-relaxed text-slate-100">{answ}</div>
             </div>
         </div>
     );

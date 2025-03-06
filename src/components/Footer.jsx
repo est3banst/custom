@@ -61,7 +61,7 @@ const Footer = () => {
         <span>Kustom</span>
         <small>Soluciones Web &copy; {yearToday}</small>
       </section>
-      <div className='flex gap-4 justify-center w-full'>
+      <div className='flex text-xs leading-relaxed py-2 gap-4 justify-center w-full'>
         <a href="">Política de privacidad</a>
         <a href="">Términos del servicio</a>
       </div>

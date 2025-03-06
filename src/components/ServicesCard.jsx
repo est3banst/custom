@@ -8,6 +8,7 @@ const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {
         ,triggerOnce: true });
 
     return (
+        <>
         <section className='w-full lg:grid lg:grid-cols-3 gap-4 my-3'>
             <article className='md:flex w-5/6 md:flex-col md:justify-center'>
                 <h2 className='text-xl md:text-2xl font-medium'>{title}</h2>
@@ -41,7 +42,10 @@ const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {
                     <button className='action'>{buttonText}</button>
                 </div>
             </Link>
+           
         </section>
+         <hr />
+         </>
     );
 };
 

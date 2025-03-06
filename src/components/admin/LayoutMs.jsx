@@ -2,20 +2,16 @@ import React from 'react'
 import Nav from '../Nav'
 import Managment from './Managment'
 import FormModal from '../FormModal'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import Lighting from '../Lighting'
 import Footer from '../Footer'
+import useScrollTop from '../hooks/useScrollTop'
 
 const LayoutMs = () => {
+    useScrollTop();
     const date = new Date();
     const currentYear = date.getFullYear();
     const [showCrmModal, setShowCrmModal] = useState(false);
-
-    useEffect(() => {
-        const isBodyHidden = () => {
-            showCrmModal ? document.body.classList.add('body-hidden') : document.body.classList.remove('body-hidden');
-        }
-        isBodyHidden();
-    }, [showCrmModal])
 
     const closeModal = (e) => {
 
@@ -23,12 +19,10 @@ const LayoutMs = () => {
             setShowCrmModal(false);
         }
     };
-    useEffect(() => {
-        scrollTo(0, 0)
-    }, [])
+    
     return (
         <>
-            <div className='container max-w-full'>
+           <Lighting>
                 <Nav />
 
                 <div className='p-4 z-20 flex relative flex-col gap-3'>
@@ -36,7 +30,7 @@ const LayoutMs = () => {
                         <h2 className='text-xl uppercase md:text-2xl'>
                             Por qué es necesario gestionar tu negocio desde un <b className='text-xl md:text-2xl px-1 text-[#a78bfa]'> sistema de administración en </b>{currentYear}?
                         </h2>
-                        <div className='h-auto backdrop-blur-md bg-[#00000020] p-4 rounded-xs shadow-lg w-full'>
+                        <div className='h-auto backdrop-blur-md bg-[#17171720] leading-relaxed p-4 rounded-xs shadow-lg w-full'>
                             <h3 className='px-2 my-4'>
                                 La tecnología avanza rápido y <b>tu negocio no puede quedarse atrás</b>. Optimiza la gestión con nuestro CRM y lleva tu negocio al siguiente nivel en 2025.
                             </h3>
@@ -53,7 +47,7 @@ const LayoutMs = () => {
                             ))}
                         </div>
                         </div>
-                        <div className='p-4 m-2'>
+                        <div className='p-4 w-full m-2 flex justify-center'>
 
                             <button className='action' onClick={() => setShowCrmModal(true)}>Comenzar</button>
                         </div>
@@ -80,7 +74,7 @@ const LayoutMs = () => {
                 <div className='bg-[#00000020] relative z-20 backdrop-blur-xs'>
                     <Footer />
                 </div>
-            </div>
+                </Lighting>
         </>
     )
 }
