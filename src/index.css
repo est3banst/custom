@@ -308,7 +308,7 @@ button:hover span::after {
   height: 100vh;
   background-color: #242424; 
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container-conic::before {
