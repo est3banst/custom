@@ -47,7 +47,7 @@ const Plans = () => {
     
     </div>
     <div className='mx-auto py-4 px-2 w-max'>
-   <h2>Métricas de <b>rendimiento</b></h2>
+   <h2 className='text-xl'>Métricas de <b>rendimiento</b></h2>
   <div className='flex flex-col md:flex-row gap-4 m-4'>
   <div className='max-w-56 p-3'>
     <span className='font-black text-2xl'>1.6S</span>
@@ -97,7 +97,7 @@ const Plans = () => {
        </section>
     </div>
           <div className='mx-auto py-4 px-2 w-max'>
-   <h2>Métricas de <b>rendimiento</b></h2>
+   <h2 className='text-xl'>Métricas de <b>rendimiento</b></h2>
   <div className='flex flex-col md:flex-row gap-4 m-4'>
   <div className='max-w-56 p-3'>
     <span className='font-black text-2xl'>1S</span>

@@ -303,6 +303,60 @@ button:hover span::after {
   color: #fff
 }
 
+.container-conic {
+  width: 100vw;
+  height: 100vh;
+  background-color: #242424; 
+  position: relative;
+  overflow: hidden;
+}
+
+.container-conic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: conic-gradient(from 0deg, #171717, #a78bfa, #242424, #171717);
+  transform: scale(1.5);
+  opacity: 0;
+  animation: conicReveal 1s ease-in-out 500ms forwards;
+}
+
+@keyframes conicReveal {
+  0% {
+    opacity: 0;
+    clip-path: circle(0% at center);
+  }
+  100% {
+    opacity: 1;
+    clip-path: circle(100% at center);
+  }
+}
+
+
+@keyframes arrowPulse {
+  0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  70% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+  }
+  85% {
+      transform: scale(0.8);
+  }
+  95% {
+    transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.arrow-animation {
+  animation: arrowPulse 3s ease-in-out infinite;
+}
+
 .load-bord ,.load-custom-bord{
   width: 0;
   height: 1.5px;
