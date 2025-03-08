@@ -22,7 +22,7 @@ const Layout = () => {
                                 En la era digital, no tener un sitio web es como no existir para miles de clientes potenciales.
                                 ¿Realmente quieres perder oportunidades solo porque tu negocio no está en línea?
                             </p>
-                            <Link to="/">
+                            <Link to="/portfolio">
                                 <button className='action'>Ver portfolio</button>
                             </Link>
                         </div>
