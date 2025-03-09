@@ -10,6 +10,13 @@ const Consultation = () => {
         telefono: ""
     });
 
+    const [showMessage, setShowMessage] = useState(false); 
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const setMessageVisibility = () => {
+        setShowMessage(!showMessage)
+    }
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -18,27 +25,33 @@ const Consultation = () => {
     };
 
     const handleData = async (e) => {
+
         e.preventDefault();
+        setIsSubmitting(true);
         try {
-            const response = await fetch('https://g5iy9do8a3.execute-api.sa-east-1.amazonaws.com/dev/client', 
+            const response = await fetch('https://g5iy9do8a3.execute-api.sa-east-1.amazonaws.com/dev/client',
                 {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ client : formData})
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ client: formData })
                 }
             )
             const data = await response.json();
 
             if (data.success) {
-                alert("Datos enviados correctamente");
-                window.location.href = '/';
+                setFormData({ nombre: "", negocio: "", correo: "", telefono: "" });
+                setMessageVisibility()
             } else {
-                alert("Error: "+data.message)
+                alert("Error: " + data.message)
             }
-            
+
         } catch (error) {
             console.error("Error:", error);
         }
+        finally {
+            setIsSubmitting(false);
+        }
+        
     };
 
     return (
@@ -51,25 +64,29 @@ const Consultation = () => {
                             <h2 className='text-xl'>Déjanos tus datos y nos comunicaremos dentro de 3 días hábiles</h2>
                             <p>Hablaremos sobre tu negocio, sus necesidades y cómo podemos lograr la <b>solución perfecta</b> para vos y así mejorar tus procesos de trabajo</p>
                             <small className='flex justify-center w-full'>Horario: 9:00 a 17:00 (GMT-3)</small>
-                        </article> 
+                        </article>
                         <form className='bg-[#17171712] backdrop-blur-sm w-full max-w-2xl p-6' onSubmit={handleData}>
                             <div className='flex flex-col gap-2 my-2'>
                                 <label htmlFor="nombre">Tu nombre:</label>
-                                <input className='border-[#a78bfa] border p-1' type="text" required id="nombre" name="nombre" value={formData.nombre} onChange={handleChange}/>
+                                <input className='border-[#a78bfa] border p-1' type="text" required id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} />
                             </div>
                             <div className='flex flex-col gap-2 my-2'>
                                 <label htmlFor="negocio">Nombre de tu negocio:</label>
-                                <input className='border-[#a78bfa] border p-1' type="text" required id="negocio" name="negocio" value={formData.negocio} onChange={handleChange}/>
+                                <input className='border-[#a78bfa] border p-1' type="text" required id="negocio" name="negocio" value={formData.negocio} onChange={handleChange} />
                             </div>
                             <div className='flex flex-col gap-2 my-2'>
                                 <label htmlFor="correo">Dirección de correo:</label>
-                                <input className='border-[#a78bfa] border p-1' type="email" required id="correo" name="correo" value={formData.correo} onChange={handleChange}/>
+                                <input className='border-[#a78bfa] border p-1' type="email" required id="correo" name="correo" value={formData.correo} onChange={handleChange} />
                             </div>
                             <div className='flex flex-col gap-2 my-2'>
                                 <label htmlFor="telefono">Número de teléfono:</label>
-                                <input className='border-[#a78bfa] border p-1' type="tel" required id="telefono" name="telefono" value={formData.telefono} onChange={handleChange}/>
+                                <input className='border-[#a78bfa] border p-1' type="tel" required id="telefono" name="telefono" value={formData.telefono} onChange={handleChange} />
                             </div>
-                            <button type="submit" className='w-max cursor-pointer hover:opacity-70 my-4 border border-[#a78bfa] mx-auto p-4'>Enviar datos</button>
+
+                         
+                            <button type="submit" className='w-max cursor-pointer hover:opacity-70 my-4 border border-[#a78bfa] mx-auto p-4' disabled={isSubmitting}
+                            >
+                                {isSubmitting ? "Enviando..." : "Enviar datos"}</button>
                         </form>
                     </section>
                     <section className='relative w-full text-center p-2 underline'>
@@ -77,6 +94,23 @@ const Consultation = () => {
                     </section>
                 </div>
             </div>
+
+            {showMessage && (
+                <span className='flex items-center justify-center fixed gap-2 bg-[#6eab8cc5] p-3 text-sm right-0 bottom-0 z-[982]'>
+                    Datos enviados, nos comunicaremos contigo
+                    <svg xmlns="http://www.w3.org/2000/svg" width={28} height={28} viewBox="0 0 50 50">
+                        <path fill="#1dc742" d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17s-7.6 17-17 17m0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15s15-6.7 15-15s-6.7-15-15-15"></path>
+                        <path fill="#1dc742" d="m23 32.4l-8.7-8.7l1.4-1.4l7.3 7.3l11.3-11.3l1.4 1.4z"></path>
+                    </svg>
+
+                    <div 
+                        className='absolute -left-2 -top-5 bg-[#d0d0d0ac] text-black w-[20px] h-[20px] flex items-center justify-center rounded-full cursor-pointer text-xs' 
+                        onClick={() => setShowMessage(false)}
+                    >
+                        ✕
+                    </div>
+                </span>
+            )}
         </>
     );
 };

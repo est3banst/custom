@@ -55,10 +55,10 @@ const LayoutStores = () => {
             {showEcommModal && (
                 <div 
                     id="modalEcommOverlay" 
-                    className="fixed inset-0 bg-black bg-opacity-50 p-4 flex justify-center items-center z-[555]"
+                    className="fixed inset-0 bg-black bg-opacity-50 h-auto overflow-y-auto p-4 flex justify-center items-center z-[555]"
                     onClick={closeModal}
                 >
-                    <div className="bg-[#242424] p-6 rounded-lg shadow-lg relative w-[80%] max-w-lg" onClick={(e) => e.stopPropagation()}>
+                    <div className="bg-[#242424] p-6 rounded-lg shadow-lg relative w-[80%] overflow-y-auto max-w-lg" onClick={(e) => e.stopPropagation()}>
                         <p className='my-2 '>Completa los datos y te contactaremos para agendar una reunión. Hablaremos de tus necesidades y de cómo crear tu tienda virtual que vende.</p>
                    
                         <button className="absolute cursor-pointer top-2 right-2 text-[#a78bfa] hover:text-gray-700" onClick={() => setShowEcommModal(false)}>
@@ -66,7 +66,9 @@ const LayoutStores = () => {
                         </button>
                         <FormModal />
                     </div>
+                    
                 </div>
+                
             )}
 
             <div className='bg-[#00000020] relative z-20 backdrop-blur-xs'>
