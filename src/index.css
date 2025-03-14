@@ -305,7 +305,7 @@ button:hover span::after {
 
 .container-conic {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
   background-color: #242424; 
   position: relative;
   /* overflow: hidden; */
@@ -314,6 +314,7 @@ button:hover span::after {
 .container-conic::before {
   content: "";
   position: absolute;
+  z-index: -1;
   inset: 0;
   background-image: conic-gradient(from 0deg, #171717, #a78bfa, #242424, #171717);
   transform: scale(1.5);
