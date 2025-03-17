@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Nav from '../Nav'
 const Support = () => {
   return (
     <>
+    <div className='pb-24'>
+    <Nav />
+    </div>
     <div className='container-conic'>
         <div className='relative p-4'>
         <section className='flex flex-col justify-center gap-2 leading-relaxed font-medium p-6'>
@@ -15,7 +18,9 @@ const Support = () => {
         </section>
         <section className='bg-[#24242493] px-2 py-6'>
             <h2 className='font-bold text-xl'>Somos tu socio ideal para que puedas usar la tecnología de manera eficiente, y no tengas que gastar montañas de dinero debido a recontratar una y otra vez para obtener lo mismo</h2>
-            <button className='action'>Comenza hoy</button>
+           <Link to="/contact" >
+           <button className='action'>Comenza hoy</button>
+           </Link>
         </section>
         </div>
 

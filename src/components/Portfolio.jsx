@@ -39,6 +39,13 @@ const Portfolio = () => {
 export default Portfolio
 
 const appPages = [
+  {
+    title: 'Sitio web para gimnasio',
+    text: 'Promociona tu gimnasio, agenda de clases y más',
+    desc: 'Aplicación web de acceso para captar nuevos miembros, agendar clases, gestionar membresías',
+    link: 'https://fittness-drive.vercel.app/',
+    src: '/gym-web.png'
+  },
     {
         title: 'Aplicación de reservas para servicios Odontológicos',
         text: 'Centraliza la gestión de tus reservas',
@@ -54,12 +61,6 @@ const appPages = [
         src: '/personal-web.png'
     }
     ,
-    {
-      title: 'Sitio web para gimnasio',
-      text: 'Promociona tu gimnasio, agenda de clases y más',
-      desc: 'Aplicación web de acceso para captar nuevos miembros, agendar clases, gestionar membresías',
-      link: 'https://fittness-drive.vercel.app/',
-      src: '/gym-web.png'
-    },
+    
 
 ]
