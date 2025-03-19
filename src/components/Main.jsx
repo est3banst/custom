@@ -4,6 +4,7 @@ import Hero from './Hero'
 import About from './About'
 import { useInView } from "react-intersection-observer";
 import Footer from './Footer';
+import Nav from './Nav';
 
 const Main = () => {
 
@@ -15,6 +16,7 @@ const Main = () => {
 
   return (
     <>
+    <Nav/>
     <div className='overflow-x-hidden grid grid-cols-1 gap-4'>
     <div
         ref={ref}

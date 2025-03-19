@@ -1,15 +1,34 @@
-import { useState } from 'react'
-import Nav from './components/Nav'
-import Main from './components/Main'
+import { useState, useEffect } from 'react'
+import Loader from './components/Loader'
+import { useLocation } from 'react-router-dom'
+import AppRouting from './components/AppRouting';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
 
   return (
-    <>
-     <Nav />
-     <Main />
-    </>
-  )
+    <div className="w-full">
+      {loading ? (
+        <div className="bg-[#42424264] flex w-full h-screen justify-center items-center">
+          <Loader />
+        </div>
+      ) : (
+        <div key={location.pathname}> 
+          <AppRouting />
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default App
