@@ -220,7 +220,7 @@ const AllServices = () => {
 
             ],
             buttonText: 'Obtener soporte',
-            link: '/services/web-support'
+            link: '/services/support-service'
         }
     ]
     return (

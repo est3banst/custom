@@ -1,10 +1,16 @@
 import React from 'react'
 import AccordionComp from './AccordionComp'
 import { useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const Plans = () => {
   const [activeStandard, setActiveStandard] = useState(null);
   const [activePremium, setActivePremium] = useState(null);
+  const { ref: ref1 , inView: inView1 } = useInView({})
+
+  const { ref: ref2 , inView: inView2 } = useInView({
+    threshold: 0.1
+  })
 
   const handleToggleStandard = (id) => {
     setActiveStandard(activeStandard === id ? null : id);
@@ -20,7 +26,7 @@ const Plans = () => {
         <h2 className='border-b text-2xl font-black border-slate-50 w-max my-4'>Planes</h2>
         <h2>Todos nuestros servicios tienen las mismas dos modalidades, <b className='text-[#a78bfa]'>Standard</b> o <b className='text-[#a78bfa]'>Premium</b></h2>
    
-        <section className='border-t-2 border-amber-50 my-4'>
+        <section ref={ref1} className={`${inView1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'} border-t-2 transition-all py-12 duration-500 ease-in border-amber-50 my-4`}>
   <h2 className='border-b w-max font-bold text-xl border-slate-50 mt-4'>
     Plan Standard
     </h2>
@@ -70,7 +76,7 @@ const Plans = () => {
   </div>
     </div>
         </section>
-        <section className='border-t-2 border-amber-50 my-4'>
+        <section ref={ref2} className={`${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'} py-12 border-t-2 transition-all duration-500 ease-in border-amber-50 my-4`}>
           <h2 className='border-b w-max text-xl font-bold border-slate-50 mt-4'>
             Plan Premium
           </h2>
@@ -184,7 +190,7 @@ const premiumSteps = [
   {
     num: '06',
     step: 'Producción',
-    info: 'Lanzamos la solución'
+    info: 'Lanzamos la solución .Realizamos monitoreos por los primeros 3 meses de la puesta en producción realizando garantizando la máxima eficiencia'
   },
  
 ]
