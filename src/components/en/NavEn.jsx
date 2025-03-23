@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from './Menu'
+import MenuEn from './MenuEn'
 import { Link, useLocation } from 'react-router-dom'
 
 const Nav = () => {
@@ -9,13 +9,13 @@ const Nav = () => {
 
        <div className='flex relative justify-between w-full items-center'>
         <section className='absolute top-0'>
-       <Link to='/'>
+       <Link to='/en'>
         <img 
         src="/klog.png"
         className='relative h-[95px]' alt="Kustom logo" />
        </Link> 
            <div className=''>
-           <Menu  />
+           <MenuEn  />
            </div>
        
         </section>
@@ -23,19 +23,19 @@ const Nav = () => {
         <div className='hidden md:block w-full'>
         <nav className='hidden md:flex md:w-full px-6'>
                <ul className='flex w-full justify-end gap-3 p-2'>
-                  <Link to="/services">
-                     <li className='orbitron border-nav'>Servicios</li>
+                  <Link to="/en/services">
+                     <li className='orbitron border-nav'>Services</li>
                     </Link>
                 
-                   <Link to="/portfolio">
+                   <Link to="/en/portfolio">
                    <li className='orbitron border-nav'>Portfolio</li>
                    </Link>
 
-                   <Link to="/plans">
-                   <li className='orbitron border-nav'>Planes</li>
+                   <Link to="/en/plans">
+                   <li className='orbitron border-nav'>Plans</li>
                    </Link>
-                   <Link to="/contact">
-                       <li className='orbitron border-nav'>Contacto</li>
+                   <Link to="/en/contact">
+                       <li className='orbitron border-nav'>Contact</li>
                    </Link>
 
                 
@@ -47,7 +47,7 @@ const Nav = () => {
        <div className='relative flex'>
        <div className='flex absolute border rounded-xs border-gray-50 m-1 -right-2 top-2 underline text-slate-50 justify-end items-center'>
             <Link className={`${location.pathname.includes('/en') ? 'text-[#a78bfa]' : ''}`} to="/en/">en</Link>/
-            <Link className={`${location.pathname.includes('/en') === false ? 'text-[#a78bfa]' : ''}`} to="">es</Link>
+            <Link className={`${location.pathname.includes('/en') === false ? 'text-[#a78bfa]' : ''}`} to="/">es</Link>
         </div>
        </div>
 

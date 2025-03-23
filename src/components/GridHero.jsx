@@ -9,8 +9,8 @@ const GridHero = () => {
 
   const squareSize = 1;
   const gapSize = 35;
-  const animationDuration = 0.04; // Speed per cell
-  const flashingDuration = 4; // Duration of falling light animation
+  const animationDuration = 0.04;
+  const flashingDuration = 4;
 
   // Calculate grid size dynamically
   const calcGrid = () => {
@@ -73,7 +73,7 @@ const GridHero = () => {
         gridTemplateRows: `repeat(${numRows}, ${squareSize + gapSize}px)`,
       }}
     >
-      {gridItems.map(({ key, delay }) => (
+       {gridItems.map(({ key, delay }) => (
         <motion.div
           key={key}
           className="bg-[#171717] border-[.2px] border-[#a78bfa]"

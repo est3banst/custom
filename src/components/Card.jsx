@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Card = ({ name, attr, price, value, valuetwo, valuet ,link}) => {
+const Card = ({ name, attr, price, value, valuetwo, en, valuet ,link}) => {
   return (
     <StyledWrapper>
       <div className='card-wrap'>
@@ -33,7 +33,7 @@ const Card = ({ name, attr, price, value, valuetwo, valuet ,link}) => {
             <span>{value}</span>
           </li>
         </ul>
-        <Link to={link}> <button className="action">Ver más
+        <Link to={link}> <button className="action">{en ? 'See more' : 'Ver más'}
         <svg xmlns="http://www.w3.org/2000/svg" className='animate-icons' width={20} height={20} viewBox="0 0 20 20">
 	<g fill="currentColor" fillRule="evenodd" clipRule="evenodd">
 		<g opacity={0.2}>

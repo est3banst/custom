@@ -40,6 +40,9 @@ const Footer = () => {
           <Link to='/services/crm' className={`hover-footer ${location.pathname === '/services/crm' ? 'text-[#a78bfa] font-bold' : ''}`}>
             Sistemas de administración
           </Link>
+          <Link to='/services/support-service' className={`hover-footer ${location.pathname === '/services/support-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
+            Soporte Web
+          </Link>
         </div>
         </div>
         <div className='flex flex-col gap-4'>

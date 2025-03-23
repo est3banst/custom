@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import SmallCard from "./SmallCard";
 
-const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {
+const ServiceCard = ({ title, benefits, impacts, buttonText, en, link, index }) => {
     const { ref, inView } = useInView({ 
-        threshold: 0.1
-        ,triggerOnce: true });
+        threshold: 0.1,
+        triggerOnce: true 
+    });
 
     return (
         <>
@@ -17,7 +18,7 @@ const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {
 
             <div className='lg:block flex gap-4 my-4 flex-col items-center'>
                 <p className='text-xl font-black self-start border-b-2 border-slate-50 w-max my-4'>
-                    Obtendrás:
+                   {en ? "You will get:" : "Obtendrás:"}
                 </p>
                 <section className='flex sm:w-5/6 md:w-4/6 gap-4 px-4 justify-center flex-col items-center'>
                     {benefits.map((benefit, index) => (
@@ -28,7 +29,7 @@ const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {
 
             <div className='lg:block flex gap-4 my-4 flex-col items-center'>
                 <h2 className='text-xl font-black self-start border-b-2 border-slate-50 w-max my-4'>
-                    Impacto en el negocio:
+                    {en ? "Business Impact:" : "Impacto en el negocio:"}
                 </h2>
                 <section className='flex sm:w-5/6 md:w-4/6 px-4 gap-4 justify-center flex-col items-center'>
                     {impacts.map((impact, index) => (

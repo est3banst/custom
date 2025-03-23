@@ -1,0 +1,37 @@
+import React from 'react'
+import { useInView } from "react-intersection-observer"
+import MarqueeCompEn from './MarqueeCompEn'
+import { Link } from 'react-router-dom'
+
+const About = () => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.2
+    })
+    return (
+
+        <>
+        <div ref={ref} className={`load-bord custom-space lg:mt-20 transition-all duration-[320ms]
+            ${
+                inView ? 'startAnim' : 
+                ''
+            }`}></div>
+          
+
+            <div className='relative h-auto text-xl py-4 flex flex-col gap-3 mb-4'>
+            <h2 className='heading-about uppercase'>What we do</h2>
+
+            <MarqueeCompEn />
+                
+            </div>
+            <Link to='/about'
+            className='w-max m-auto rounded-full underline hover:bg-[#f0f0f0] hover:opacity-75 flex justify-center bg-[#f5f5f5] text-slate-900 p-6'
+            >About us
+            
+            </Link>
+        </>
+
+    )
+}
+
+export default About

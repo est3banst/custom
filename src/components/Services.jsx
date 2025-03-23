@@ -39,6 +39,7 @@ const ServiceCard = ({ service, index }) => {
         attr={service.attr}
         price={service.price}
         value={service.value}
+        
         valuetwo={service.valuetwo}
         valuet={service.valuet}
         link={service.link}
