@@ -54,7 +54,7 @@ const services = [
   {
     name: "Design and hosting of your website",
     attr: "Expand your brand into the digital world, maximize your business reach",
-    price: "Starting at: USD 99/Anual",
+    price: "Starting at: USD 99/Year",
     value: "Attractive and functional designs",
     valuetwo: "Focus on results",
     valuet: "Fast and adaptable",
@@ -63,7 +63,7 @@ const services = [
   {
     name: "Design and implementation of virtual store",
     attr: "Your customers will be able to shop in your store at any time of day, any day of the year",
-    price: "Starting at: USD 99/Mes",
+    price: "Starting at: USD 99/Month",
     value: "Complete integrations",
     valuetwo: "Optimized for sales",
     valuet: "Custom and scalable stores",
@@ -72,7 +72,7 @@ const services = [
   {
     name: "Design and implementation of management systems",
     attr: "Manage and manage all your business transactions in one place",
-    price: "Starting at: USD 89/Mes",
+    price: "Starting at: USD 89/Month",
     value: "Complete integrations",
     valuetwo: "Custom features",
     valuet: "Custom designs",

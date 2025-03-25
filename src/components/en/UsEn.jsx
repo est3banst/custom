@@ -36,7 +36,7 @@ Elevate your digital presence with sophisticated interactions and a unique brand
   </div>
 </div>
 
-          <div ref={ref2} className={`bg-[#1d1d1db5] rounded-br-2xl rounded-tl-2xl backdrop-blur-xs text-xl flex transition-all duration-500 ease-in flex-col gap-3 py-8 px-4 ${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
+          <div ref={ref2} className={`bg-[#1d1d1db5] rounded-br-2xl rounded-tl-2xl backdrop-blur-xs text-xl flex transition-all duration-500 ease-in flex-col gap-3 py-12 px-4 ${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
             <p>Everyone does an online search before hiring a service or paying for a product. If you're not there, you're likely to lose that potential customer</p>
             <p>You take care of your business while we build your digital brand</p>
             
@@ -45,7 +45,7 @@ Elevate your digital presence with sophisticated interactions and a unique brand
                The wait is over
             </p>
             <section className='flex p-3 items-center justify-center'>
-                <Link to="/contact">
+                <Link to="/en/contact">
                 <button className="action">Get in touch</button>
                 </Link>
             </section>

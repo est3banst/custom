@@ -178,6 +178,49 @@ button:hover span::after {
   border-radius: 10px;
 }
 
+.path1.animate {
+  fill: #a78bfa6d;
+}
+.path2.animate {
+  fill: #f2f2f2d7
+}
+.path1, .path2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: all 1.3s ease-in-out;
+}
+.path2 {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.path2.animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+.path1.animate, .path2.animate {
+  stroke-dashoffset: 0;
+}
+.column {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: drawColumn 1s ease-out forwards;
+}
+
+.column.animate-column {
+  animation-delay: 0s;
+}
+
+@keyframes drawColumn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .cust-background {
   background: rgb(148,148,148);
@@ -189,6 +232,23 @@ button:hover span::after {
   rgba(23,23,23,.99) 95%);
 
 }
+.curved-edge {
+  --c: 120px; /* control the curvature (works with percentage) */
+  height: 200px;
+  width: 100%;
+  aspect-ratio: 3/2;
+  mask: radial-gradient(60% var(--c) at bottom,#0000 calc(100% - 2px),#000);
+  background: #a78bfa71;
+}
+
+.curved-edge-two {
+  --c: 120px; 
+  height: 300px;
+  aspect-ratio: 3/2;
+  mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
+  background: #a78bfa71;
+}
+
 .cust-font {
   font-family: 'Gloock', serif;
   letter-spacing: 0.182rem;

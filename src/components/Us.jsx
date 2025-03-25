@@ -35,7 +35,7 @@ const Us = () => {
   </div>
 </div>
 
-          <div ref={ref2} className={`bg-[#1d1d1db5] rounded-br-2xl rounded-tl-2xl backdrop-blur-xs text-xl flex transition-all duration-500 ease-in flex-col gap-3 py-8 px-4 ${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
+          <div ref={ref2} className={`bg-[#1d1d1db5] rounded-br-2xl rounded-tl-2xl backdrop-blur-xs text-xl flex transition-all duration-500 ease-in flex-col gap-3 py-12 px-4 ${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
             <p>Todo el mundo antes de contratar un servicio o pagar un producto hace una búsqueda en línea, si no estás es muy probable que pierdas ese potencial cliente</p>
             <p>Vos te ocupas de tu negocio mientras nosotros construimos tu marca digital</p>
             

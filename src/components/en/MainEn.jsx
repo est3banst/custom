@@ -5,6 +5,8 @@ import AboutEn from './AboutEn'
 import { useInView } from "react-intersection-observer";
 import FooterEn from './FooterEn';
 import NavEn from './NavEn';
+import Charts from '../Charts';
+import TwistedGallery from '../TwistedGallery';
 
 const MainEn = () => {
 
@@ -26,7 +28,14 @@ const MainEn = () => {
     <HeroEn />
     </div>
     <div className='grid grid-cols-1 custom-spacing-pc gap-8 mb-12 lg:gap-15'>
+    <TwistedGallery
+    lang='en'
+    />
     <ServicesEn />
+    
+    <Charts
+    lang='en'
+    />
     <AboutEn />
     </div>
     <FooterEn />
