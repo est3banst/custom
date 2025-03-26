@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 
 const TwistedGallery = ({ lang }) => {
     const refOne = useRef(null);
@@ -8,7 +8,7 @@ const TwistedGallery = ({ lang }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const force = window.scrollY / window.innerHeight * 20;
+            const force = window.scrollY / window.innerHeight * 50;
 
             if (refOne.current) refOne.current.style.transform = `translateX(${force}px)`;
             if (refTwo.current) refTwo.current.style.transform = `translateX(${-force}px)`;
@@ -21,7 +21,35 @@ const TwistedGallery = ({ lang }) => {
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 h-auto py-4'>
-            <section className='flex flex-col justify-center'>
+            
+            <div className='relative w-full h-auto py-12 overflow-hidden gap-4 flex items-center'>
+                {/* <div className='absolute inset-0 z-50 bg-radial from-transparent to-[#242424]'></div> */}
+				<section className='w-full flex flex-col gap-1 items-center justify-center rotate-45'>
+                    <article ref={refOne} className='flex w-[130vw] md:w-full gap-1 transition-transform duration-300 ease-out'>
+                        <img className="w-32 grow-2 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
+                        <img className="w-0 grow-2 aspect-square object-cover object-center" src="/gym-web.png" alt="" />
+                        <img className="w-0 grow-2 aspect-square object-cover object-center" src="/login.png" alt="" />
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/products.png" alt="" />
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/personal-web.png" alt="" />
+                    </article>
+                    <article ref={refTwo} className='flex w-[130vw] md:w-full gap-4 transition-transform duration-300 ease-out'>
+                        <img className="w-0 grow-2 aspect-square object-cover object-center" src="/login.png" alt="" />
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/personal-web.png" alt="" />
+                        <img className="w-32 grow-2 aspect-square object-cover object-center" src="/gym-web.png" alt="" />
+                       
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/products.png" alt="" />
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
+                    </article>
+                    <article ref={refThree} className='flex w-[130vw] md:w-full gap-4 transition-transform duration-300 ease-out'>
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/gym-web.png" alt="" />
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/personal-web.png" alt="" />
+                        <img className="w-32 grow-3 aspect-square object-cover object-center" src="/products.png" alt="" />
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
+                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/login.png" alt="" />
+                    </article>
+                </section>
+            </div>
+            <section className='flex flex-col md:px-4 justify-center'>
                 <h2 className='font-black border-b-2 border-purple-900 text-3xl px-2 py-4 my-8'>{lang === 'en' ? 'We have the right fit for your business' : 'Tenemos la solución ideal para tu negocio'}</h2>
                 <span className='p-2'>
                     <p className='text-xl font-bold'>{lang === 'en' ? 'Start growing your business with us today' : 'Comenzá hoy a expandir tu negocio con nosotros' }</p>
@@ -202,33 +230,6 @@ const TwistedGallery = ({ lang }) => {
        </span>
                 </span>
             </section>
-            <div className='relative w-full h-auto py-12 overflow-hidden gap-4 flex items-center'>
-                <section className='w-full flex flex-col gap-1 items-center justify-center rotate-45'>
-                    <article ref={refOne} className='flex w-full gap-1 transition-transform duration-300 ease-out'>
-                        <img className="w-32 grow-2 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/gym-web.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/login.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/products.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/personal-web.png" alt="" />
-                    </article>
-                    <article ref={refTwo} className='flex w-[130vw] md:w-full gap-4 transition-transform duration-300 ease-out'>
-                        <img className="w-0 grow-2 aspect-square object-cover object-center" src="/login.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/personal-web.png" alt="" />
-                        <img className="w-32 grow-2 aspect-square object-cover object-center" src="/gym-web.png" alt="" />
-                       
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/products.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
-                    </article>
-                    <article ref={refThree} className='flex w-full gap-4 transition-transform duration-300 ease-out'>
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/gym-web.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/personal-web.png" alt="" />
-                        <img className="w-32 grow-2 aspect-square object-cover object-center" src="/products.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
-                        <img className="w-0 grow-1 aspect-square object-cover object-center" src="/login.png" alt="" />
-                    </article>
-                </section>
-            </div>
-            
         </div>
     );
 };
