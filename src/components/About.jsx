@@ -8,6 +8,7 @@ const About = () => {
     const { ref, inView } = useInView({
         threshold: 0.2
     })
+ 
     return (
 
         <>
@@ -18,14 +19,14 @@ const About = () => {
             }`}></div>
           
 
-            <div className='relative h-auto text-xl py-4 flex flex-col gap-3 mb-4'>
+            <div className={`relative h-auto text-xl py-4 flex flex-col transition-all duration-500 ease-in-out gap-3 mb-4 ${inView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className='heading-about uppercase'>Que hacemos</h2>
 
             <MarqueeComp />
                 
             </div>
             <Link to='/about'
-            className='w-max m-auto rounded-full underline hover:bg-[#f0f0f0] hover:opacity-75 flex justify-center bg-[#f5f5f5] text-slate-900 p-6'
+            className={`${inView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} w-max m-auto transition-all duration-500 ease-in rounded-full underline hover:bg-[#f0f0f0] hover:opacity-75 flex justify-center bg-[#f5f5f5] text-slate-900 p-6`}
             >Nosotros
             
             </Link>

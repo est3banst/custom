@@ -46,12 +46,20 @@ const appPages = [
     link: 'https://fittness-drive.vercel.app/',
     src: '/gym-web.png'
   },
+
     {
         title: 'Aplicación de reservas para servicios Odontológicos',
         text: 'Centraliza la gestión de tus reservas',
-        desc: 'Tendrás acceso a un panel desde tu celular para ver tus reservas con control total sobre las mismas',
+        desc: 'Tus clientes podrán acceder a tu web y realizar reservas. Tendrás acceso a un panel desde tu celular para ver tus reservas con control total sobre las mismas',
         link: "https://clinic-dent.vercel.app/",
         src: '/dental-clinic.png'
+    },
+    {
+      title: 'Aplicación de reservas para salón de uñas',
+      text: 'Mejor gestión de tus reservas y un registro general de cada trabajo',
+      desc: 'Tus clientes podrán acceder a la web a hacer reservas. Tendrás acceso a un panel desde tu celular o laptop para administrar tus reservas',
+      link: 'https://gloss-nails.vercel.app/',
+      src : '/nail-reservas.png'
     },
     {
         title: 'Sitio web institucional',

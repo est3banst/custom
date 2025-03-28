@@ -54,6 +54,13 @@ const appPages = [
       src: '/dental-clinic.png'
     },
     {
+      title: 'Nail Salon Booking Application',
+      text: 'Better management of your bookings and a general record of each service',
+      desc: 'Your clients will be able to access the website to make reservations. You will have access to a panel from your phone or laptop to manage your bookings',
+      link: 'https://gloss-nails.vercel.app/',
+      src : '/nail-reservas.png'
+    },
+    {
       title: 'Corporate Website',
       text: 'Present your brand to the world',
       desc: 'Fully customized website, platform to offer/promote your services/products',
