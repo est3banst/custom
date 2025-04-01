@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import AccordionComp from "./AccordionComp";
-import { useEffect } from "react";
+import AccordionComp from "./blueprints/AccordionComp";
 import useScrollTop from './hooks/useScrollTop'
 import { useLanguage } from "../config/LanguageContext";
 

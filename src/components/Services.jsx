@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./blueprints/Card";
 import { useInView } from "react-intersection-observer";
 import { useLanguage } from "../config/LanguageContext";
 

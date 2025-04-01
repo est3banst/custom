@@ -1,5 +1,5 @@
 import React from 'react'
-import AccordionComp from './AccordionComp'
+import AccordionComp from './blueprints/AccordionComp'
 import { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { useLanguage } from '../config/LanguageContext'

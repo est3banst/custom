@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
-import SmallCard from "./SmallCard";
+import SmallCard from "./blueprints/SmallCard";
 import { useLanguage } from "../config/LanguageContext";
 
 const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {

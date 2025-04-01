@@ -1,17 +1,17 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Nosotros from './pages/AboutPage'; 
-import Layout from './landing/Layout';
-import Main from './Main';
-import Faq from './Faq';
-import PlansLayout from './pages/PlansLayout';
-import ServicesLayout from './ServicesLayout';
-import LayoutStores from './ecomm/LayoutStores';
-import LayoutMs from './admin/LayoutMs';
-import ContactPage from './pages/ContactPage';
-import Portfolio from './Portfolio';
-import Consultation from './Consultation';
-import Support from './supp/Support';
+import Nosotros from '../pages/AboutPage'; 
+import Layout from '../landing/Layout';
+import Main from '../Main';
+import Faq from '../Faq';
+import PlansLayout from '../pages/PlansLayout';
+import ServicesLayout from '../ServicesLayout';
+import LayoutStores from '../ecomm/LayoutStores';
+import LayoutMs from '../admin/LayoutMs';
+import ContactPage from '../pages/ContactPage';
+import Portfolio from '../Portfolio';
+import Consultation from '../Consultation';
+import Support from '../supp/Support';
 
 const AppRouting = () => {
   return (

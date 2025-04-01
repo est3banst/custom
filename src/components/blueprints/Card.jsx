@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { useLanguage } from '../config/LanguageContext';
+import { useLanguage } from '../../config/LanguageContext';
 
 const Card = ({ name, attr, price, value, valuetwo, valuet ,link}) => {
   const {lang} = useLanguage();

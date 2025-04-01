@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Loader from './components/Loader'
 import { useLocation } from 'react-router-dom'
-import AppRouting from './components/AppRouting';
+import AppRouting from './components/routes/AppRouting';
 
 function App() {
   const [loading, setLoading] = useState(true);
