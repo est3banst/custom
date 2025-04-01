@@ -7,8 +7,11 @@ import Footer from './Footer';
 import Nav from './Nav';
 import Charts from './Charts';
 import TwistedGallery from './TwistedGallery';
+import { useLanguage } from '../config/LanguageContext';
 
 const Main = () => {
+
+  const { lang } = useLanguage();
 
   const { ref, inView } = useInView({
    triggerOnce: false,
@@ -18,7 +21,7 @@ const Main = () => {
 
   return (
     <>
-    <Nav/>
+    <Nav />
     <div className='overflow-x-hidden grid grid-cols-1 gap-4'>
     <div
         ref={ref}

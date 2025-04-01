@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { useLanguage } from '../config/LanguageContext';
 
 
-const TwistedGallery = ({ lang }) => {
+const TwistedGallery = () => {
+	const { lang } = useLanguage();
 
 	const refOne = useRef(null);
 	const refTwo = useRef(null);

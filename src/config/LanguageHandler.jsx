@@ -1,15 +1,14 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLanguage } from "./LanguageContext";
 
 function LanguageHandler() {
-    const location = useLocation();
+    const { lang } = useLanguage();
 
     useEffect(() => {
-        const isEnglish = location.pathname.includes("/en");
+        
+        document.documentElement.lang = lang;
 
-        document.documentElement.lang = isEnglish ? "en" : "es";
-
-        const metaData = isEnglish
+        const metaData = lang === 'en'
             ? {
                   title: "Web Development, Online Stores, and Custom Solutions - Kustom",
                   description:
@@ -62,7 +61,7 @@ function LanguageHandler() {
             }
         });
 
-    }, [location]);
+    }, [lang]);
 
     return null; 
 }

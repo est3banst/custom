@@ -2,8 +2,11 @@ import React from "react";
 import GridHero from "./GridHero";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../config/LanguageContext";
 
 const Hero = () => {
+
+  const { lang } = useLanguage();
   const { ref: freeBtn, inView: isBtnInView } = useInView({
     threshold: 0.1
   })
@@ -13,12 +16,14 @@ const Hero = () => {
       <GridHero />
       <div className="relative cust-background z-20 text-center h-screen flex flex-col justify-center items-center gap-5">
         <h2 className="text-xl md:text-2xl lg:text-3xl font-medium uppercase p-4 ">
-          Impulsamos tu negocio con soluciones web innovadoras. Ubicados en Uruguay, trabajamos para todo el mundo
-        </h2>
+       {   lang === 'en' ?
+         'We boost your business with innovative web solutions. Based in Uruguay, we work worldwide' :
+          'Impulsamos tu negocio con soluciones web innovadoras. Ubicados en Uruguay, trabajamos para todo el mundo'
+       } </h2>
        <div className="flex w-full md:w-4/6 justify-center gap-5 flex-col md:flex-row items-center">
        <span className="">
-        <Link to="/services">
-       <button className="action">Más info.
+        <Link to='/services'>
+       <button className="action">{ lang === 'en' ? 'See more' : 'Ver más'}
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="currentColor" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg>
         </button>
         </Link>
@@ -26,7 +31,7 @@ const Hero = () => {
        <div ref={freeBtn} className={`outbutton -translate-y-12 opacity-0 transition-all my-2 duration-[1200ms] ease-in-out ${isBtnInView ? 'translate-y-0 opacity-100' : ''}`}>
         <Link target="_blank" to="/free-consultation">
         <button className="corner-button text-base font-bold bg-[#00000004] backdrop-blur-[2px]">
-            <span>Solicitar auditoría gratis</span>
+            <span>{ lang === 'en' ? 'Free consultation' : 'Solicitar auditoría gratis'}</span>
         </button>
         </Link>
         <span className={`absolute bottom-0 translate-y-5 font-black right-0 text-[#a78bfa] ${isBtnInView ? 'arrow-animation' : ''}`}>

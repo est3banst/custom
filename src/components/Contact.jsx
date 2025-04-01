@@ -3,12 +3,15 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { useForm, ValidationError } from '@formspree/react';
 import '../assets/Contact.css';
 import { CAPTCHA, KEY_CAPTCHA } from '../apiroutes/captcha';
+import { useLanguage } from '../config/LanguageContext';
 
 
 const Contact = () => {
   const [recaptchaToken, setRecaptchaToken] = useState('');
   const [captchaValidated, setCaptchaValidated] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
+  const {lang} = useLanguage();
 
   const [state, handleSubmit] = useForm("xldgqzel");
 
@@ -20,7 +23,7 @@ const Contact = () => {
   if (state.succeeded) {
     setTimeout(() => setShowModal(true), 100); 
   }
-
+  let mssgResponse = lang === 'en' ? 'Invalid CAPTCHA, try again' : 'Captcha inválido, intenta nuevamente';
   const handleCaptchaChange = async (token) => {
     setRecaptchaToken(token);
     if (token) {
@@ -36,11 +39,11 @@ const Contact = () => {
         if (data.success) {
           setCaptchaValidated(true);
         } else {
-          alert("Captcha inválido, intenta nuevamente.");
+          alert(mssgResponse);
           setCaptchaValidated(false);
         }
       } catch (error) {
-        console.error("Error al validar CAPTCHA:", error);
+        console.error("Error CAPTCHA:", error);
         setCaptchaValidated(false);
       }
     } else {
@@ -58,12 +61,12 @@ const Contact = () => {
             <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
           <div className="form-group">
-            <label htmlFor="phone">Número de teléfono:</label>
+            <label htmlFor="phone">{ lang === 'en' ? 'Phone:' : 'Número de teléfono:'}</label>
             <input type="text" id="phone" name="phone" required />
             <ValidationError prefix="Phone" field="phone" errors={state.errors} />
           </div>
           <div className="form-group">
-            <label htmlFor="textarea">¿Cómo podemos ayudarte?</label>
+            <label htmlFor="textarea">{ lang === 'en' ? 'How can we help you?' : '¿Cómo podemos ayudarte?'}</label>
             <textarea name="message" id="message" rows="10" cols="50" required />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
           </div>
@@ -80,7 +83,7 @@ const Contact = () => {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <p className="text-xl font-medium m-auto">
-              Gracias por comunicarte. Nos pondremos en contacto contigo dentro de un plazo de 48hs!
+              { lang === 'en' ? 'Thank you for contacting us. We will get back to you within 48 hours!' : 'Gracias por comunicarte. Nos pondremos en contacto contigo dentro de un plazo de 48hs!'}
             </p>
             <button className="close-btn" onClick={closeModal}>X</button>
           </div>

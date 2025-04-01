@@ -1,8 +1,48 @@
 import React from "react";
 import Card from "./Card";
 import { useInView } from "react-intersection-observer";
+import { useLanguage } from "../config/LanguageContext";
 
 const Services = () => {
+  const { lang } = useLanguage();
+
+  const services = [
+    {
+      name: lang === 'en' ? "Design and hosting of your website" : "Diseño y alojamiento de tu sitio web",
+      attr: lang === 'en' ? "Expand your brand into the digital world, maximize your business reach" : "Expande tu marca hacia el mundo digital, maximiza el alcance de tu negocio",
+      price: lang === 'en' ? "Starting at: USD 99/Year" : "Desde: USD 99/Anual",
+      value: lang === 'en' ? "Attractive and functional designs" : "Diseños atractivos y funcionales",
+      valuetwo: lang === 'en' ? "Focus on results" : "Enfoque en resultados",
+      valuet: lang === 'en' ? "Fast and adaptable" : "Rápidos y adaptables",
+      link: "/services/spa-service"
+    },
+    {
+      name: lang === 'en' ? "Design and implementation of virtual store" : "Diseño e implementación de tienda virtual",
+      attr: lang === 'en' ? "Your customers will be able to shop in your store at any time of day, any day of the year" : "Tus clientes podrán comprar en tu tienda a cualquier hora del día, cualquier día del año",
+      price: lang === 'en' ? "Starting at: USD 99/Month" : "Desde: USD 99/Mes",
+      value: lang === 'en' ? "Complete integrations" : "Integración completa",
+      valuetwo: lang === 'en' ? "Optimized for sales" : "Optimizadas para ventas",
+      valuet: lang === 'en' ? "Custom and scalable stores" : "Tiendas personalizadas y escalables",
+      link: "/services/ecommerce"
+    },
+    {
+      name: lang === 'en' ? "Design and implementation of management systems" : "Diseño e implementación de sistemas de administración",
+      attr: lang === 'en' ? "Manage and manage all your business transactions in one place" : "Administra y gestiona todos los movimientos de tu negocio en un solo lugar",
+      price: lang === 'en' ? "Starting at: USD 89/Month" : "Desde: USD 89/Mes",
+      value: lang === 'en' ? "Complete integrations" : "Integración completa",
+      valuetwo: lang === 'en' ? "Custom features" : "Funcionalidades personalizadas",
+      valuet: lang === 'en' ? "Custom designs" : "Diseños personalizados",
+      link: "/services/crm"
+    },
+    {
+      name: lang === 'en' ? "Technical support specialized in the web" : "Soporte técnico especializado en la web",
+      attr: lang === 'en' ? "You have a system in place and you are tired of unresolved issues, we will take care of it." : "Tienes un sistema implementado y estás cansado de problemas sin resolver, nosotros nos encargamos",
+      value: lang === 'en' ? "Immediate response" : "Respuesta inmediata",
+      valuetwo: lang === 'en' ? "Consulting and optimization" : "Asesoría y optimización",
+      valuet: lang === 'en' ? "Complete technical support" : "Soporte técnico integral",
+      link: "/services/support-service"
+    },
+  ];
   return (
     <>
     <div className="relative my-12 lg:my-14">
@@ -49,40 +89,4 @@ const ServiceCard = ({ service, index }) => {
 
 export default Services;
 
-const services = [
-  {
-    name: "Diseño y alojamiento de tu sitio web",
-    attr: "Expande tu marca hacia el mundo digital, maximiza el alcance de tu negocio",
-    price: "Desde: USD 99/Anual",
-    value: "Diseños atractivos y funcionales",
-    valuetwo: "Enfoque en resultados",
-    valuet: "Rápidos y adaptables",
-    link: "/services/spa-service"
-  },
-  {
-    name: "Diseño e implementación de tienda virtual",
-    attr: "Tus clientes podrán comprar en tu tienda a cualquier hora del día, cualquier día del año",
-    price: "Desde: USD 99/Mes",
-    value: "Integración completa",
-    valuetwo: "Optimizadas para ventas",
-    valuet: "Tiendas personalizadas y escalables",
-    link: "/services/ecommerce"
-  },
-  {
-    name: "Diseño e implementación de sistemas de administración",
-    attr: "Administra y gestiona todos los movimientos de tu negocio en un solo lugar",
-    price: "Desde: USD 89/Mes",
-    value: "Integración completa",
-    valuetwo: "Funcionalidades personalizadas",
-    valuet: "Diseños personalizados",
-    link: "/services/crm"
-  },
-  {
-    name: "Soporte técnico especializado en la web",
-    attr: "Tienes un sistema implementado y estás cansado de problemas sin resolver, nosotros nos encargamos",
-    value: "Respuesta inmediata",
-    valuetwo: "Asesoría y optimización",
-    valuet: "Soporte técnico integral",
-    link: "/services/support-service"
-  },
-];
+

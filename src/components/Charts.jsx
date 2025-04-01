@@ -1,11 +1,12 @@
 import React, {useRef, useState} from 'react'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
+import { useLanguage } from '../config/LanguageContext';
 
-const Charts = ({ lang }) => {
+const Charts = () => {
     const contentRef = useRef(null);
     const contentSecondRef = useRef(null);
-
+    const {lang} = useLanguage();
 
     const [active, setActive] = useState(null);
 
@@ -44,8 +45,8 @@ const Charts = ({ lang }) => {
                         strokeWidth="2"
                         fill="none" d="m242.01172 44.67578-32.9961 121.30078 121.3047-32.9961c-.78907-2.59374-1.65235-5.16015-2.59766-7.69921-.94532-2.53906-1.96485-5.05078-3.06641-7.52734-1.09766-2.47657-2.26953-4.91797-3.51953-7.32422-1.2461-2.40235-2.57031-4.76953-3.96094-7.09375-1.39453-2.32422-2.85937-4.60156-4.39062-6.83985-1.53516-2.23437-3.13282-4.41796-4.80079-6.55468-1.66796-2.13672-3.39843-4.21875-5.1953-6.25a132.8541 132.8541 0 0 0-5.56641-5.91797 132.89983 132.89983 0 0 0-5.92188-5.57031c-2.02734-1.79297-4.11328-3.52344-6.25-5.19141-2.13281-1.66797-4.32031-3.26953-6.55469-4.80078-2.23437-1.53516-4.51562-2.9961-6.83984-4.39063-2.32422-1.39453-4.6875-2.71484-7.09375-3.96484-2.40625-1.2461-4.84766-2.42188-7.32422-3.51953-2.47656-1.09766-4.98437-2.1211-7.52344-3.0625-2.54297-.94532-5.10937-1.8125-7.70312-2.59766Zm0 0"/>
                         </svg>
-                        <small className={`top-1/2 left-1/3 text-white p-2 bg-black/30 font-black absolute transition-all duration-500 ease-in ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'}`}>Negocios que tienen sitio web</small>
-                        <small className={`top-1/4 text-white p-2 bg-black/40 font-black left-1/2 absolute transition-all duration-500 ease-in ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'}`}>Negocios que aún no tienen sitio web</small>
+                        <small className={`top-1/2 left-1/3 text-white p-2 bg-black/30 font-black absolute transition-all duration-500 ease-in ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'}`}>{lang === 'en' ? 'Business that have a website' : 'Negocios que tienen sitio web'}</small>
+                        <small className={`top-1/4 text-white p-2 bg-black/40 font-black left-1/2 absolute transition-all duration-500 ease-in ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'}`}>{lang === 'en' ? "Businesses that still don't have a website" : 'Negocios que aún no tienen sitio web'}</small>
                     </div>
                
                         <span className='bg-[#bdb2ff] text-slate-900 p-2'>
@@ -106,7 +107,7 @@ xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
             </section>
             <div className='px-2 w-full flex justify-center flex-col items-center py-6'>
                     <p className='text-xl font-black'>{lang === 'en' ? "If you're in the white portion of the graph, it's time to step out" : 'Si estás en la porción blanca de la gráfica es el momento de salir'}</p>
-                    <Link to={lang === 'en' ? '/en/contact' : '/contact'}>
+                    <Link to='/contact'>
                     <button className='action'>{ lang === 'en' ? 'Get Started' : 'Comenzar'}</button>
                     </Link>
                 </div>
@@ -158,7 +159,7 @@ xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
                     <p>{lang === 'en' ? 'If you have a physical store, you should already have your online store' : 'Si tenes una tienda física ya deberías de tener tu tienda virtual'}</p>
                     <p>{lang === 'en' ? "And if you don't have one, don't worry. We take care of it" : 'Y si no la tenes, no te preocupes. Nosotros nos encargamos'}</p>
                 </div>
-                <Link to={lang === 'en' ? '/en/contact' : '/contact'} >
+                <Link to='/contact' >
                 <button className='action'>{lang === 'en' ? 'Start today' : 'Comenza hoy'}</button>
                 </Link>
             </section>
