@@ -9,7 +9,7 @@ const Section = () => {
         <section className='flex gap-2 uppercase'>
         <h2 className='text-xl md:text-2xl'>{lang === 'en' ? 'Why your business needs a' : "¿Por qué tu negocio necesita un "}
             <b className='text-xl md:text-2xl px-1 text-[#a78bfa]'>
-            { lang === en ? 'webiste' : "sitio web"}
+            { lang === 'en' ? 'webiste' : "sitio web"}
             </b>
             ?
             </h2>
