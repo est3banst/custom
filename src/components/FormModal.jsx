@@ -66,7 +66,7 @@ const setMessageVisibility = () => {
                             <input className="border rounded-xs p-1 border-[#a78bfa]" type="text" name="nombre" onChange={handleChange} value={formData.nombre} id="name" />
                         </div>
                         <div className='flex gap-1 p-2  flex-col'>
-                            <label htmlFor="correo">{lang === en ? 'Email' : 'Correo electrónico'}:</label>
+                            <label htmlFor="correo">{lang === 'en' ? 'Email' : 'Correo electrónico'}:</label>
                             <input className="border rounded-xs p-1 border-[#a78bfa]" name="correo" id="correo" onChange={handleChange} value={formData.correo} type="text" />
                         </div>
                         <div className='flex gap-1 p-2 flex-col'>

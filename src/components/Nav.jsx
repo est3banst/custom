@@ -27,18 +27,18 @@ const Nav = () => {
         <nav className='hidden md:flex md:w-full px-6'>
                <ul className='flex w-full justify-end gap-3 p-2'>
                   <Link to='/services'>
-                     <li className='orbitron border-nav'>{lang === 'en' ? 'Services' : 'Servicios'}</li>
+                     <li className={`${location.pathname.includes('/services') ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'Services' : 'Servicios'}</li>
                     </Link>
                 
                    <Link to='/portfolio'>
-                   <li className='orbitron border-nav'>{lang === 'en' ? 'Portfolio' : 'Portfolio'}</li>
+                   <li className={`${location.pathname === '/portfolio' ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'Portfolio' : 'Portfolio'}</li>
                    </Link>
 
                    <Link to='/plans'>
-                   <li className='orbitron border-nav'>{lang === 'en' ? 'Plans' : 'Planes'}</li>
+                   <li className={`${location.pathname === '/plans' ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'Plans' : 'Planes'}</li>
                    </Link>
                    <Link to='/contact'>
-                       <li className='orbitron border-nav'>{lang === 'en' ? 'Contact' : 'Contacto'}</li>
+                       <li className={`${location.pathname === '/contact' ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'Contact' : 'Contacto'}</li>
                    </Link>
 
                 
