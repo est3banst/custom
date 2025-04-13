@@ -28,23 +28,23 @@ const Support = () => {
         <div className='relative p-2'>
         <section className='flex flex-col text-base justify-center gap-2 leading-relaxed font-medium px-2 pt-4 pb-8'>
     <div className='flex items-center gap-4'>
-    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+    <svg className="w-6 h-6 shrink-0 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
 </svg>
  <p>{ lang === 'en' ? 'Is your website slow, not bringing in customers, or not representing your brand because it was made a long time ago?' : 'Tu web es lenta, no te trae clientes o no representa tu marca debido a que fue hecha hace mucho?'}</p>
 
     </div>
             <div className='bg-purple-950 w-1/6 h-1' ></div>
      <div className='flex items-center gap-4'>
-     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+     <svg className="w-6 h-6 shrink-0 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
 </svg>
 <p>{lang === 'en' ? "Do you have an online store that doesn't meet your expectations?" : 'Tenes una tienda virtual implementada que no cumple tus expectativas?'}</p>
     </div>        
             <div className='bg-purple-950 h-1 w-2/6' ></div>
         <div className='flex items-center gap-4'>
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+        <svg className="w-6 h-6 shrink-0 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
 </svg>
  <p>{lang === 'en' ? 'Did you purchase a system to improve your business management, but instead of speeding up your processes, it slows you down due to long support wait times or just a slow system?' : 'Adquiriste un sistema para mejorar la gestión de tu negocio y en lugar de agilizar tus procesos te enlentece, debido a largos tiempos de espera por el soporte o simplemente un sistema lento?'}</p>
      </div>   
