@@ -248,7 +248,11 @@ button:hover span::after {
   mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
   background: #a78bfa71;
 }
-
+.container-svgs svg {
+  fill: #fff;
+  stroke-width: .3;
+  stroke: #fff;
+}
 .cust-font {
   font-family: 'Gloock', serif;
   letter-spacing: 0.182rem;
