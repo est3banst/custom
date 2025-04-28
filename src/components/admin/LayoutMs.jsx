@@ -88,6 +88,14 @@ const LayoutMs = () => {
                                     icon={item.svg} />
                             ))}
                         </div>
+                        <div className='bg-[#242424] my-4 p-4'>
+                            <h2 className='uppercase font-black'>{lang === 'en' ? 'Process' : 'Proceso'}</h2>
+                          <hr />
+                            <p className='py-4'>{lang === 'en' ? "We'll have a meeting to discuss your business current workflow, after the meeting we'll send you a form with questions related to your business for you to fill to have a broader view and to start engineering the solution" : 'Tendremos una reunión para discutir el flujo de trabajo actual de su negocio, después de la reunión le enviaremos un formulario con preguntas relacionadas con su negocio para que las complete, para tener una visión más amplia y comenzar a diseñar la solución.'}</p>
+                            <hr />
+                            <p className='py-4'>{lang === 'en' ? "Once we get started working on it, you'll have a first functional version of the solution within two months, we are right next to you at this point so any improvements or addons you wish will be made immediately, we'll do this for the next month after the first release, after that you will receive weekly support for the application. At this point the solution has met all the requirements we previously set" :
+                             'Una vez que comencemos a trabajar en ello, tendrá una primera versión funcional de la solución en dos meses. En este punto, estamos a su disposición, por lo que cualquier mejora o complemento que desee se implementará de inmediato. Lo haremos durante el mes siguiente al primer lanzamiento. Posteriormente, recibirá soporte semanal para la aplicación. En este punto, la solución cumple con todos los requisitos que establecimos previamente.'}</p>
+                        </div>
                         </div>
                         <div className='p-4 w-full m-2 flex justify-center'>
 
