@@ -48,60 +48,6 @@ const Charts = () => {
                         <small className={`top-1/2 left-1/3 text-white p-2 bg-black/30 font-black absolute transition-all duration-500 ease-in ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'}`}>{lang === 'en' ? 'Business that have a website' : 'Negocios que tienen sitio web'}</small>
                         <small className={`top-1/4 text-white p-2 bg-black/40 font-black left-1/2 absolute transition-all duration-500 ease-in ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'}`}>{lang === 'en' ? "Businesses that still don't have a website" : 'Negocios que aún no tienen sitio web'}</small>
                     </div>
-               
-                        <span className='bg-[#bdb2ff] text-slate-900 p-2'>
-                           <div className='flex items-center p-2 gap-3 justify-between'>
-                           <p>
-
-<b> 76%</b> { lang === 'en' ? 'Small and medium businesses that have a digital presence' : 'Pequeños y medianos negocios que tienen presencia digital'}
-</p>
-<svg
-onClick={() => handleToggle(89)}
-className={`${active === 89 ? 'rotate-45' : ''} shrink-0 transition-all duration-500 cursor-pointer ease-in-out`}
-xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
-<g fill="none" fillRule="evenodd">
-<path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></path>
-<path fill="currentColor" d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-4H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h4zm4 0h-2v5a1 1 0 0 1-1 1H5v2h5a1 1 0 0 1 1 1v5h2v-5a1 1 0 0 1 1-1h5v-2h-5a1 1 0 0 1-1-1z"></path>
-</g>
-</svg>
-                           </div>
-                            <div ref={contentRef}
-                            className="overflow-hidden transition-all duration-300"
-                            style={{
-                                height: active === 89 ? `${contentRef.current.scrollHeight}px` : "0px",
-                            }}
-                            >
-                            <p><b>{lang === 'en' ? 'Indicate a strong recognition of the importance of having an online presence to grow their business' : 'Indican un fuerte reconocimiento de la importancia de tener presencia online para hacer crecer su negocio'} </b></p>
-                            </div>
-
-                        </span>
-                        <span className={`bg-[#f2f2f2fc] text-slate-900 p-2 ${active === 932 ? '' : ''}`}>
-                            <div className='flex items-center p-2 gap-3 justify-between'>
-                            <p>
-                                <b>22%</b> {lang === 'en' ? 'Small and medium businesses that don’t have a website or digital presence' : 'Pequeños y medianos negocios que no tienen sitio web ni presencia digital'}
-                            </p>
-                            <svg 
-                            className={`${active === 932 ? 'rotate-45' : ''} shrink-0 transition-all duration-500 cursor-pointer ease-in-out`}
-                            onClick={() => handleToggle(932)}
-                            xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
-	<g fill="none" fillRule="evenodd">
-		<path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></path>
-		<path fill="currentColor" d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-4H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h4zm4 0h-2v5a1 1 0 0 1-1 1H5v2h5a1 1 0 0 1 1 1v5h2v-5a1 1 0 0 1 1-1h5v-2h-5a1 1 0 0 1-1-1z"></path>
-	</g>
-</svg>
-                            </div>
-                            <div ref={contentSecondRef}
-                            className="overflow-hidden transition-all duration-300"
-                            style={{
-                                height: active === 932 ? `${contentSecondRef.current.scrollHeight}px` : "0px",
-                            }}
-                            >
-                            <p><b>
-                            {lang === 'en' ? 'This percentage suffers from losing this competitive advantage over other businesses. With 5+ billion users on the internet, businesses without any digital presence lose many potential customers.' : 'Este porcentaje sufre la perdida de esta ventaja competitiva sobre otros negocios, con 5+ billones de usuarios en internet los negocios que no tienen presencia digital alguna pierden muchisimos potenciales clientes'}
-                            </b></p>
-                            </div>
-                        </span>
-                    
                 </div>
                
             </section>
@@ -112,9 +58,11 @@ xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
                     </Link>
                 </div>
             <hr />
-            <section className='flex flex-col items-center py-12 justify-center w-full'>
-                <div className='flex justify-center flex-col items-center w-full px-2'>
-                <h4 className='text-xl'>{lang === 'en' ? 'Global eCommerce Growth' : 'Crecimiento del comercio electrónico a nivel global'}</h4>
+            <section className='flex flex-col md:flex-row relative items-center pt-12 pb-6 justify-center w-full'>
+            
+                <div>
+                    <div className='flex justify-center flex-col items-center w-full px-2'>
+                <h4 className='text-xl text-center'>{lang === 'en' ? 'Global eCommerce Growth' : 'Crecimiento del comercio electrónico a nivel global'}</h4>
                 <small>{lang === 'en' ? 'Period: 2018-2024' : 'Período : 2018-2024'} </small>
                 </div>
 
@@ -155,13 +103,16 @@ xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
         <text x="275" y="320" fontFamily="Arial" fontSize="12" fill="#fff">2024</text>
 
                 </svg>
-                <div className='w-full text-xl px-2 font-bold text-center'>
+                </div>
+                <div className='flex flex-col items-center w-full px-2'>
+                    <div className='w-full text-xl px-2 font-bold text-center'>
                     <p>{lang === 'en' ? 'If you have a physical store, you should already have your online store' : 'Si tenes una tienda física ya deberías de tener tu tienda virtual'}</p>
                     <p>{lang === 'en' ? "And if you don't have one, don't worry. We take care of it" : 'Y si no la tenes, no te preocupes. Nosotros nos encargamos'}</p>
                 </div>
                 <Link to='/contact' >
                 <button className='action'>{lang === 'en' ? 'Start today' : 'Comenza hoy'}</button>
                 </Link>
+                </div>
             </section>
 
         </div>

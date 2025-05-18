@@ -7,7 +7,6 @@ import Faq from '../Faq';
 import PlansLayout from '../pages/PlansLayout';
 import ServicesLayout from '../ServicesLayout';
 import LayoutStores from '../ecomm/LayoutStores';
-import LayoutMs from '../admin/LayoutMs';
 import ContactPage from '../pages/ContactPage';
 import Portfolio from '../Portfolio';
 import Consultation from '../Consultation';
@@ -27,7 +26,6 @@ const AppRouting = () => {
         <Route path="/services/spa-service" element={<Layout />}/>
         <Route path='/services/support-service' element={<Support />} />
         <Route path="/services/ecommerce" element={<LayoutStores />} />
-        <Route path="/services/crm" element={<LayoutMs/>} />
       </Routes>
   )
 }

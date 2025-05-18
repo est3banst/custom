@@ -13,6 +13,7 @@ const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {
     return (
         <>
         <section className='w-full lg:grid lg:grid-cols-3 gap-4 my-3'>
+            
             <article className='md:flex w-5/6 md:flex-col md:justify-center'>
                 <h2 className='text-xl md:text-2xl font-black'>{title}</h2>
                 <div ref={ref} className={`load-custom-bord transition-all duration-[320ms] ${inView ? 'startAnim' : ''}`}></div>

@@ -8,7 +8,8 @@ const About = () => {
     const {lang} = useLanguage();
 
     const { ref, inView } = useInView({
-        threshold: 0.2
+        threshold: 0.2,
+        triggerOnce: true
     })
  
     return (

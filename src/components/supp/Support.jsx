@@ -13,14 +13,23 @@ const Support = () => {
     </div>
     <div className='flex flex-col gap-4 w-full'>
       <p className='text-[#a78bfa] font-black text-xl uppercase flex justify-center'>{lang === 'en' ? 'Web support' : 'soporte web'}</p>
-       <ul className='list-disc space-y-4 pl-6 leading-relaxed'>
-        <li>
+       <ul className='space-y-4 pl-6 leading-relaxed'>
+        <li className='flex items-center gap-4'>
+          <svg className='shrink-0' xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
+	<path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"></path>
+</svg> 
        {lang === 'en' ? 'We optimize your current system, improving load times and overall performance' : 'Optimizamos tu sistema actual, mejorando la velocidad de carga y aumentando el rendimiento'}
         </li>
-        <li>
+        <li className='flex items-center gap-4'>
+          <svg className='shrink-0' xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
+	<path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"></path>
+</svg> 
           {lang === 'en' ? 'We redesign your website to make sure it matches your brand identity' : 'Rediseñamos tu sitio web existente y logramos la mejor relación con la identidad de tu marca'}
         </li>
-        <li>
+        <li className='flex items-center gap-4'>
+          <svg className='shrink-0' xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
+	<path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"></path>
+</svg> 
           {lang === 'en' ? 'We provide technical support to make sure your business runs smoothly all the time' : 'Proveemos soporte técnico garantizando que tu negocio cumpla sus objetivos' }
         </li>
        </ul>
@@ -51,10 +60,10 @@ const Support = () => {
      <div className='bg-purple-950 h-1 w-4/6'></div>
         </section>
         <section className='relative bg-[#242424] w-full p-4'>
-        <p className='uppercase my-3 font-black w-max border-b border-purple-950 text-xl'>{lang === 'en' ? 'The process' : 'El proceso'}</p>
-        <div>
-          <p>{lang === 'en' ? "We will meet and briefly discuss the current state of the application identifying it's current weakness and strengths. After the meeting we'll create the requirements for what need's to be done in order to make the application fulfill your business goals ,we always thinking about your budget so don't worry about that. When the requirements are set and you are ready to proceed we get started with the implementations." : 'Nos reuniremos para brevemente discutir el estado actual de la aplicación o sitio web identificando sus fortalezas y debilidades. Después de la reunión crearemos los requerimientos de lo que se tiene que hacer para que la aplicación cumpla con tus metas de negocio, siempre pensamos en tu presupuesto asi que no te preocupes por eso. Cuando los requerimientos están hechos y vos estás listo para avanzar comenzamos con las implementaciones.'}</p>
-          <p>{lang === 'en' ? "Once we have the minimum viable product, we launch the solution, we closely monitor it ,for up to three months, after launch to identify usage patterns and the user experience ensuring it's optimal performance and results. " : 'Una vez que tenemos el mínimo producto viable lanzamos la solución, le hacemos un detallado seguimiento ,durante hasta tres meses despues de lanzamiento, para identificar patrones de uso y la experiencia de usuario asegurando un óptimo rendimiento y resultados acorde'}</p>
+        <p className='uppercase my-3 font-black w-max border-b-2 border-purple-950 text-xl'>{lang === 'en' ? 'The process' : 'El proceso'}</p>
+        <div className='leading-relaxed'>
+          <p className='py-4'>{lang === 'en' ? "We will meet and briefly discuss the current state of the application identifying it's current weakness and strengths. After the meeting we'll create the requirements for what need's to be done in order to make the application fulfill your business goals ,we always thinking about your budget so don't worry about that. When the requirements are set and you are ready to proceed we get started with the implementations." : 'Nos reuniremos para brevemente discutir el estado actual de la aplicación o sitio web identificando sus fortalezas y debilidades. Después de la reunión crearemos los requerimientos de lo que se tiene que hacer para que la aplicación cumpla con tus metas de negocio, siempre pensamos en tu presupuesto asi que no te preocupes por eso. Cuando los requerimientos están hechos y vos estás listo para avanzar comenzamos con las implementaciones.'}</p>
+          <p className='py-2'>{lang === 'en' ? "Once we have the minimum viable product, we launch the solution, we closely monitor it ,for up to three months, after launch to identify usage patterns and the user experience ensuring it's optimal performance and results. " : 'Una vez que tenemos el mínimo producto viable lanzamos la solución, le hacemos un detallado seguimiento ,durante hasta tres meses despues de lanzamiento, para identificar patrones de uso y la experiencia de usuario asegurando un óptimo rendimiento y resultados acorde'}</p>
         </div>
         </section>
         <section className='bg-[#242424] px-4 py-8'>

@@ -8,14 +8,14 @@ const Nav = () => {
     const { lang, setLanguage } = useLanguage();
     const location = useLocation();
     return (
-        <header className='z-[90] pt-4 px-4 flex fixed gap-4 top-0 left-0 justify-between w-full'>
+        <header className='z-[90] pt-4 px-4 flex fixed gap-4 top-0 left-0 items-center justify-between w-full'>
 
        <div className='flex relative justify-between w-full items-center'>
         <section className='absolute top-0'>
        <Link to='/'>
         <img 
         src="/klog.png"
-        className='relative h-[95px]' alt="Kustom logo" />
+        className='relative h-[90px]' alt="Kustom logo" />
        </Link> 
            <div className=''>
            <Menu  />
@@ -48,7 +48,7 @@ const Nav = () => {
        
        </div>
        <div className="relative flex">
-      <div className="flex absolute border rounded-xs border-gray-50 m-1 -right-2 top-2 underline text-slate-50 justify-end items-center">
+      <div className="flex absolute border rounded-xs border-gray-50 m-1 -right-2 top-4 md:-top-4 underline text-slate-50 justify-end items-center">
         <button
           className={`cursor-pointer ${lang === "en" ? "text-[#a78bfa]" : ""}`}
           onClick={() => setLanguage("en")}

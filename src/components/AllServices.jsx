@@ -130,52 +130,6 @@ const AllServices = () => {
             
         },
         {
-            title: lang === 'en' ? 'Customer Relationship Management (CRM)' : 'Gestión de Relación con el Cliente (CRM)',
-            benefits: [
-                {
-                    text: lang === 'en' ? 'Optimization of internal processes and more efficient management' : 'Optimización de procesos internos y una gestión màs eficiente',
-                    svg: (<svg xmlns="http://www.w3.org/2000/svg" className="hover:fill-[#a78bfa] m-auto fill-amber-50 border-b-[0.5px] border-slate-50 w-[55px] md:w-[80px]" viewBox="0 0 24 24">
-                        <path   d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2h6v2h1.67C17.4 4 18 4.6 18 5.33V12c-.7 0-1.37.13-2 .35V6H8v14h4.35c.26.75.65 1.42 1.19 2M18 13l2.25 2.25L18 17.5V16c-1.85 0-3.06 1.96-2.24 3.62l-1.09 1.09c-1.76-2.66.14-6.21 3.33-6.21zm0 11l-2.25-2.25L18 19.5V21c1.85 0 3.06-1.96 2.24-3.62l1.09-1.09c1.76 2.66-.14 6.21-3.33 6.21z"></path>
-                    </svg>)
-                },
-                {
-                    text: lang === 'en' ? 'Data centralization for better decision-making' : 'Centralización de datos para mejor toma de decisiones',
-                    svg: ( <svg xmlns="http://www.w3.org/2000/svg" className=" border-b-[0.5px] m-auto border-slate-50 w-[55px] md:w-[80px]" viewBox="0 0 24 24">
-                        <path  className="hover:stroke-[#a78bfa] stroke-amber-50" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m5.737-.737L21.5 2.5m-3.763 3.763c-.44-.44-.154-2.242-.04-3.263m.04 3.263c.44.44 2.242.154 3.263.04M6.263 17.737L2.5 21.5m3.763-3.763c-.44-.44-2.242-.154-3.263-.04m3.263.04c.44.44.154 2.242.04 3.263m11.434-3.263L21.5 21.5m-3.763-3.763c.44-.44 2.242-.154 3.263-.04m-3.263.04c-.44.44-.154 2.242-.04 3.263M6.263 6.263L2.5 2.5m3.763 3.763c.44-.44.154-2.242.04-3.263m-.04 3.263c-.44.44-2.242.154-3.263.04" color="currentColor"></path>
-                    </svg>)
-                },
-                {
-                    text: lang === 'en' ? 'Task automation to reduce operating costs' : 'Automatización de tareas para reducir costos operativos',
-                    svg: (<svg xmlns="http://www.w3.org/2000/svg" className="border-b-[0.5px] m-auto fill-amber-50 hover:fill-[#a78bfa] border-slate-50 w-[55px] md:w-[80px]" viewBox="0 0 32 32">
-                        <path   d="M16 27c-3.6 0-7.1-1.8-9.2-5H12v-2H4v8h2v-3.7c2.5 3 6.1 4.7 10 4.7zm15-4v-2h-2.1c-.1-.6-.4-1.2-.7-1.8l1.5-1.5l-1.4-1.4l-1.5 1.5c-.5-.3-1.1-.6-1.8-.7V15h-2v2.1c-.6.1-1.2.4-1.8.7l-1.5-1.5l-1.4 1.4l1.5 1.5c-.3.5-.6 1.1-.7 1.8H17v2h2.1c.1.6.4 1.2.7 1.8l-1.5 1.5l1.4 1.4l1.5-1.5c.5.3 1.1.6 1.8.7V29h2v-2.1c.6-.1 1.2-.4 1.8-.7l1.5 1.5l1.4-1.4l-1.5-1.5c.3-.5.6-1.1.7-1.8zm-7 2c-1.7 0-3-1.3-3-3s1.3-3 3-3s3 1.3 3 3s-1.3 3-3 3m-4-15h5.2C21.9 4.9 15.1 3.5 10 6.8c-3.1 2-5 5.5-5 9.2H3C3 8.8 8.8 3 16 3c3.9 0 7.5 1.7 10 4.7V4h2v8h-8z"></path>
-                    </svg>)
-                },
-            ],
-            impacts: [
-                {
-                    text: lang === 'en' ? 'Saving time and improving productivity' : 'Ahorro de tiempo y mejora en la productividad',
-                    svg: (<svg xmlns="http://www.w3.org/2000/svg" className="border-b-[0.5px] m-auto fill-amber-50 hover:fill-[#a78bfa] border-slate-50 w-[55px] md:w-[80px]" viewBox="0 0 24 24">
-                        <path   d="m11.5 11.792l3 3q.14.14.15.345t-.15.363t-.354.16t-.354-.16l-3.05-3.05q-.13-.13-.186-.274t-.056-.297V7.5q0-.213.144-.356T11.001 7t.356.144t.143.356zM18 5.885h-2.5q-.213 0-.356-.144Q15 5.597 15 5.384t.144-.356t.356-.143H18v-2.5q0-.213.144-.357t.357-.144t.356.144t.143.357v2.5h2.5q.213 0 .356.144t.144.356t-.144.356t-.356.144H19v2.5q0 .212-.144.356t-.357.143t-.356-.143T18 8.384zM11.003 20q-1.666 0-3.123-.622t-2.545-1.71t-1.712-2.544T3 12.003t.622-3.123t1.711-2.546q1.09-1.089 2.545-1.711T11 4q.275 0 .513.013t.512.062q.214 0 .357.14t.143.367q0 .207-.143.35t-.357.143q-.275 0-.509-.038T11 5Q8.089 5 6.044 7.044T4 12t2.044 4.956T11 19t4.956-2.044T18 12q0-.213.144-.356t.357-.144t.356.144T19 12q0 1.667-.622 3.122t-1.71 2.545q-1.089 1.088-2.544 1.71q-1.455.623-3.121.623"></path>
-                    </svg>)
-                },
-                {
-                    text: lang === 'en' ? 'Greater control and analysis of data in real time' : 'Mayor control y análisis de datos en tiempo real',
-                    svg: ( <svg xmlns="http://www.w3.org/2000/svg" className="fill-amber-50 m-auto hover:fill-[#a78bfa] border-b-[0.5px] border-slate-50 w-[55px] md:w-[80px]" viewBox="0 0 32 32">
-                        <path   d="M27 19c-.3 0-.7.1-1 .2L20.4 12c1-1.1 1.6-2.5 1.6-4c0-3.3-2.7-6-6-6s-6 2.7-6 6c0 1.6.6 3 1.6 4L6 19.2c-.3-.1-.7-.2-1-.2c-1.7 0-3 1.3-3 3s1.3 3 3 3s3-1.3 3-3c0-.6-.2-1.1-.5-1.6l5.6-7.1c.6.3 1.2.5 1.9.6v10.3c-1.2.4-2 1.5-2 2.8c0 1.7 1.3 3 3 3s3-1.3 3-3c0-1.3-.8-2.4-2-2.8V13.9c.7-.1 1.3-.3 1.9-.6l5.6 7.1c-.3.5-.5 1-.5 1.6c0 1.7 1.3 3 3 3s3-1.3 3-3s-1.3-3-3-3M16 4c2.2 0 4 1.8 4 4s-1.8 4-4 4s-4-1.8-4-4s1.8-4 4-4M5 23c-.6 0-1-.4-1-1s.4-1 1-1s1 .4 1 1s-.4 1-1 1m11 5c-.6 0-1-.4-1-1s.4-1 1-1s1 .4 1 1s-.4 1-1 1m11-5c-.6 0-1-.4-1-1s.4-1 1-1s1 .4 1 1s-.4 1-1 1"></path>
-                    </svg>)
-                },
-                {
-                    text: lang === 'en' ? 'Facilitates scalability and business growth' : 'Facilita la escalabilidad y el crecimiento de la empresa',
-                    svg: (<svg xmlns="http://www.w3.org/2000/svg" className="fill-amber-50 m-auto hover:fill-[#a78bfa] border-b-[0.5px] border-slate-50 w-[55px] md:w-[80px]" viewBox="0 0 24 24">
-                        <path   d="M21.5 21H20V4.5a.5.5 0 0 0-1 0V21h-3V8.5a.5.5 0 0 0-1 0V21h-3v-8.5a.5.5 0 0 0-1 0V21H8v-4.5a.5.5 0 0 0-1 0V21H3V2.5a.5.5 0 0 0-1 0v19a.5.5 0 0 0 .5.5h19a.5.5 0 0 0 0-1"></path>
-                    </svg>)
-                },
-
-            ],
-            buttonText: lang === 'en' ? 'Managment Systems' : 'Sistemas de administración',
-            link: '/services/crm'
-        },
-        {
             title: lang === 'en' ? 'Web Optimization and Application Support' : 'Optimización Web y Soporte de Aplicaciones',
             benefits: [
                 {

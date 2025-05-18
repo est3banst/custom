@@ -61,10 +61,12 @@ const Consultation = () => {
     return (
         <>
             <Nav />
-            <div className='flex'>
+            <div className='flex relative'>
 
                 <div className='flex flex-col'>
+                    
                     <section className='flex flex-col pt-24 relative bg-[rgba(36,36,36,0.22)] m-auto backdrop-blur-xs w-screen h-auto items-center'>
+                        
                         <article className='w-full px-2 my-4 justify-center flex flex-col items-center gap-1'>
                             <h2 className='font-black text-xl'>{lang === 'en' ? "If you are ready to start growing your digital brand we are here to help you all the way up" : "Si estás listo para comenzar a crecer tu marca digital estamos acá para ayudarte durante todo el proceso"} </h2>
                             <p className='px-2 text-sm'>{lang === 'en' ? "If you have any questions or queries, please leave us an email and we will respond as quickly as possible" : "Si te quedo alguna duda o consulta por realizar por favor dejanos un mail que responderemos lo más rapido posible"}</p>
@@ -78,7 +80,7 @@ const Consultation = () => {
                             </a>
                              </article>
 
-                        <article className='py-6 px-4 bg-[#242424] leading-relaxed flex max-w-3xl flex-col gap-2'>
+                        <article className='py-6 px-4 bg-[#242424] leading-relaxed flex w-full items-center flex-col gap-2'>
                             <h2 className='text-xl'>{lang === 'en' ? "Leave us your details, and we will contact you within 3 business days" : 'Déjanos tus datos y nos comunicaremos dentro de 3 días hábiles'}</h2>
                             <p>{lang === 'en' ? 'We will talk about your business, its needs, and how we can achieve the' : 'Hablaremos sobre tu negocio, sus necesidades y cómo podemos lograr la'} <b>{lang === 'en' ? 'perfect solution' : 'solución perfecta'}</b> {lang === 'en' ? 'for you to improve your work processes' : 'para vos y así mejorar tus procesos de trabajo'}</p>
                             <small className='flex justify-center w-full'>{lang === 'en' ? "Hours: 9:00 AM to 5:00 PM" : 'Horario: 9:00 a 17:00'} (GMT-3)</small>
@@ -126,10 +128,18 @@ const Consultation = () => {
                             </span>
                         )}
                     </section>
-                    <section className='relative w-full text-center p-2 underline'>
-                        <Link to={'/'}>{lang === 'en' ? 'Go back' : 'Volver'}</Link>
+                    <section className='relative w-full flex items-center gap-4 justify-center text-center pb-12 pt-2 underline'>
+         
+       <Link className='flex items-center gap-4' to={'/'}>{lang === 'en' ? 'Go back' : 'Volver'}
+        <svg xmlns="http://www.w3.org/2000/svg" width={14} height={14} viewBox="0 0 24 24">
+	<path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20z"></path>
+</svg>
+        </Link>
+                   
                     </section>
+                    
                 </div>
+                  
             </div>
 
             <Footer />

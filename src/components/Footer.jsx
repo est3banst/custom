@@ -13,49 +13,46 @@ const Footer = () => {
     <>
       <div className='h-auto grid grid-cols-1 p-4 md:grid-cols-2 w-full gap-4'>
         <div className='flex flex-col gap-4'>
-        <h2 className='border-b-2 border-slate-50 w-max'>{ lang === 'en' ? 'Links' : 'Vínculos'}</h2>
+        <h2 className={`${location.pathname === '/' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 w-max`}>{ lang === 'en' ? 'Links' : 'Vínculos'}</h2>
         <div className='flex flex-col gap-5'>
-          <Link to='/faq' className={`hover-footer ${location.pathname === '/faq' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/faq' className={`py-2 hover:opacity-90 ${location.pathname === '/faq' ? 'text-[#a78bfa] font-bold' : ''}`}>
             { lang === 'en' ? 'FAQ' : 'Preguntas Frecuentes'}
           </Link>
-          <Link to='/plans' className={`hover-footer ${location.pathname === '/plans' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/plans' className={`py-2 hover:opacity-90 ${location.pathname === '/plans' ? 'text-[#a78bfa] font-bold' : ''}`}>
             { lang === 'en' ? 'Plans' : 'Planes'}
           </Link>
-          <Link to='/about' className={`hover-footer ${location.pathname === '/about' ? 'text-[#a78bfa] font-bold' : ''} `}>
+          <Link to='/about' className={`py-2 hover:opacity-90 ${location.pathname === '/about' ? 'text-[#a78bfa] font-bold' : ''} `}>
             { lang === 'en' ? 'About us' : 'Nosotros'}
           </Link>
-          <Link to='/contact' className={`hover-footer ${location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/contact' className={`py-2 hover:opacity-90 ${location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''}`}>
             { lang === 'en' ? 'Contact' : 'Contacto'}
           </Link>
         </div>
         </div>
 
         <div className='flex flex-col gap-4'>
-        <h2 className='border-b-2 border-slate-50 w-max'>{lang === 'en' ? 'Services' : 'Servicios'}</h2>
+        <h2 className={`${location.pathname === '/services' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 w-max`}>{lang === 'en' ? 'Services' : 'Servicios'}</h2>
         <div className='flex flex-col gap-5'>
-          <Link to='/services/spa-service' className={`hover-footer ${location.pathname === '/services/spa-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/services/spa-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/spa-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
             { lang === 'en' ? 'Landing pages - SPA(Single Page Apps)' : 'Landing pages o SPA'}
           </Link>
-          <Link to='/services/ecommerce' className={`hover-footer ${location.pathname === '/services/ecommerce' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/services/ecommerce' className={`py-2 hover:opacity-90 ${location.pathname === '/services/ecommerce' ? 'text-[#a78bfa] font-bold' : ''}`}>
             E-commerce
           </Link>
-          <Link to='/services/crm' className={`hover-footer ${location.pathname === '/services/crm' ? 'text-[#a78bfa] font-bold' : ''}`}>
-            { lang === 'en' ? 'Managment Systems' : 'Sistemas de administración'}
-          </Link>
-          <Link to='/services/support-service' className={`hover-footer ${location.pathname === '/services/support-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/services/support-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/support-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
             { lang === 'en' ? 'Web support' : 'Soporte Web'}
           </Link>
         </div>
         </div>
         <div className='flex flex-col gap-4'>
-          <h2 className='border-b-2 border-slate-50 w-max'>
+          <h2 className={`${location.pathname === '/contact' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 w-max`}>
           { lang === 'en' ? 'Contact' : 'Contacto'}
           </h2>
           <div className='flex flex-col gap-5'>
             <a 
-            className='underline hover-footer font-medium'
+            className='underline   font-medium'
             href="mailto:info@kustomdev.com">{ lang === 'en' ? 'Send us a mail' : 'Envíanos un mail'} &rarr;</a>
-            <small className='font-bold hover-footer text-base'>info@kustomdev.com</small>
+            <small className='font-bold   text-base'>info@kustomdev.com</small>
           </div>
         </div>
       </div>

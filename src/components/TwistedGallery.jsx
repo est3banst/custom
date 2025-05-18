@@ -11,7 +11,9 @@ const TwistedGallery = () => {
 	const refThree = useRef(null);
 
 	const { ref: refFirst, inView: inViewFirst } = useInView({
-		threshold: 0
+		threshold: 0,
+		triggerOnce: true,
+
 	})
 	
 	useEffect(() => {

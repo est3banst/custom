@@ -88,6 +88,7 @@ const premiumSteps = [
   return (
     <>
     <div className='p-4'>
+      
         <h2 className='border-b text-2xl font-black border-slate-50 w-max my-4'>{lang === 'en' ? 'Plans' : 'Planes'}</h2>
         <h2>{lang === 'en' ? 'All of our services come in two modes:' : 'Todos nuestros servicios tienen las mismas dos modalidades: '} <b className='text-[#a78bfa]'>Standard</b> {lang === 'en' ? 'or' : 'o'} <b className='text-[#a78bfa]'>Premium</b></h2>
    
@@ -192,6 +193,7 @@ const premiumSteps = [
     </div>
         </section>
     </div>
+  
     </>
   )
 }

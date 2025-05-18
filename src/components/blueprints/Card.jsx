@@ -8,7 +8,7 @@ const Card = ({ name, attr, price, value, valuetwo, valuet ,link}) => {
   return (
     <StyledWrapper>
       <div className='card-wrap'>
-      <div className="card">
+      <div className="card max-w-sm">
         <div className="header">
           <span className="title">{name}</span>
           <span className="line-sep"></span>
@@ -93,25 +93,6 @@ const StyledWrapper = styled.div`
     border-radius: 0.25rem;
     z-index: -1;
 }
-
-  .card {
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    max-width: 350px;
-    min-width: auto;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    backdrop-filter: blur(4px);
-    flex-direction: column;
-    border-radius: 0.25rem;
-    background-color: #17171702;
-    
-    padding: 1.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  }
 
   .header {
     display: flex;

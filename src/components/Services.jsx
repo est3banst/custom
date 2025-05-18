@@ -26,15 +26,6 @@ const Services = () => {
       link: "/services/ecommerce"
     },
     {
-      name: lang === 'en' ? "Design and implementation of management systems" : "Diseño e implementación de sistemas de administración",
-      attr: lang === 'en' ? "Manage and manage all your business transactions in one place" : "Administra y gestiona todos los movimientos de tu negocio en un solo lugar",
-      price: lang === 'en' ? "Starting at: USD 89/Month" : "Desde: USD 89/Mes",
-      value: lang === 'en' ? "Complete integrations" : "Integración completa",
-      valuetwo: lang === 'en' ? "Custom features" : "Funcionalidades personalizadas",
-      valuet: lang === 'en' ? "Custom designs" : "Diseños personalizados",
-      link: "/services/crm"
-    },
-    {
       name: lang === 'en' ? "Technical support specialized in the web" : "Soporte técnico especializado en la web",
       attr: lang === 'en' ? "You have a system in place and you are tired of unresolved issues, we will take care of it." : "Tienes un sistema implementado y estás cansado de problemas sin resolver, nosotros nos encargamos",
       value: lang === 'en' ? "Immediate response" : "Respuesta inmediata",
