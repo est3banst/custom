@@ -44,7 +44,7 @@ const Portfolio = () => {
   return (
     <>
     <Nav/>
-    <div className='flex h-auto'>
+    <div className='flex h-auto supp-bg'>
 
      <div className='relative p-4 pt-24 grid grid-cols-1 md:grid-cols-3 gap-6'>
      {appPages.map((app, idx) => (

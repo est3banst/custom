@@ -1,17 +1,48 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLanguage } from '../config/LanguageContext';
 
 const Footer = () => {
   const location = useLocation(); 
   const { ref, inView } = useInView({ threshold: 0.1 });
+  const { ref: svgRef, inView: svgInView } = useInView({ threshold: 0.1 });
   const yearToday = new Date().getFullYear();
   const {lang} = useLanguage();
 
   return (
     <>
-      <div className='h-auto grid grid-cols-1 p-4 md:grid-cols-2 w-full gap-4'>
+
+    <h2 className='text-2xl bg-white/5 shadow-lg font-bold px-2 py-8'>{lang === 'en' ? 'At Kustom we build tailored web solution to boost your business and improve your workflows' : 'En Kustom creamos soluciones web personalizadas para potenciar tu negocio y mejorar tus flujos de trabajo'}</h2>
+    <div className='flex bg-white/5 flex-col items-center justify-center gap-4 py-8'>
+        <div className='flex justify-center gap-4 items-center'> 
+          <p className='text-xl border-b-2 border-[#a78bf2] text-center'>{lang === 'en' ? 'We help you grow' : 'Te ayudamos a crecer'}</p>
+      <motion.svg
+      ref={svgRef}
+      xmlns="http://www.w3.org/2000/svg"
+      width={32}
+      height={32}
+      viewBox="0 0 32 32"
+      initial={{ scale: 0, opacity: 0 }}
+      animate={svgInView ? { scale: 1.4, opacity: 1 } : {}}
+      transition={{ type: 'spring', stiffness: 200, damping: 200 }}
+    >
+      <g fill="none">
+        <path
+          fill="#86d72f"
+          d="M22.39 6.45c-2.29 0-4.32 1.08-5.63 2.75v-.47h-.01A7.155 7.155 0 0 0 9.61 2H2c0 3.95 3.2 7.15 7.15 7.15h5.19v12.46h2.42v-8h6.09c3.95 0 7.15-3.2 7.15-7.15h-7.61z"
+        />
+        <path
+          fill="#6d4534"
+          d="M15.55 21a8.99 8.99 0 0 0-8.99 8.99h17.99c0-4.965-4.025-8.99-9-8.99"
+        />
+      </g>
+    </motion.svg>
+        </div>
+      <Link to='/contact' className='action'>{lang === 'en' ? 'Get to know us' : 'Charlemos'}</Link>
+    </div>
+      <div className='h-auto grid grid-cols-1 px-4 py-10 md:grid-cols-2 w-full gap-4'>
         <div className='flex flex-col gap-4'>
         <h2 className={`${location.pathname === '/' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 w-max`}>{ lang === 'en' ? 'Links' : 'Vínculos'}</h2>
         <div className='flex flex-col gap-5'>

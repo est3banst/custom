@@ -17,7 +17,7 @@ const Us = () => {
         <Lighting>
         <div className='flex font-medium flex-col w-full justify-center m-auto relative h-auto gap-4'>
       <div>
-        <h2 className='uppercase text-[#a78bda] text-3xl md:text-4xl font-bold text-center'>
+        <h2 className='uppercase relative z-[98232] text-[#a78bda] px-2 py-6 text-3xl md:text-4xl font-bold text-center'>
         {lang === 'en' ? 'Your web your way' : 'Tu web a tu manera'}
         </h2></div>
       <div className="outer">
@@ -53,15 +53,15 @@ const Us = () => {
 
           <div ref={ref2} className={`card backdrop-blur-xs text-base flex transition-all duration-500 ease-in flex-col leading-relaxed gap-3 py-12 px-4 ${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
             <svg xmlns="http://www.w3.org/2000/svg" width={30} height={24} viewBox="0 0 24 24">
-	<g fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={1}>
+	<g fill="none" stroke="#ff2233" strokeLinejoin="round" strokeWidth={1}>
 		<path strokeLinecap="round" strokeWidth={2.5} d="M4 4.001h16v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></path>
 		<path strokeWidth={3.75} d="M12 16h.01v.01H12z"></path>
 		<path strokeLinecap="round" strokeWidth={2.5} d="M12 12V8"></path>
 	</g>
 </svg>
-            <p className='py-4'>{ lang === 'en' ? "Everyone does an online search before hiring a service or paying for a product. If you're not there, you're likely to lose that potential customer" : 'Todo el mundo antes de contratar un servicio o pagar un producto hace una búsqueda en línea, si no estás es muy probable que pierdas ese potencial cliente'}</p>
+            <p className='text-center md:px-6 py-4 px-2'>{ lang === 'en' ? "Everyone does an online search before hiring a service or paying for a product. If you're not there, you're likely to lose that potential customer" : 'Todo el mundo antes de contratar un servicio o pagar un producto hace una búsqueda en línea, si no estás es muy probable que pierdas ese potencial cliente'}</p>
          
-            <p className='py-4'>{ lang === 'en' ? 'You take care of your business while we build your digital brand' : 'Vos te ocupas de tu negocio mientras nosotros construimos tu marca digital'}</p>
+            <p className='text-center py-4 px-2'>{ lang === 'en' ? 'You take care of your business while we build your digital brand' : 'Vos te ocupas de tu negocio mientras nosotros construimos tu marca digital'}</p>
             
             </div>
             <p className='text-2xl text-center self-center w-max border-b-2 border-[#a78bfa] font-semibold'>

@@ -10,10 +10,13 @@ const Services = () => {
     {
       name: lang === 'en' ? "Design and hosting of your website" : "Diseño y alojamiento de tu sitio web",
       attr: lang === 'en' ? "Expand your brand into the digital world, maximize your business reach" : "Expande tu marca hacia el mundo digital, maximiza el alcance de tu negocio",
-      price: lang === 'en' ? "Starting at: USD 99/Year" : "Desde: USD 99/Anual",
-      value: lang === 'en' ? "Attractive and functional designs" : "Diseños atractivos y funcionales",
+      price: lang === 'en' ? "Starting at: USD 99/Year" : "Desde: USD 99/Anual", 
+      value: lang === 'en' ? "Attractive and responsive designs" : "Diseños atractivos y responsivos",
+      valuex: lang === 'en' ? "SEO Optimization" : "Optimización SEO",
+      valuez: lang === 'en' ? "Corporate email (up to 5 accounts with starter plan)" : "Correo electrónico corporativo (hasta 5 cuentas con el plan inicial)",
+      valuey: lang === 'en' ? "Hosting and SSL Certificate" : "Certificado SSL y Alojamiento",
       valuetwo: lang === 'en' ? "Focus on results" : "Enfoque en resultados",
-      valuet: lang === 'en' ? "Fast and adaptable" : "Rápidos y adaptables",
+      valuet: lang === 'en' ? "Technical support" : "Soporte técnico",
       link: "/services/spa-service"
     },
     {
@@ -21,6 +24,9 @@ const Services = () => {
       attr: lang === 'en' ? "Your customers will be able to shop in your store at any time of day, any day of the year" : "Tus clientes podrán comprar en tu tienda a cualquier hora del día, cualquier día del año",
       price: lang === 'en' ? "Starting at: USD 99/Month" : "Desde: USD 99/Mes",
       value: lang === 'en' ? "Complete integrations" : "Integración completa",
+      valuex: lang === 'en' ? "Payment gateways" : "Pasarelas de pago",
+      valuez: lang === 'en' ? "Inventory management" : "Gestión de inventario",
+      valuey: lang === 'en' ? "No products limit" : "Sin límite de productos",
       valuetwo: lang === 'en' ? "Optimized for sales" : "Optimizadas para ventas",
       valuet: lang === 'en' ? "Custom and scalable stores" : "Tiendas personalizadas y escalables",
       link: "/services/ecommerce"
@@ -29,6 +35,9 @@ const Services = () => {
       name: lang === 'en' ? "Technical support specialized in the web" : "Soporte técnico especializado en la web",
       attr: lang === 'en' ? "You have a system in place and you are tired of unresolved issues, we will take care of it." : "Tienes un sistema implementado y estás cansado de problemas sin resolver, nosotros nos encargamos",
       value: lang === 'en' ? "Immediate response" : "Respuesta inmediata",
+      valuex: lang === 'en' ? "Custom solutions" : "Soluciones personalizadas",
+      valuez: lang === 'en' ? "No limit of tickets" : "Sin límite de tickets",
+      valuey: lang === 'en' ? "No limit of hours" : "Sin límite de horas",
       valuetwo: lang === 'en' ? "Consulting and optimization" : "Asesoría y optimización",
       valuet: lang === 'en' ? "Complete technical support" : "Soporte técnico integral",
       link: "/services/support-service"
@@ -70,6 +79,9 @@ const ServiceCard = ({ service, index }) => {
         attr={service.attr}
         price={service.price}
         value={service.value}
+        valuex={service.valuex}
+        valuez={service.valuez} 
+        valuey={service.valuey}
         valuetwo={service.valuetwo}
         valuet={service.valuet}
         link={service.link}

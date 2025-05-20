@@ -19,7 +19,7 @@ const Menu = () => {
     <span></span>
     <span></span>
 
-    <ul id="menu" className='orbitron'>
+    <ul id="menu" className='supp-bg orbitron'>
    
       <li>
         <Link to="/">

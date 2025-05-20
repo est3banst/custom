@@ -12,7 +12,7 @@ const Layout = () => {
     const { lang } = useLanguage();
   return (
     <>
-    <div className='min-h-screen grid grid-cols-1 relative bg-[#171717]'>
+    <div className='min-h-screen grid grid-cols-1 relative supp-bg'>
         <Nav/>
         <Section />
        <div className='md:flex relative md:gap-8'>

@@ -3,61 +3,61 @@ import { Link } from 'react-router-dom'
 import Nav from '../Nav'
 import Footer from '../Footer'
 import { useLanguage } from '../../config/LanguageContext'
+import useScrollTop from '../hooks/useScrollTop'
 
 const Support = () => {
+  useScrollTop();
   const {lang} = useLanguage();
   return (
     <>
-    <div className='pb-24'>
+   
     <Nav />
-    </div>
-    <div className='flex flex-col gap-4 w-full'>
-      <p className='text-[#a78bfa] font-black text-xl uppercase flex justify-center'>{lang === 'en' ? 'Web support' : 'soporte web'}</p>
-       <ul className='space-y-4 pl-6 leading-relaxed'>
-        <li className='flex items-center gap-4'>
+    
+    <div className='flex pt-24 supp-bg flex-col gap-6 w-full pb-2'>
+      <div className='py-10'>
+      <p className='text-[#a78bfa] font-black text-3xl md:text-4xl uppercase flex justify-center'>{lang === 'en' ? 'Web support' : 'soporte web'}</p>
+       <ul className='space-y-4 pl-2 py-4 leading-relaxed'>
+        <li className='flex items-center text-xl font-medium px-3 gap-4'>
           <svg className='shrink-0' xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
 	<path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"></path>
 </svg> 
        {lang === 'en' ? 'We optimize your current system, improving load times and overall performance' : 'Optimizamos tu sistema actual, mejorando la velocidad de carga y aumentando el rendimiento'}
         </li>
-        <li className='flex items-center gap-4'>
+        <li className='flex items-center text-xl font-medium px-3 gap-4'>
           <svg className='shrink-0' xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
 	<path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"></path>
 </svg> 
           {lang === 'en' ? 'We redesign your website to make sure it matches your brand identity' : 'Rediseñamos tu sitio web existente y logramos la mejor relación con la identidad de tu marca'}
         </li>
-        <li className='flex items-center gap-4'>
+        <li className='flex items-center text-xl font-medium px-3 gap-4'>
           <svg className='shrink-0' xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
 	<path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"></path>
 </svg> 
           {lang === 'en' ? 'We provide technical support to make sure your business runs smoothly all the time' : 'Proveemos soporte técnico garantizando que tu negocio cumpla sus objetivos' }
         </li>
        </ul>
-       <div className='w-full h-1 bg-purple-950'></div>
+       </div>
         <div className='relative p-2'>
-        <section className='flex flex-col text-base justify-center gap-2 leading-relaxed font-medium px-2 pt-4 pb-8'>
-    <div className='flex items-center gap-4'>
+        <section className='flex flex-col text-base justify-center gap-4 leading-relaxed font-medium px-2 pt-4 pb-8'>
+    <div className='flex border card items-center gap-4'>
     <svg className="w-6 h-6 shrink-0 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+  <path stroke="#ff3211" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
 </svg>
  <p>{ lang === 'en' ? 'Is your website slow, not bringing in customers, or not representing your brand because it was made a long time ago?' : 'Tu web es lenta, no te trae clientes o no representa tu marca debido a que fue hecha hace mucho?'}</p>
 
     </div>
-            <div className='bg-purple-950 w-1/6 h-1' ></div>
-     <div className='flex items-center gap-4'>
+     <div className='flex card items-center gap-4'>
      <svg className="w-6 h-6 shrink-0 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+  <path stroke="#ff3211" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
 </svg>
 <p>{lang === 'en' ? "Do you have an online store that doesn't meet your expectations?" : 'Tenes una tienda virtual implementada que no cumple tus expectativas?'}</p>
     </div>        
-            <div className='bg-purple-950 h-1 w-2/6' ></div>
-        <div className='flex items-center gap-4'>
+        <div className='flex card items-center gap-4'>
         <svg className="w-6 h-6 shrink-0 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+  <path stroke="#ff3211" strokeLinecap="round" strokeWidth="2" d="m6 6 12 12m3-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
 </svg>
  <p>{lang === 'en' ? 'Did you purchase a system to improve your business management, but instead of speeding up your processes, it slows you down due to long support wait times or just a slow system?' : 'Adquiriste un sistema para mejorar la gestión de tu negocio y en lugar de agilizar tus procesos te enlentece, debido a largos tiempos de espera por el soporte o simplemente un sistema lento?'}</p>
      </div>   
-     <div className='bg-purple-950 h-1 w-4/6'></div>
         </section>
         <section className='relative bg-[#242424] w-full p-4'>
         <p className='uppercase my-3 font-black w-max border-b-2 border-purple-950 text-xl'>{lang === 'en' ? 'The process' : 'El proceso'}</p>
@@ -105,10 +105,7 @@ const Support = () => {
         </div>
      
     </div>
-    <div className='relative pt-24'>
    <Footer />
-   </div>
-   
     </>
   )
 }
