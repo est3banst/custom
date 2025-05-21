@@ -48,7 +48,7 @@ const Nav = () => {
        
        </div>
        <div className="relative flex">
-      <div className="flex absolute border rounded-xs border-gray-50 m-1 -right-2 top-4 md:-top-4 underline text-slate-50 justify-end items-center">
+      <div className="flex absolute border rounded-2xl px-1 border-gray-50 m-1 -right-2 top-4 md:-top-4 underline text-slate-50 justify-end items-center">
         <button
           className={`cursor-pointer ${lang === "en" ? "text-[#a78bfa]" : ""}`}
           onClick={() => setLanguage("en")}

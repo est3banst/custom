@@ -24,6 +24,16 @@
   scrollbar-color: #a78bfa var(--black-variant);
 
 }
+.headings-size {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.contents-size {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -352,18 +362,19 @@ button:hover span::after {
   display: flex;
   align-items: center;
   width: max-content;
-  padding: 8px 20px;
+  padding: 15px 20px;
   height: auto;
-  line-height: 2em;
+  line-height: 2;
   overflow: hidden;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   margin: 20px;
-  font-size: 17px;
+  text-decoration: underline;
+  font-size: 18px;
   z-index: 1;
   color: var(--color);
   border: 2px solid var(--color);
-  border-radius: 6px;
+  border-radius: 9999px;
   position: relative;
 }
 
@@ -426,36 +437,41 @@ button:hover span::after {
   color: #fff
 }
 
-.container-conic {
-  width: 100vw;
-  height: auto;
-  background-color: #242424; 
-  position: relative;
-  /* overflow: hidden; */
+.text-animation {
+  animation: textUp .8s ease-out forwards;
+}
+.head-animation {
+  animation: headUp 1s ease-out forwards;
 }
 
-.container-conic::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  background-image: conic-gradient(from 0deg, #171717, #a78bfa, #242424, #171717);
-  transform: scale(1.5);
-  opacity: 0;
-  animation: conicReveal 1s ease-in-out 500ms forwards;
-}
-
-@keyframes conicReveal {
+@keyframes textUp {
   0% {
+    transform: translateY(20px);
     opacity: 0;
-    clip-path: circle(0% at center);
   }
   100% {
+    transform: translateY(0);
     opacity: 1;
-    clip-path: circle(100% at center);
   }
 }
 
+@keyframes headUp {
+  0% {
+    transform: translateY(40px) scaleY(0.8) skewY(5deg);
+    filter: blur(4px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-10px) scaleY(1.1) skewY(-3deg);
+    filter: blur(1px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) skewY(0);
+    opacity: 1;
+    /* filter: blur(0); */
+  }
+}
 
 @keyframes arrowPulse {
   0% {

@@ -17,7 +17,7 @@ const Us = () => {
         <Lighting>
         <div className='flex font-medium flex-col w-full justify-center m-auto relative h-auto gap-4'>
       <div>
-        <h2 className='uppercase relative z-[98232] text-[#a78bda] px-2 py-6 text-3xl md:text-4xl font-bold text-center'>
+        <h2 className='uppercase relative z-[98232] head-animation text-[#a78bda] px-2 py-6 text-3xl md:text-4xl font-bold text-center'>
         {lang === 'en' ? 'Your web your way' : 'Tu web a tu manera'}
         </h2></div>
       <div className="outer">

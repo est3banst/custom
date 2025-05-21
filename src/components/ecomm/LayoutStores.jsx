@@ -6,10 +6,15 @@ import Footer from '../Footer';
 import Lighting from '../Lighting';
 import useScrollTop from '../hooks/useScrollTop'
 import { useLanguage } from '../../config/LanguageContext';
+import { useInView } from 'react-intersection-observer';
 
 const LayoutStores = () => {
 
     useScrollTop()
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+    })
     const {lang} = useLanguage();
     
     const [showEcommModal, setShowEcommModal] = useState(false);
@@ -65,7 +70,7 @@ const LayoutStores = () => {
             <div className='p-4 flex relative items-center z-20 flex-col gap-3'>
             <div className='relative px-4 items-center grid grid-cols-1 gap-4 w-full pt-24'>
             <section className='flex gap-2 uppercase'>
-                <h2 className='text-xl'>
+                <h2 className='text-xl head-animation'>
 
                     { lang === 'en' ? 'How your business can benefit from having a' : '¿Cómo se puede beneficiar tu negocio de tener una'} <b className='text-xl md:text-2xl px-1 text-[#a78bfa]'>{ lang === 'en' ? 'virtual store' : 'tienda virtual'}</b>?
                 </h2>
@@ -79,7 +84,7 @@ const LayoutStores = () => {
                     key={key}/>
                 ))}
                 </section>
-                <section className='bg-[#242424] leading-relaxed p-4'>
+                <section ref={ref} className={`bg-[#242424] leading-relaxed p-4 ${inView ? 'text-animation' : ''}`}>
                     <h2 className='uppercase font-black'>{lang === 'en' ? 'Process' : 'Proceso'}</h2>
                     <hr />
                     <p className='py-4'>{lang === 'en' ? "We'll have a meeting to discuss about your business current digital perspective and how we could get to the right solution to achieve your business goals, which in most cases is to sell more, once the meeting is over we'll get started right away with the requirements and a business plan, with short, mid and long term goals for you to expect once we ship the solution"

@@ -53,7 +53,7 @@ const Charts = () => {
             </section>
             <div className='px-2 w-full flex justify-center flex-col items-center py-6'>
                     <p className='text-xl font-black'>{lang === 'en' ? "If you're in the white portion of the graph, it's time to step out" : 'Si estás en la porción blanca de la gráfica es el momento de salir'}</p>
-                    <Link to='/contact'>
+                    <Link to='/services/spa-service'>
                     <button className='action'>{ lang === 'en' ? 'Get Started' : 'Comenzar'}</button>
                     </Link>
                 </div>
@@ -109,7 +109,7 @@ const Charts = () => {
                     <p>{lang === 'en' ? 'If you have a physical store, you should already have your online store' : 'Si tenes una tienda física ya deberías de tener tu tienda virtual'}</p>
                     <p>{lang === 'en' ? "And if you don't have one, don't worry. We take care of it" : 'Y si no la tenes, no te preocupes. Nosotros nos encargamos'}</p>
                 </div>
-                <Link to='/contact' >
+                <Link to='/services/ecommerce' >
                 <button className='action'>{lang === 'en' ? 'Start today' : 'Comenza hoy'}</button>
                 </Link>
                 </div>

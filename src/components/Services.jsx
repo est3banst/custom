@@ -27,19 +27,19 @@ const Services = () => {
       valuex: lang === 'en' ? "Payment gateways" : "Pasarelas de pago",
       valuez: lang === 'en' ? "Inventory management" : "Gestión de inventario",
       valuey: lang === 'en' ? "No products limit" : "Sin límite de productos",
-      valuetwo: lang === 'en' ? "Optimized for sales" : "Optimizadas para ventas",
-      valuet: lang === 'en' ? "Custom and scalable stores" : "Tiendas personalizadas y escalables",
+      valuet: lang === 'en' ? "Optimized for sales" : "Optimizadas para ventas",
+      valuetwo: lang === 'en' ? "Custom and scalable stores" : "Tiendas personalizadas y escalables",
       link: "/services/ecommerce"
     },
     {
       name: lang === 'en' ? "Technical support specialized in the web" : "Soporte técnico especializado en la web",
       attr: lang === 'en' ? "You have a system in place and you are tired of unresolved issues, we will take care of it." : "Tienes un sistema implementado y estás cansado de problemas sin resolver, nosotros nos encargamos",
-      value: lang === 'en' ? "Immediate response" : "Respuesta inmediata",
+      valuey: lang === 'en' ? "Immediate response" : "Respuesta inmediata",
       valuex: lang === 'en' ? "Custom solutions" : "Soluciones personalizadas",
-      valuez: lang === 'en' ? "No limit of tickets" : "Sin límite de tickets",
-      valuey: lang === 'en' ? "No limit of hours" : "Sin límite de horas",
-      valuetwo: lang === 'en' ? "Consulting and optimization" : "Asesoría y optimización",
-      valuet: lang === 'en' ? "Complete technical support" : "Soporte técnico integral",
+      valuetwo: lang === 'en' ? "No limit of tickets" : "Sin límite de tickets",
+      valuet: lang === 'en' ? "No limit of hours" : "Sin límite de horas",
+      valuez: lang === 'en' ? "Consulting and optimization" : "Asesoría y optimización",
+      value: lang === 'en' ? "Complete technical support" : "Soporte técnico integral",
       link: "/services/support-service"
     },
   ];
