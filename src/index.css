@@ -443,6 +443,10 @@ button:hover span::after {
 .head-animation {
   animation: headUp 1s ease-out forwards;
 }
+.wp-chat {
+  text-decoration: underline;
+  text-decoration-color: #a78bfa;
+}
 
 @keyframes textUp {
   0% {
