@@ -58,9 +58,16 @@ const Footer = () => {
           </h2>
           <div className='flex flex-col gap-5'>
             <a 
+            className='uppercase underline font-bold text-base'
+            target='_blank'
+            rel='noopener noreferer' href="https://www.instagram.com/kustom_desarrollo/">
+             <small className=''>instagram</small>
+              </a>
+            <a 
             className='underline   font-medium'
             href="mailto:info@kustomdev.com">{ lang === 'en' ? 'Send us a mail' : 'Envíanos un mail'} &rarr;</a>
             <small className='font-bold   text-base'>info@kustomdev.com</small>
+            
           </div>
         </div>
       </div>

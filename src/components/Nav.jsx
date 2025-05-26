@@ -14,8 +14,8 @@ const Nav = () => {
         <section className='absolute top-0'>
        <Link to='/'>
         <img 
-        src="/klog.png"
-        className='relative h-[90px]' alt="Kustom logo" />
+        src="/K.png"
+        className='relative h-[80px]' alt="Kustom logo" />
        </Link> 
            <div className=''>
            <Menu  />
