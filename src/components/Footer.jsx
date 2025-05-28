@@ -14,9 +14,9 @@ const Footer = () => {
   return (
     <>
 
-    <h2 className='contents-size shadow-lg px-4 pb-2 pt-4'>{lang === 'en' ? 'At Kustom we build tailored web solution to boost your business and improve your workflows' : 'En Kustom creamos soluciones web personalizadas para potenciar tu negocio y mejorar tus flujos de trabajo'}</h2>
-    <div className='flex flex-col items-center justify-center gap-4 py-5'>
-        
+    <div className='flex flex-col items-center shadow-lg justify-center gap-4 py-5'>
+            <h2 className='contents-size px-1 pb-2 pt-4'>{lang === 'en' ? 'At Kustom we build tailored web solution to boost your business and improve your workflows' : 'En Kustom creamos soluciones web personalizadas para potenciar tu negocio y mejorar tus flujos de trabajo'}</h2>
+
       <Link to='/contact' className='action'>{lang === 'en' ? 'Get to know us' : 'Charlemos'}</Link>
     </div>
       <div className='h-auto grid grid-cols-1 px-4 py-10 md:grid-cols-2 w-full gap-4'>
