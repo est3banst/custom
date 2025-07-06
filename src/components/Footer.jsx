@@ -15,45 +15,45 @@ const Footer = () => {
     <>
 
     <div className='flex rounded-t-4xl border-t-2 border-slate-100 rounded-br-lg flex-col items-center shadow-lg justify-center gap-4 py-5'>
-            <h2 className='contents-size px-1 pb-2 pt-4'>{lang === 'en' ? 'At Kustom we build tailored web solution to boost your business and improve your workflows' : 'En Kustom creamos soluciones web personalizadas para potenciar tu negocio y mejorar tus flujos de trabajo'}</h2>
+            <h2 className='contents-size text-gray-200 px-1 pb-2 pt-4'>{lang === 'en' ? 'At Kustom we build tailored web solution to boost your business and improve your workflows' : 'En Kustom creamos soluciones web personalizadas para potenciar tu negocio y mejorar tus flujos de trabajo'}</h2>
 
       <Link to='/contact' className='action'>{lang === 'en' ? 'Get to know us' : 'Charlemos'}</Link>
     </div>
       <div className='h-auto rounded-t-4xl border-t-2 border-slate-100 grid grid-cols-1 px-4 py-10 md:grid-cols-2 w-full gap-4'>
         <div className='flex flex-col gap-4'>
-        <h2 className={`${location.pathname === '/' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 w-max`}>{ lang === 'en' ? 'Links' : 'Vínculos'}</h2>
+        <h2 className={`${location.pathname === '/' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 font-bold text-lg w-max`}>{ lang === 'en' ? 'Links' : 'Vínculos'}</h2>
         <div className='flex flex-col gap-5'>
-          <Link to='/faq' className={`py-2 hover:opacity-90 ${location.pathname === '/faq' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/faq' className={`py-2 hover:opacity-90 ${location.pathname === '/faq' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
             { lang === 'en' ? 'FAQ' : 'Preguntas Frecuentes'}
           </Link>
-          <Link to='/plans' className={`py-2 hover:opacity-90 ${location.pathname === '/plans' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/plans' className={`py-2 hover:opacity-90 ${location.pathname === '/plans' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
             { lang === 'en' ? 'Plans' : 'Planes'}
           </Link>
-          <Link to='/about' className={`py-2 hover:opacity-90 ${location.pathname === '/about' ? 'text-[#a78bfa] font-bold' : ''} `}>
+          <Link to='/about' className={`py-2 hover:opacity-90 ${location.pathname === '/about' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
             { lang === 'en' ? 'About us' : 'Nosotros'}
           </Link>
-          <Link to='/contact' className={`py-2 hover:opacity-90 ${location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/contact' className={`py-2 hover:opacity-90 ${location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''}text-gray-300 font-medium`}>
             { lang === 'en' ? 'Contact' : 'Contacto'}
           </Link>
         </div>
         </div>
 
         <div className='flex flex-col gap-4'>
-        <h2 className={`${location.pathname === '/services' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 w-max`}>{lang === 'en' ? 'Services' : 'Servicios'}</h2>
+        <h2 className={`${location.pathname === '/services' ? 'border-[#a78bfa]' : 'border-slate-50'} font-bold text-lg border-b-2 w-max`}>{lang === 'en' ? 'Services' : 'Servicios'}</h2>
         <div className='flex flex-col gap-5'>
-          <Link to='/services/spa-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/spa-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/services/spa-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/spa-service' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
             { lang === 'en' ? 'Landing pages - SPA(Single Page Apps)' : 'Landing pages o SPA'}
           </Link>
-          <Link to='/services/ecommerce' className={`py-2 hover:opacity-90 ${location.pathname === '/services/ecommerce' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/services/ecommerce' className={`py-2 hover:opacity-90 ${location.pathname === '/services/ecommerce' ? 'text-[#a78bfa] font-bold' : ''}text-gray-300 font-medium`}>
             E-commerce
           </Link>
-          <Link to='/services/support-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/support-service' ? 'text-[#a78bfa] font-bold' : ''}`}>
+          <Link to='/services/support-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/support-service' ? 'text-[#a78bfa] font-bold' : ''}text-gray-300 font-medium`}>
             { lang === 'en' ? 'Web support' : 'Soporte Web'}
           </Link>
         </div>
         </div>
         <div className='flex flex-col gap-4'>
-          <h2 className={`${location.pathname === '/contact' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 w-max`}>
+          <h2 className={`${location.pathname === '/contact' ? 'border-[#a78bfa]' : 'border-slate-50'} font-bold text-lg border-b-2 w-max`}>
           { lang === 'en' ? 'Contact' : 'Contacto'}
           </h2>
           <div className='flex flex-col gap-5'>

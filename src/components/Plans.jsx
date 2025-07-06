@@ -96,7 +96,7 @@ const premiumSteps = [
   <h2 className='border-b w-max font-bold text-xl border-slate-50 mt-4'>
     {lang === 'en' ? 'Standard Plan' : 'Plan Standard'}
     </h2>
-    <p className='my-2'>{lang === 'en' ? 'The ideal plan for small businesses or individuals offering their services and looking to start building their digital brand' : 'El plan ideal para pequeños negocios o particulares que ofrecen sus servicios y quieren comenzar a construir su marca digital'}</p>
+    <p className='my-2 text-gray-300'>{lang === 'en' ? 'The ideal plan for small businesses or individuals offering their services and looking to start building their digital brand' : 'El plan ideal para pequeños negocios o particulares que ofrecen sus servicios y quieren comenzar a construir su marca digital'}</p>
     <p className='text-base w-max font-bold my-2'>{lang === 'en' ? 'Process: ' : 'Proceso:'}</p>
     <div className='flex flex-col m-2 px-2 leading-relaxed w-full gap-4'>
       <section className='flex flex-col p-4'>
@@ -146,7 +146,7 @@ const premiumSteps = [
           <h2 className='border-b w-max text-xl font-bold border-slate-50 mt-4'>
             {lang === 'en' ? 'Premium Plan' : 'Plan Premium'}
           </h2>
-          <p className='my-2'>{lang === 'en' ? 'We are passionate about what we do, and it shows. For businesses with very specific requirements, the digital identity of your brand will leave a lasting impression on your customers' : 'Somos apasionados por lo que hacemos y se nota. Para negocios con requerimientos muy especifícos, la identidad digital de tu marca tus clientes no la van a olvidar'}
+          <p className='my-2 text-gray-300'>{lang === 'en' ? 'We are passionate about what we do, and it shows. For businesses with very specific requirements, the digital identity of your brand will leave a lasting impression on your customers' : 'Somos apasionados por lo que hacemos y se nota. Para negocios con requerimientos muy especifícos, la identidad digital de tu marca tus clientes no la van a olvidar'}
           </p>
           <p className='text-base w-max font-bold my-2'>{ lang === 'en' ? 'Process:' : 'Proceso:'}</p>
     <div className='flex flex-col w-full gap-4'>
