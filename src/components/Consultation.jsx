@@ -63,7 +63,7 @@ const Consultation = () => {
             <Nav />
             <div className='flex relative'>
 
-                <div className='supp-bg flex flex-col'>
+                <div className='flex flex-col'>
                     
                     <section className='flex flex-col pt-24 relative bg-[rgba(36,36,36,0.22)] m-auto backdrop-blur-xs w-screen h-auto items-center'>
                         

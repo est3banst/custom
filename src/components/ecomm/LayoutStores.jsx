@@ -84,11 +84,13 @@ const LayoutStores = () => {
                     key={key}/>
                 ))}
                 </section>
+                <div className='flex flex-col items-center justify-center gap-4'>
+                <h2 className='text-2xl py-4'>{lang === 'en' ? 'Our process' : 'Nuestro proceso'}</h2>
+                </div>
                 <section ref={ref} className={`bg-[#242424] leading-relaxed p-4 ${inView ? 'text-animation' : ''}`}>
-                    <h2 className='uppercase font-black'>{lang === 'en' ? 'Process' : 'Proceso'}</h2>
-                    <hr />
-                    <p className='py-4'>{lang === 'en' ? "We'll have a meeting to discuss about your business current digital perspective and how we could get to the right solution to achieve your business goals, which in most cases is to sell more, once the meeting is over we'll get started right away with the requirements and a business plan, with short, mid and long term goals for you to expect once we ship the solution"
-                     : 'Tendremos una reunión para discutir sobre la perspectiva digital actual de su negocio y cómo podríamos llegar a la solución adecuada para lograr sus objetivos comerciales, que en la mayoría de los casos es vender más, una vez que finalice la reunión, comenzaremos de inmediato con los requisitos y un plan de negocios, con objetivos a corto, mediano y largo plazo que puede esperar una vez que enviemos la solución'}</p>
+                    
+                    <p className='py-4'>{lang === 'en' ? "We'll have a meeting to discuss about your business current digital perspective and how we could get to the right solution to achieve your business goals, once the meeting is over we'll get started right away with the requirements and a business plan, with short, mid and long term goals for you to expect once we ship the solution"
+                     : 'Tendremos una reunión para discutir sobre la perspectiva digital actual de su negocio y cómo podríamos llegar a la solución adecuada para lograr sus objetivos comerciales, una vez que finalice la reunión, comenzaremos de inmediato con los requisitos y un plan de negocios, con objetivos a corto, mediano y largo plazo que puede esperar una vez que enviemos la solución'}</p>
                     <hr />
                     <p className='py-4'>{lang === 'en' ? "Once the solution is shipped we'll provide close support and monitoring to ensure the goals we previously set are being met, we'll also provide a panel for you to look into your products, update stock, sale's metrics and more" :
                      'Una vez enviada la solución brindaremos soporte y monitoreo cercano para garantizar que se cumplan los objetivos que establecimos previamente, también le brindaremos un panel para que pueda revisar sus productos, actualizar el stock, las métricas de ventas y más'}</p>

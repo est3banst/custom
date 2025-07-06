@@ -22,7 +22,7 @@ const Support = () => {
    
     <Nav />
     
-    <div className='flex pt-24 supp-bg flex-col gap-6 w-full pb-2'>
+    <div className='flex pt-24 flex-col gap-6 w-full'>
       <div className='py-10'>
       <p className='text-[#a78bfa] head-animation font-black text-3xl md:text-4xl uppercase flex justify-center'>{lang === 'en' ? 'Web support' : 'soporte web'}</p>
        <ul className='space-y-4 pl-2 py-4 leading-relaxed'>
@@ -60,7 +60,7 @@ const Support = () => {
         </div>
         </section>
         <section className='bg-[#242424] px-4 py-8'>
-            <p className='font-bold text-base'>{lang === 'en' ? 'We are your ideal partner to help you use technology efficiently, so you don’t have to spend mountains of money re-hiring over and over to get the same results' : 'Somos tu socio ideal para que puedas usar la tecnología de manera eficiente, y no tengas que gastar montañas de dinero debido a recontratar una y otra vez para obtener lo mismo'}</p>
+            <p className='font-bold text-base'>{lang === 'en' ? 'We are your ideal partner to help you use technology efficiently to grow your business' : 'Somos tu socio ideal para que puedas usar la tecnología de manera eficiente para crecer tu negocio'}</p>
            <Link to="/contact" >
            <button className='action'>{lang === 'en' ? 'Get started' : 'Comenza hoy'}</button>
            </Link>

@@ -48,7 +48,7 @@ const ServiceCard = ({ title, benefits, impacts, buttonText, link, index }) => {
             </Link>
            
         </section>
-         <hr />
+        
          </>
     );
 };
