@@ -51,7 +51,7 @@ const Menu = () => {
       
         <section className='my-12 relative flex gap-1 flex-col w-full'>
     <p className='border-b border-slate-50 w-max'>Kustom &copy; {year.getFullYear()}</p>
-    <small>{lang === 'en' ? 'Connecting more' : "Conectando más"} </small>
+    <small>{lang === 'en' ? 'Web development at your reach' : "Desarrollo web a tu alcance"} </small>
 </section>
     </ul>
    
