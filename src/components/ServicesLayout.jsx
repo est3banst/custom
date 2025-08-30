@@ -1,4 +1,3 @@
-import React from 'react'
 import Lighting from './Lighting'
 import AllServices from './AllServices'
 import Nav from './Nav'

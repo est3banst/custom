@@ -16,7 +16,7 @@ const Charts = () => {
         <div className='flex flex-col h-auto w-full'>
             <section className='grid grid-cols-1 leading-relaxed py-4 md:grid-cols-2 w-full'>
                 <h4 className='text-xl text-center py-2 font-semibold px-2 md:self-center'>
-                    {lang === 'en' ? "Let's start building your digital presence today" : 'Comencemos a contruir tu presencia digital hoy'}
+                    {lang === 'en' ? "Let's start building your digital presence today" : 'Comencemos a construir tu presencia digital hoy'}
                 </h4>
                 <div className='flex flex-col items-center'>
                     <div className='relative flex justify-center w-full'>
