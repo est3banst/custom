@@ -1,6 +1,7 @@
 import React from "react";
 import GridHero from "./GridHero";
 import { useInView } from "react-intersection-observer";
+import SilkLayout from "./SilkLayout";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../config/LanguageContext";
 
@@ -12,14 +13,15 @@ const Hero = () => {
   })
 
   return (
-    <div id="hero-container" className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
-      <GridHero />
-      <div className="relative cust-background z-20 text-center h-screen flex flex-col justify-center items-center gap-5">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-medium uppercase p-4 ">
+    <div id="hero-container" className="relative w-full min-h-dvh flex flex-col justify-center items-center overflow-hidden">
+      <SilkLayout />
+      <div className="relative cust-background z-20 text-center h-dvh w-dvw flex flex-col justify-center items-center gap-5">
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-black uppercase p-4 ">
        {   lang === 'en' ?
-         'We boost your business with innovative web solutions. Based in Uruguay, we work worldwide' :
-          'Impulsamos tu negocio con soluciones web innovadoras. Ubicados en Uruguay, trabajamos para todo el mundo'
+         'We boost your business with innovative web solutions' :
+          'Impulsamos tu negocio con soluciones web innovadoras'
        } </h2>
+       <p className="uppercase text-sm"> { lang === 'en' ? 'Based in Uruguay, working worldwide' : 'Ubicados en Uruguay, trabajamos para todo el mundo' }</p>
        <div className="flex w-full md:w-4/6 justify-center gap-5 flex-col md:flex-row items-center">
        <span className="">
         <Link to='/services'>

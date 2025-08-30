@@ -8,6 +8,7 @@ import Nav from './Nav';
 import Charts from './Charts';
 import TwistedGallery from './TwistedGallery';
 import { useLanguage } from '../config/LanguageContext';
+import Plans from './Plans';
 
 const Main = () => {
 
@@ -30,7 +31,7 @@ const Main = () => {
       >
     <Hero />
     </div>
-    <div className='grid grid-cols-1 custom-spacing-pc gap-8 mb-12 lg:gap-15'>
+    <div className='grid grid-cols-1 custom-spacing-pc gap-8 mb-6 lg:gap-15'>
     <TwistedGallery
     lang='es'/>
     <Services />
@@ -38,6 +39,7 @@ const Main = () => {
     <Charts
     lang='es'
     />
+    <Plans />
     <About />
     </div>
     <Footer />

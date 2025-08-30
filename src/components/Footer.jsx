@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { Link, useLocation, NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { useLanguage } from '../config/LanguageContext';
 
 const Footer = () => {
   const location = useLocation(); 
   const { ref, inView } = useInView({ threshold: 0.1 });
-  const { ref: svgRef, inView: svgInView } = useInView({ threshold: 0.1 });
   const yearToday = new Date().getFullYear();
   const {lang} = useLanguage();
 
@@ -23,33 +21,54 @@ const Footer = () => {
         <div className='flex flex-col gap-4'>
         <h2 className={`${location.pathname === '/' ? 'border-[#a78bfa]' : 'border-slate-50'} border-b-2 font-bold text-lg w-max`}>{ lang === 'en' ? 'Links' : 'Vínculos'}</h2>
         <div className='flex flex-col gap-5'>
-          <Link to='/faq' className={`py-2 hover:opacity-90 ${location.pathname === '/faq' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
-            { lang === 'en' ? 'FAQ' : 'Preguntas Frecuentes'}
-          </Link>
-          <Link to='/plans' className={`py-2 hover:opacity-90 ${location.pathname === '/plans' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
-            { lang === 'en' ? 'Plans' : 'Planes'}
-          </Link>
-          <Link to='/about' className={`py-2 hover:opacity-90 ${location.pathname === '/about' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
-            { lang === 'en' ? 'About us' : 'Nosotros'}
-          </Link>
-          <Link to='/contact' className={`py-2 hover:opacity-90 ${location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''}text-gray-300 font-medium`}>
-            { lang === 'en' ? 'Contact' : 'Contacto'}
-          </Link>
+          <NavLink
+  to='/faq'
+  className={({ isActive }) =>
+    `py-2 hover:opacity-90 ${isActive ? 'text-[#a78bfa] font-bold' : 'text-gray-300 font-medium'}`
+  }
+>
+  {lang === 'en' ? 'FAQ' : 'Preguntas Frecuentes'}
+</NavLink>
+         <NavLink
+  to='/about'
+  className={({ isActive }) =>
+    `py-2 hover:opacity-90 ${isActive ? 'text-[#a78bfa] font-bold' : 'text-gray-300 font-medium'}`
+  }
+>
+  {lang === 'en' ? 'About us' : 'Nosotros'}
+</NavLink>
+         <NavLink
+  to='/contact'
+  className={({ isActive }) =>
+    `py-2 hover:opacity-90 ${isActive ? 'text-[#a78bfa] font-bold' : 'text-gray-300 font-medium'}`
+  }
+>
+  {lang === 'en' ? 'Contact' : 'Contacto'}
+</NavLink>
         </div>
         </div>
 
         <div className='flex flex-col gap-4'>
         <h2 className={`${location.pathname === '/services' ? 'border-[#a78bfa]' : 'border-slate-50'} font-bold text-lg border-b-2 w-max`}>{lang === 'en' ? 'Services' : 'Servicios'}</h2>
         <div className='flex flex-col gap-5'>
-          <Link to='/services/spa-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/spa-service' ? 'text-[#a78bfa] font-bold' : ''} text-gray-300 font-medium`}>
+          <NavLink to='/services/spa-service' 
+           className={({ isActive }) =>
+    `py-2 hover:opacity-90 ${isActive ? 'text-[#a78bfa] font-bold' : 'text-gray-300 font-medium'}`
+  }>
             { lang === 'en' ? 'Landing pages - SPA(Single Page Apps)' : 'Landing pages o SPA'}
-          </Link>
-          <Link to='/services/ecommerce' className={`py-2 hover:opacity-90 ${location.pathname === '/services/ecommerce' ? 'text-[#a78bfa] font-bold' : ''}text-gray-300 font-medium`}>
+          </NavLink>
+          <NavLink to='/services/ecommerce' 
+          className={({ isActive }) =>
+    `py-2 hover:opacity-90 ${isActive ? 'text-[#a78bfa] font-bold' : 'text-gray-300 font-medium'}`
+  }>
             E-commerce
-          </Link>
-          <Link to='/services/support-service' className={`py-2 hover:opacity-90 ${location.pathname === '/services/support-service' ? 'text-[#a78bfa] font-bold' : ''}text-gray-300 font-medium`}>
+          </NavLink>
+          <NavLink to='/services/support-service' 
+          className={({ isActive }) =>
+    `py-2 hover:opacity-90 ${isActive ? 'text-[#a78bfa] font-bold' : 'text-gray-300 font-medium'}`
+  }>
             { lang === 'en' ? 'Web support' : 'Soporte Web'}
-          </Link>
+          </NavLink>
         </div>
         </div>
         <div className='flex flex-col gap-4'>
@@ -79,8 +98,8 @@ const Footer = () => {
         <small>{lang === 'en' ? 'Web development at your reach' : 'Desarrollo web a tu alcance'}</small>
       </section>
       <div className='flex text-xs leading-relaxed py-2 gap-4 justify-center w-full'>
-        <a href="">{ lang === 'en' ? 'Privacy policy' : 'Política de privacidad'}</a>
-        <a href="">{ lang === 'en' ? 'Terms of service' : 'Términos del servicio'}</a>
+        <a href="#">{ lang === 'en' ? 'Privacy policy' : 'Política de privacidad'}</a>
+        <a href="#">{ lang === 'en' ? 'Terms of service' : 'Términos del servicio'}</a>
       </div>
     </>
   );

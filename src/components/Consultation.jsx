@@ -67,9 +67,9 @@ const Consultation = () => {
                     
                     <section className='flex flex-col pt-24 relative bg-[rgba(36,36,36,0.22)] m-auto backdrop-blur-xs w-screen h-auto items-center'>
                         
-                        <article className='w-full px-2 py-8 my-4 justify-center flex flex-col items-center gap-1'>
+                        <article className='w-full px-2 py-8 my-4 justify-center flex flex-col gap-1'>
                             <h2 className='font-black text-2xl'>{lang === 'en' ? "If you are ready to start growing your digital brand we are here to help you all the way up" : "Si estás listo para comenzar a crecer tu marca digital estamos acá para ayudarte durante todo el proceso"} </h2>
-                            <p className='px-2 text-[9px]'>{lang === 'en' ? "If you have any questions or queries, please leave us an email and we will respond as quickly as possible" : "Si tenes alguna duda o tenes una consulta por favor dejanos un mail que responderemos lo más rapido posible"}</p>
+                            <p className='px-2 text-[9px]'>{lang === 'en' ? "If you have any questions or queries, please leave us an email and we will respond as quickly as possible" : "Si tenes alguna duda o consulta por favor dejanos un mail que responderemos lo más rapido posible"}</p>
 
                           <a href='mailto:info@kustomdev.com' className='flex gap-2 items-center'>
                           
@@ -80,7 +80,7 @@ const Consultation = () => {
                             </a>
                              </article>
 
-                        <article className='py-6 px-4 bg-[#2424246e] leading-relaxed flex w-full items-center flex-col gap-2'>
+                        <article className='py-6 px-4 bg-[#2424246e] leading-relaxed flex w-full flex-col gap-2'>
                             <h2 className='text-xl'>{lang === 'en' ? "Leave us your details, and we will contact you within 3 business days" : 'Déjanos tus datos y nos comunicaremos dentro de 3 días hábiles'}</h2>
                             <p>{lang === 'en' ? 'We will talk about your business, its needs, and how we can achieve the' : 'Hablaremos sobre tu negocio, sus necesidades y cómo podemos lograr la'} <b>{lang === 'en' ? 'perfect solution' : 'solución perfecta'}</b> {lang === 'en' ? 'for you to improve your work processes' : 'para vos y así mejorar tus procesos de trabajo'}</p>
                             <small className='flex justify-center w-full'>{lang === 'en' ? "Hours: 9:00 AM to 5:00 PM" : 'Horario: 9:00 a 17:00'} (GMT-3)</small>

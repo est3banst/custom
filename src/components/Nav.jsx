@@ -33,9 +33,8 @@ const Nav = () => {
                    <Link to='/portfolio'>
                    <li className={`${location.pathname === '/portfolio' ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'Portfolio' : 'Portfolio'}</li>
                    </Link>
-
-                   <Link to='/plans'>
-                   <li className={`${location.pathname === '/plans' ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'Plans' : 'Planes'}</li>
+                     <Link to='/about'>
+                   <li className={`${location.pathname === '/about' ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'About' : 'Nosotros'}</li>
                    </Link>
                    <Link to='/contact'>
                        <li className={`${location.pathname === '/contact' ? 'text-[#a78bfa]' : ''} orbitron border-nav`}>{lang === 'en' ? 'Contact' : 'Contacto'}</li>

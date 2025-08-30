@@ -15,14 +15,12 @@ const Us = () => {
     return (
         <>
         <Lighting>
-        <div className='flex font-medium flex-col w-full justify-center m-auto relative h-auto gap-4'>
+        <div className='flex font-medium py-14 flex-col w-full justify-center m-auto relative h-auto gap-4'>
       <div>
-        <h2 className='uppercase relative z-[98232] head-animation text-[#a78bda] px-2 py-6 text-3xl md:text-4xl font-bold text-center'>
+        <h2 className='uppercase relative z-[98232] head-animation text-[#a78bda] mt-4 px-2 text-3xl md:text-4xl font-bold text-center'>
         {lang === 'en' ? 'Your web your way' : 'Tu web a tu manera'}
         </h2></div>
-      <div className="outer">
-  <div className="card">
-     <div ref={ref1} className={`relative z-50 backdrop-blur-2x transition-all duration-500 ease-in px-2 items-center gap-4 py-12 flex w-full flex-col ${inView1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
+     <div ref={ref1} className={`relative z-50 transition-all duration-500 text-lg ease-in px-10 gap-4 py-12 flex w-full flex-col ${inView1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
   <div className="flex items-start gap-2">
     <svg className='shrink-0' xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
 	<path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"></path>
@@ -46,12 +44,8 @@ const Us = () => {
     </p>
   </div>
 </div>
- 
-  </div>
-</div>
-     
 
-          <div ref={ref2} className={`card backdrop-blur-xs text-base flex transition-all duration-500 ease-in flex-col leading-relaxed gap-3 py-12 px-4 ${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
+          <div ref={ref2} className={`card backdrop-blur-xs text-xl flex transition-all duration-500 ease-in flex-col leading-relaxed gap-3 py-12 px-4 ${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-9'}`}>
             <svg xmlns="http://www.w3.org/2000/svg" width={30} height={24} viewBox="0 0 24 24">
 	<g fill="none" stroke="#ff2233" strokeLinejoin="round" strokeWidth={1}>
 		<path strokeLinecap="round" strokeWidth={2.5} d="M4 4.001h16v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></path>
@@ -59,14 +53,11 @@ const Us = () => {
 		<path strokeLinecap="round" strokeWidth={2.5} d="M12 12V8"></path>
 	</g>
 </svg>
-            <p className='text-center md:px-6 py-4 px-2'>{ lang === 'en' ? "Everyone does an online search before hiring a service or paying for a product. If you're not there, you're likely to lose that potential customer" : 'Todo el mundo antes de contratar un servicio o pagar un producto hace una búsqueda en línea, si no estás es muy probable que pierdas ese potencial cliente'}</p>
+            <p className='md:px-6 py-4 px-2'>{ lang === 'en' ? "Everyone does an online search before hiring a service or paying for a product. If you're not there, you're likely to lose that potential customer" : 'Todo el mundo antes de contratar un servicio o pagar un producto hace una búsqueda en línea, si no estás es muy probable que pierdas ese potencial cliente'}</p>
          
-            <p className='text-center py-4 px-2'>{ lang === 'en' ? 'You take care of your business while we build your digital brand' : 'Vos te ocupas de tu negocio mientras nosotros construimos tu marca digital'}</p>
+            <p className='py-4 px-2'>{ lang === 'en' ? 'You take care of your business while we build your digital brand' : 'Vos te ocupas de tu negocio mientras nosotros construimos tu marca digital'}</p>
             
             </div>
-            <p className='text-2xl text-center self-center w-max border-b-2 border-[#a78bfa] font-semibold'>
-                { lang === 'en' ? 'The wait is over' : 'Comenzamos ?'}
-            </p>
             <section className='flex p-3 items-center justify-center'>
                 <Link to="/contact">
                 <button className="action">{ lang === 'en' ? 'Get in touch' : 'Contactar'}</button>

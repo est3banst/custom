@@ -7,7 +7,7 @@ const AccordionComp = ({ que, answ, idn, num, active, secclass, clasname, handle
         <div className="border rounded-t-2xl rounded-b-2xl  p-4">
             <div
                 className={`px-4 flex justify-between cursor-pointer ${
-                    active === idn ? "bg-[#171717]" : "bg-[#17171701]"
+                    active === idn ? "bg-[#242424]" : "bg-[#24242401]"
                 }`}
                 onClick={() => handleToggle(idn)}
             >

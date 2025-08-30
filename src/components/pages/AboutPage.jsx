@@ -1,4 +1,3 @@
-import React from 'react'
 import Nav from '../Nav'
 import Us from '../Us'
 import Footer from '../Footer'
@@ -9,14 +8,12 @@ const AboutPage = () => {
     useScrollTop()
   return (
     <>
-    <div className='flex flex-col relative h-screen bg-[#171717]'>
-        <Nav />
-        <div className='pt-[100px]'>
-
-        <Us />
+        <div>
+          <Nav />
+            <Us />
+          <Footer/>
         </div>
-        <Footer/>
-    </div>
+  
     </>
   )
 }

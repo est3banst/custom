@@ -11,7 +11,6 @@ const ContactPage = () => {
   const {lang} = useLanguage();
    useScrollTop()
 
-  const { ref: contactRef, inView: inViewContact } = useInView({ threshold: 0.1 });
   return (
     <>
     <div className='w-full'>

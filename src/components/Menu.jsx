@@ -19,7 +19,7 @@ const Menu = () => {
     <span></span>
     <span></span>
 
-    <ul id="menu" className='supp-bg orbitron'>
+    <ul id="menu" className='bg-black/90 orbitron'>
    
       <li>
         <Link to="/">
@@ -37,11 +37,7 @@ const Menu = () => {
       <label className={location.pathname.includes('/portfolio') ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Portfolio</label>
       </Link>
         </li>
-        <li>
-      <Link to="/plans">
-      <label className={location.pathname === '/plans' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">{lang === 'en' ? 'Plans' : 'Planes'}</label>
-      </Link>
-        </li>
+      
         <li>
       <Link to="/contact">
       <label className={location.pathname === '/contact' ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">{lang === 'en' ? 'Contact' : 'Contacto'}</label>

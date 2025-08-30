@@ -158,7 +158,7 @@ US PAGE
   display: block;
   content: "";
   width: 15px;
-  height: 15px;
+  height: 16px;
   position: absolute;
   text-align: center;
   justify-content: center;
@@ -176,9 +176,9 @@ US PAGE
   cursor: pointer;
   color: #f2f2f2;
   border-radius: 10px;
-  padding: 12px 18px;
+  padding: 12px 17px;
   box-sizing: content-box;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   text-align: center;
   line-height: 30px;
   transition: 0.75s ease;
@@ -187,16 +187,16 @@ US PAGE
   top: -2px;
   left: -2px;
   border-top: 2px solid #a78bfa;
-  border-top-left-radius: 8px;
-  border-left: 2px solid #a78bfa;
+  border-top-left-radius: 11px;
+  /* border-left: 2px solid #a78bfa; */
   transition: 0.75s all;
 }
 .corner-button:after {
   top: -2px;
   right: -2px;
   border-top: 2px solid #a78bfa;
-  border-top-right-radius: 8px;
-  border-right: 2px solid #a78bfa;
+  border-top-right-radius: 11px;
+  /* border-right: 2px solid #a78bfa; */
   transition: 0.75s all;
 }
 .corner-button span {
@@ -207,44 +207,44 @@ US PAGE
   margin-left: 8px;
 }
 .corner-button span:before {
-  bottom: -2px;
-  left: -2px;
-  border-bottom: 2px solid #a78bfa;
-  border-bottom-left-radius: 8px;
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 2px solid hsl(255, 92%, 76%);
+  border-bottom-left-radius: 11px;
   border-left: 2px solid #a78bfa;
   transition: 0.75s all;
 }
 .corner-button span:after {
-  bottom: -2px;
-  right: -2px;
+  bottom: -1px;
+  right: -1px;
   border-bottom: 2px solid #a78bfa;
-  border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 11px;
   border-right: 2px solid #a78bfa;
   transition: 0.75s all;
 }
 .corner-button:hover {
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 .corner-button:hover:before,
 .corner-button:hover:after {
   border-color: #a78bfa;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 .corner-button:hover span:before,
 .corner-button:hover span:after {
   border-color: #a78bfa;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 button:hover span::before,
 button:hover span::after {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 11px;
 }
 
 .path1.animate {
@@ -292,11 +292,11 @@ button:hover span::after {
 
 
 .cust-background {
-  background: rgb(148,148,148);
+  background: rgb(25,25,25);
   background: linear-gradient(180deg, 
   rgba(29, 29, 29, .95) 12%, 
-  rgba(73, 73, 73, 0.661) 22%, 
-  rgba(148,148,148,0.7660057773109244) 33%, 
+  rgba(36, 36, 36, 0.661) 22%, 
+  rgba(148, 148, 148, 0.112) 33%, 
   rgba(29,29,29,.8) 74%, 
   rgba(23,23,23,.99) 95%);
 
