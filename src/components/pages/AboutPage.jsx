@@ -8,7 +8,7 @@ const AboutPage = () => {
     useScrollTop()
   return (
     <>
-        <div>
+        <div className='supp-bg'>
           <Nav />
             <Us />
           <Footer/>

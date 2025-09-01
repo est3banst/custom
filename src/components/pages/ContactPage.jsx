@@ -13,16 +13,12 @@ const ContactPage = () => {
 
   return (
     <>
-    <div className='w-full'>
+    <div className='w-full supp-bg'>
     <div className='pb-24'>
       <Nav />
     </div>
 
     <div className='grid relative grid-cols-1 md:grid-cols-2 lg:gap-2 gap-2 w-full'>
-        <div className="line topl"></div>
-    <div className="line leftl"></div>
-    <div className="line bottoml"></div>
-    <div className="line rightl"></div>
     <section className='flex max-w-2xl h-full justify-center items-center italiana px-6 py-12 flex-col gap-8'> 
         <h2 className='font-black relative text-lg md:text-xl border-b-2 border-[#a78bfa] py-2'>{lang === 'en' ? 'Looking for a personalized solution?': 'Buscas una solución personalizada?'}</h2>
         <h2 className='font-medium relative text-gray-300 text-center px-4 md:text-xl py-1'>{lang === 'en' ? 'Need a team ready to help you use technology to grow your business?' : 'Necesitas un equipo listo para ayudarte a utilizar la tecnología para hacer crecer tu negocio?'}</h2>
@@ -35,8 +31,9 @@ const ContactPage = () => {
    </div>
     
     </div>
-    </div>
+    
     <Footer/>
+    </div>
     </>
 
   )

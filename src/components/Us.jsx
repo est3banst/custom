@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Lighting from './Lighting'
 import { useInView } from 'react-intersection-observer'
 import { useLanguage } from '../config/LanguageContext'
 
@@ -14,7 +13,7 @@ const Us = () => {
   })
     return (
         <>
-        <Lighting>
+      
         <div className='flex font-medium py-14 flex-col w-full justify-center m-auto relative h-auto gap-4'>
       <div>
         <h2 className='uppercase relative z-[98232] head-animation text-[#a78bda] mt-4 px-2 text-3xl md:text-4xl font-bold text-center'>
@@ -68,7 +67,6 @@ const Us = () => {
     <div className="line bottoml"></div>
     <div className="line rightl"></div>
         </div>
-        </Lighting>
         
         </>
     )
