@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./blueprints/Card";
+import Card from "../blueprints/Card";
 import { useInView } from "react-intersection-observer";
-import { useLanguage } from "../config/LanguageContext";
+import { useLanguage } from "../../config/LanguageContext";
 
 const Services = () => {
   const { lang } = useLanguage();

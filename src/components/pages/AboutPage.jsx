@@ -1,6 +1,6 @@
-import Nav from '../Nav'
+import Nav from '../ui/Nav'
 import Us from '../Us'
-import Footer from '../Footer'
+import Footer from '../ui/Footer'
 
 import useScrollTop from '../hooks/useScrollTop'
 

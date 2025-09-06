@@ -1,8 +1,7 @@
-import React from 'react'
 import { useInView } from "react-intersection-observer"
 import MarqueeComp from './MarqueeComp'
 import { Link } from 'react-router-dom'
-import { useLanguage } from '../config/LanguageContext'
+import { useLanguage } from '../../config/LanguageContext'
 
 const About = () => {
     const {lang} = useLanguage();

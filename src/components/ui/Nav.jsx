@@ -1,7 +1,6 @@
-import React from 'react'
 import Menu from './Menu'
 import { Link, useLocation } from 'react-router-dom'
-import { useLanguage } from '../config/LanguageContext'
+import { useLanguage } from '../../config/LanguageContext'
 
 
 const Nav = () => {

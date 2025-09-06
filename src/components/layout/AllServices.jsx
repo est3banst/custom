@@ -1,6 +1,5 @@
-import React from 'react'
 import ServiceCard from './ServicesCard';
-import { useLanguage } from '../config/LanguageContext';
+import { useLanguage } from '../../config/LanguageContext';
 
 const AllServices = () => {
     const {lang} = useLanguage();

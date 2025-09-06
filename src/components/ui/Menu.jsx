@@ -1,7 +1,6 @@
-import React from 'react'
-import '../assets/Menu.css'
+import '../../assets/Menu.css'
 import { Link ,useLocation} from 'react-router-dom'
-import { useLanguage } from '../config/LanguageContext';
+import { useLanguage } from '../../config/LanguageContext';
 
 const Menu = () => {
     const year = new Date();

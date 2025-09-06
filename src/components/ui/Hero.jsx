@@ -1,9 +1,9 @@
 import React from "react";
-import GridHero from "./GridHero";
+import GridHero from "../GridHero";
 import { useInView } from "react-intersection-observer";
-import SilkLayout from "./SilkLayout";
+import SilkLayout from "../SilkLayout";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../config/LanguageContext";
+import { useLanguage } from "../../config/LanguageContext";
 
 const Hero = () => {
 

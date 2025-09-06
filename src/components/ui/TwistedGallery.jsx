@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { useLanguage } from '../config/LanguageContext';
+import { useLanguage } from '../../config/LanguageContext';
 
 
 const TwistedGallery = () => {
@@ -33,8 +33,8 @@ const TwistedGallery = () => {
 		<div className='grid grid-cols-1 md:grid-cols-2 h-auto py-4'>
 
 			<div className='relative w-full h-auto py-22 overflow-clip gap-4 flex items-center'>
-				{/* <div className='absolute inset-0 z-50 bg-radial from-transparent to-[#242424]'></div> */}
-				<section ref={refFirst} className={`w-full flex flex-col gap-1 transition-all duration-500 ease-in-out items-center justify-center rotate-45 ${inViewFirst ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
+				 <div className='absolute inset-0 z-50 bg-radial from-transparent to-[#24242442]'></div> 
+				 <section ref={refFirst} className={`w-full flex flex-col gap-1 transition-all duration-500 ease-in-out items-center justify-center rotate-45 ${inViewFirst ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
 					<article ref={refOne} className='flex w-[200%] gap-1 transition-transform duration-300 ease-out'>
 						<img className="w-20 grow-2 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
 						<img className="w-0 grow-1 aspect-square object-cover object-center" src="/gym-web.png" alt="" />
@@ -63,7 +63,7 @@ const TwistedGallery = () => {
 						<img className="w-0 grow-2 aspect-square object-cover object-center" src="/dental-clinic.png" alt="" />
 						<img className="w-0 grow-2 aspect-square object-cover object-center" src="/login.png" alt="" />
 					</article>
-				</section>
+				</section> 
 			</div>
 			<section
 			

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { API_CLIENTE } from '../apiroutes/client';
-import { useLanguage } from '../config/LanguageContext';
+import { API_CLIENTE } from '../../apiroutes/client';
+import { useLanguage } from '../../config/LanguageContext';
 
 
 const Ecomm = () => {

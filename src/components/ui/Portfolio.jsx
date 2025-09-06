@@ -1,8 +1,7 @@
-import React from 'react'
-import CardJob from './blueprints/CardJob'
-import Nav from './Nav'
-import Footer from './Footer'
-import { useLanguage } from '../config/LanguageContext'
+import CardJob from '../blueprints/CardJob';
+import Nav from './Nav';
+import Footer from './Footer';
+import { useLanguage } from '../../config/LanguageContext';
 
 const Portfolio = () => {
   const { lang } = useLanguage();

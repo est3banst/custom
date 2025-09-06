@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Nav from '../Nav';
-import FormModal from '../FormModal';
-import SectionEcommerce from './SectionEcommerce';
-import Footer from '../Footer';
+import { useState } from 'react';
+import Nav from '../ui/Nav';
+import FormModal from '../ui/FormModal';
+import SectionEcommerce from '../layout/SectionEcommerce';
+import Footer from '../ui/Footer';
 import Lighting from '../Lighting';
 import useScrollTop from '../hooks/useScrollTop'
 import { useLanguage } from '../../config/LanguageContext';
@@ -64,8 +64,6 @@ const LayoutStores = () => {
     return (
         <>
         <Lighting>
-
-        
             <Nav />
             <div className='p-4 flex relative items-center z-20 flex-col gap-3'>
             <div className='relative px-4 items-center grid grid-cols-1 gap-4 w-full pt-24'>

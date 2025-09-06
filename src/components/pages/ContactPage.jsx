@@ -1,8 +1,6 @@
-import React from 'react'
-import Nav from '../Nav'
-import Contact from '../Contact'
-import Footer from '../Footer'
-import { useInView } from 'react-intersection-observer'
+import Nav from '../ui/Nav'
+import Contact from '../ui/Contact'
+import Footer from '../ui/Footer'
 import useScrollTop from '../hooks/useScrollTop'
 import { useLanguage } from '../../config/LanguageContext'
 

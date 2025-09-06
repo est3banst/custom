@@ -1,5 +1,4 @@
-import React from "react";
-import { useLanguage } from "../config/LanguageContext";
+import { useLanguage } from "../../config/LanguageContext";
 
 const MarqueeComp = () => {
   const { lang } = useLanguage();

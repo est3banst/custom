@@ -1,7 +1,6 @@
-import React, { useState} from 'react'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
-import { useLanguage } from '../config/LanguageContext';
+import { useLanguage } from '../../config/LanguageContext';
 
 const Charts = () => {
     const {lang} = useLanguage();
@@ -36,9 +35,9 @@ const Charts = () => {
                     </Link>
                 </div>
             <hr />
-            <section className='flex flex-col md:flex-row relative items-center pt-12 pb-6 justify-center w-full'>
+            <section className='grid grid-cols-1 leading-relaxed py-4 lg:grid-cols-2 w-full'>
             
-                <div>
+                <div className='flex flex-col w-full items-center'>
                     <div className='flex justify-center flex-col items-center w-full px-2'>
                 <h4 className='text-xl text-center'>{lang === 'en' ? 'Start selling online, is easy with us' : 'Empezá a vender en línea, es facil con nosotros'}</h4>
               
@@ -52,7 +51,7 @@ const Charts = () => {
 
                 </div>
                 <div className='flex flex-col items-center w-full px-2'>
-                    <div className='w-full text-sm px-2 font-bold text-center'>
+                    <div className='w-full text-xl px-2 font-black my-auto text-center'>
                     <p>{lang === 'en' ? 'If you have a physical store, you should already have your online store' : 'Si tenes una tienda física ya deberías de tener tu tienda virtual'}</p>
                     <p>{lang === 'en' ? "And if you don't have one, don't worry. We take care of it" : 'Y si no la tenes, no te preocupes. Nosotros nos encargamos'}</p>
                 </div>

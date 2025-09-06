@@ -1,15 +1,14 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nosotros from '../pages/AboutPage'; 
-import Layout from '../landing/Layout';
+import Layout from '../services/Layout';
 import Main from '../Main';
-import Faq from '../Faq';
+import Faq from '../ui/Faq';
 import ServicesLayout from '../ServicesLayout';
-import LayoutStores from '../ecomm/LayoutStores';
+import LayoutStores from '../services/LayoutStores';
 import ContactPage from '../pages/ContactPage';
-import Portfolio from '../Portfolio';
-import Consultation from '../Consultation';
-import Support from '../supp/Support';
+import Portfolio from '../ui/Portfolio';
+import Consultation from '../ui/Consultation';
+import Support from '../services/Support';
 
 const AppRouting = () => {
   return (

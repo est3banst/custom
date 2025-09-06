@@ -1,9 +1,8 @@
-import React from 'react'
-import Landings from './Landings'
-import Nav from '../Nav'
+import Landings from '../layout/Landings'
+import Nav from '../ui/Nav'
 import { Link } from 'react-router-dom'
-import Section from './Section'
-import Footer from '../Footer'
+import Section from '../layout/Section'
+import Footer from '../ui/Footer'
 import useScrollTop from '../hooks/useScrollTop'
 import { useLanguage } from '../../config/LanguageContext'
 

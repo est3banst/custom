@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Nav from './Nav'
-import { API_CLIENTE } from '../apiroutes/client';
-import { useLanguage } from '../config/LanguageContext';
-import Footer from './Footer';
+import Nav from '../ui/Nav'
+import { API_CLIENTE } from '../../apiroutes/client';
+import { useLanguage } from '../../config/LanguageContext';
+import Footer from '../ui/Footer';
 
 const Consultation = () => {
     const [formData, setFormData] = useState({

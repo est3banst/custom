@@ -1,14 +1,13 @@
-import React from 'react'
-import Services from './Services'
-import Hero from './Hero'
-import About from './About'
+import Services from './ui/Services'
+import Hero from './ui/Hero'
+import About from './ui/About'
 import { useInView } from "react-intersection-observer";
-import Footer from './Footer';
-import Nav from './Nav';
-import Charts from './Charts';
-import TwistedGallery from './TwistedGallery';
+import Footer from './ui/Footer';
+import Nav from './ui/Nav';
+import Charts from './ui/Charts';
+import TwistedGallery from './ui/TwistedGallery';
 import { useLanguage } from '../config/LanguageContext';
-import Plans from './Plans';
+import Plans from './ui/Plans';
 
 const Main = () => {
 

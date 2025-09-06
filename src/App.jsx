@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Loader from './components/Loader'
 import { useLocation } from 'react-router-dom'
 import AppRouting from './components/routes/AppRouting';
-import Chatbot from './components/ChatBot';
+import Chatbot from './components/ui/ChatBot';
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();

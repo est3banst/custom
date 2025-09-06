@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation, NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
-import { useLanguage } from '../config/LanguageContext';
+import { useLanguage } from '../../config/LanguageContext';
 
 const Footer = () => {
   const location = useLocation(); 

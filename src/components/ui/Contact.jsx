@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useForm, ValidationError } from '@formspree/react';
-import '../assets/Contact.css';
-import { CAPTCHA, KEY_CAPTCHA } from '../apiroutes/captcha';
-import { useLanguage } from '../config/LanguageContext';
+import '../../assets/Contact.css';
+import { CAPTCHA, KEY_CAPTCHA } from '../../apiroutes/captcha';
+import { useLanguage } from '../../config/LanguageContext';
 
 
 const Contact = () => {
