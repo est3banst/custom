@@ -33,7 +33,7 @@ const Menu = () => {
         </li>
         <li>
       <Link to="/portfolio">
-      <label className={location.pathname.includes('/portfolio') ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">Portfolio</label>
+      <label className={location.pathname.includes('/portfolio') ? 'text-[#a78bfa] font-bold' : ''} htmlFor="menuCheckbox">{ lang === 'en' ? 'Projects' : 'Proyectos' }</label>
       </Link>
         </li>
       
