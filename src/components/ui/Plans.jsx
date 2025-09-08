@@ -71,7 +71,7 @@ const steps = [
        <section ref={ref2} className={`${inView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'} border-t-2 transition-all duration-500 ease-in border-amber-50 mt-4`}>
           
            <svg
-    className="absolute left-0 top-0 w-full h-[120dvh] md:h-[150dvh] pointer-events-none"
+    className="absolute left-0 top-0 w-full h-[120vh] pointer-events-none"
     viewBox="0 0 100 600"
     preserveAspectRatio="none"
   >
